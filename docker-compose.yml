@@ -5,6 +5,7 @@ services:
       args:
         NODE_IMAGE: ${NODE_IMAGE:-node:20.18.0-alpine}
     image: go-nomads-web:latest
+    container_name: go-nomads-web
     environment:
       NODE_ENV: production
       NEXT_TELEMETRY_DISABLED: "1"

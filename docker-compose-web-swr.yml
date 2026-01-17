@@ -3,6 +3,7 @@ version: "3.9"
 services:
   web:
     image: ${SWR_REGISTRY:-swr.ap-southeast-3.myhuaweicloud.com}/${SWR_ORGANIZATION:-go-nomads}/go-nomads-web:${IMAGE_TAG:-latest}
+    container_name: go-nomads-web
     environment:
       NODE_ENV: production
       NEXT_TELEMETRY_DISABLED: "1"
