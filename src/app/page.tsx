@@ -59,8 +59,17 @@ const screenshots = [
   { src: "/screenshots/6.png", alt: "社区交流" },
 ];
 
+const ANDROID_DOWNLOAD_URL = "https://www.fir021.org/cXHLd";
+
 export default function Home() {
   const [modal, setModal] = useState<"about" | "privacy" | "terms" | null>(null);
+  const [toast, setToast] = useState<string | null>(null);
+  const [showQR, setShowQR] = useState(false);
+
+  const showToast = (msg: string) => {
+    setToast(msg);
+    setTimeout(() => setToast(null), 3000);
+  };
 
   const modalTitle: Record<Exclude<typeof modal, null>, string> = {
     about: "关于我们",
@@ -144,18 +153,26 @@ export default function Home() {
               精选共享空间、参与社区活动，让你的旅居生活更加精彩。
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a href="#download" className="btn btn-primary btn-lg gap-2">
+              <button
+                type="button"
+                className="btn btn-primary btn-lg gap-2"
+                onClick={() => showToast("iOS 版本暂未上架，敬请期待！")}
+              >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
                 </svg>
                 App Store
-              </a>
-              <a href="#download" className="btn btn-outline btn-lg gap-2">
+              </button>
+              <button
+                type="button"
+                className="btn btn-outline btn-lg gap-2"
+                onClick={() => setShowQR(true)}
+              >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
                 </svg>
                 Google Play
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -244,18 +261,26 @@ export default function Home() {
                 立即下载 Go Nomads，加入全球数字游民社区，探索更多可能
               </p>
               <div className="flex flex-wrap justify-center gap-4">
-                <a href="#" className="btn btn-lg bg-white text-primary hover:bg-white/90 gap-2">
+                <button
+                  type="button"
+                  className="btn btn-lg bg-white text-primary hover:bg-white/90 gap-2"
+                  onClick={() => showToast("iOS 版本暂未上架，敬请期待！")}
+                >
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
                   </svg>
                   App Store
-                </a>
-                <a href="#" className="btn btn-lg btn-outline border-white text-white hover:bg-white hover:text-primary gap-2">
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-lg btn-outline border-white text-white hover:bg-white hover:text-primary gap-2"
+                  onClick={() => setShowQR(true)}
+                >
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
                   </svg>
                   Google Play
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -306,6 +331,58 @@ export default function Home() {
                 知道了
               </button>
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* QR Code Modal for Android */}
+      {showQR && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4"
+          role="dialog"
+          aria-modal="true"
+          onClick={() => setShowQR(false)}
+        >
+          <div
+            className="relative w-full max-w-xs rounded-2xl bg-base-100 p-6 shadow-2xl text-center"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              aria-label="关闭"
+              className="btn btn-sm btn-circle btn-ghost absolute right-3 top-3"
+              onClick={() => setShowQR(false)}
+            >
+              ✕
+            </button>
+            <h3 className="text-lg font-semibold mb-4">扫码下载 Android 版</h3>
+            <div className="flex justify-center">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={`https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(ANDROID_DOWNLOAD_URL)}`}
+                alt="Android 下载二维码"
+                width={200}
+                height={200}
+                className="rounded-lg"
+              />
+            </div>
+            <p className="mt-4 text-sm text-base-content/70">使用手机相机或浏览器扫描二维码</p>
+            <a
+              href={ANDROID_DOWNLOAD_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary btn-sm mt-4"
+            >
+              直接访问下载页
+            </a>
+          </div>
+        </div>
+      )}
+
+      {/* Toast */}
+      {toast && (
+        <div className="toast toast-top toast-center z-[60]">
+          <div className="alert alert-info">
+            <span>{toast}</span>
           </div>
         </div>
       )}
