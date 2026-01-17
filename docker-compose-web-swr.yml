@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  web:
+    image: ${SWR_REGISTRY:-swr.ap-southeast-3.myhuaweicloud.com}/${SWR_ORGANIZATION:-go-nomads}/go-nomads-web:${IMAGE_TAG:-latest}
+    environment:
+      NODE_ENV: production
+      NEXT_TELEMETRY_DISABLED: "1"
+    ports:
+      - "3001:3000"
+    command: ["node", "server.js"]
+    restart: unless-stopped
+    pull_policy: always

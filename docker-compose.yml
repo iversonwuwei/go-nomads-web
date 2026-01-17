@@ -1,0 +1,14 @@
+services:
+  web:
+    build:
+      context: .
+      args:
+        NODE_IMAGE: ${NODE_IMAGE:-node:20.18.0-alpine}
+    image: go-nomads-web:latest
+    environment:
+      NODE_ENV: production
+      NEXT_TELEMETRY_DISABLED: "1"
+    ports:
+      - "3001:3000"
+    command: ["node", "server.js"]
+    restart: unless-stopped
