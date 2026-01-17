@@ -51,3 +51,12 @@ Compose:
 ```bash
 docker compose up --build
 ```
+
+## Generate feature images with Tongyi Wanxiang
+
+This repo ships a helper script that calls Tongyi Wanxiang (DashScope) to render the six feature card images and saves them to `public/funcs`.
+
+1. Copy env template: `cp .env.local.example .env.local`.
+2. Open `.env.local` and set `DASHSCOPE_API_KEY` (same value used by AIService under `Qwen:ApiKey` in the backend).
+3. Run the generator: `node scripts/generate-func-images.js` (requires Node 18+ for built-in `fetch`).
+4. Start the site (`npm run dev`) and the feature cards will load the generated images automatically.
