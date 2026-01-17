@@ -12,3 +12,9 @@ services:
     command: ["node", "server.js"]
     restart: unless-stopped
     pull_policy: always
+    networks:
+      - go-nomads-network
+
+networks:
+  go-nomads-network:
+    external: true
