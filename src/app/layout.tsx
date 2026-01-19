@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Go Nomads Web",
-  description: "Web experience for the Go Nomads platform",
+  title: "行途",
+  description: "行途平台的 Web 体验",
 };
 
 export default function RootLayout({

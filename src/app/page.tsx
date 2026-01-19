@@ -80,7 +80,7 @@ export default function Home() {
   const modalBody: Record<Exclude<typeof modal, null>, JSX.Element> = {
     about: (
       <div className="space-y-3 text-sm text-base-content/80">
-        <p>Go Nomads 致力于为数字游民提供可信的城市数据、共享办公信息与社区连接。</p>
+        <p>行途致力于为数字游民提供可信的城市数据、共享办公信息与社区连接。</p>
         <ul className="list-disc list-inside space-y-1">
           <li>核心团队：远程工作与旅行产品背景</li>
           <li>使命：让全球任何地方都能高效工作</li>
@@ -117,7 +117,7 @@ export default function Home() {
       {/* Navigation */}
       <nav className="navbar sticky top-0 z-50 bg-base-100/80 backdrop-blur-lg border-b border-base-200">
         <div className="navbar-start">
-          <a className="text-xl font-bold text-primary">Go Nomads</a>
+          <a className="text-xl font-bold text-primary">行途</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-2">
@@ -149,7 +149,7 @@ export default function Home() {
               <span className="text-primary">随处工作</span>
             </h1>
             <p className="text-xl text-base-content/70 mb-8 max-w-2xl mx-auto">
-              Go Nomads 是专为数字游民打造的一站式平台。发现全球最佳远程办公城市、
+              行途是专为数字游民打造的一站式平台。发现全球最佳远程办公城市、
               精选共享空间、参与社区活动，让你的旅居生活更加精彩。
             </p>
             <div className="flex flex-wrap justify-center gap-4">
@@ -184,7 +184,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">为数字游民而生</h2>
             <p className="text-lg text-base-content/70 max-w-2xl mx-auto">
-              从城市探索到社区连接，Go Nomads 帮你解决旅居生活的方方面面
+              从城市探索到社区连接，行途帮你解决旅居生活的方方面面
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -258,7 +258,7 @@ export default function Home() {
             <div className="card-body text-center py-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">开始你的数字游民之旅</h2>
               <p className="text-lg opacity-90 mb-8 max-w-xl mx-auto">
-                立即下载 Go Nomads，加入全球数字游民社区，探索更多可能
+                立即下载行途，加入全球数字游民社区，探索更多可能
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <button
@@ -310,7 +310,7 @@ export default function Home() {
           </div>
         </nav>
         <aside>
-          <p>© 2026 Go Nomads. All rights reserved.</p>
+          <p>© 2026 行途. All rights reserved.</p>
         </aside>
       </footer>
 
