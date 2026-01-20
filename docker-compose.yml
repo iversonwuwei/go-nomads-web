@@ -13,3 +13,9 @@ services:
       - "3001:3000"
     command: ["node", "server.js"]
     restart: unless-stopped
+    networks:
+      - go-nomads-network
+
+networks:
+  go-nomads-network:
+    external: true

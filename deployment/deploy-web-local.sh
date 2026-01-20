@@ -61,26 +61,24 @@ select_runtime() {
   exit 1
 }
 
-COMPOSE_CMD="$(select_runtime)"
-
 if [[ ! -f "$COMPOSE_FILE" ]]; then
   echo "Error: docker-compose.yml not found at $COMPOSE_FILE" >&2
   exit 1
 fi
 
+COMPOSE_CMD="$(select_runtime)"
+
 cd "$ROOT_DIR"
-
-BUILD_FLAG="--build"
-[[ "$SKIP_BUILD" == true ]] && BUILD_FLAG=""
-
-RECREATE_FLAG=""
-[[ "$FORCE_RECREATE" == true ]] && RECREATE_FLAG="--force-recreate"
 
 echo "Using compose: $COMPOSE_CMD"
 echo "Project root: $ROOT_DIR"
 
-$COMPOSE_CMD -f "$COMPOSE_FILE" up -d $BUILD_FLAG $RECREATE_FLAG
+cmd=( $COMPOSE_CMD -f "$COMPOSE_FILE" up -d )
+[[ "$SKIP_BUILD" == true ]] || cmd+=(--build)
+[[ "$FORCE_RECREATE" == true ]] && cmd+=(--force-recreate)
+"${cmd[@]}"
 
-$COMPOSE_CMD -f "$COMPOSE_FILE" ps
+ps_cmd=( $COMPOSE_CMD -f "$COMPOSE_FILE" ps )
+"${ps_cmd[@]}"
 
-echo "✅ go-nomads-web is running at http://localhost:3001"
+echo "✅ go-nomads-web is running at http://localhost:3000"
