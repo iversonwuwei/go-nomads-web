@@ -12,7 +12,10 @@ RUN if command -v apk >/dev/null 2>&1; then \
 		apt-get update && apt-get install -y --no-install-recommends libc6 && rm -rf /var/lib/apt/lists/*; \
 	fi
 COPY package.json yarn.lock ./
-RUN yarn install --frozen-lockfile
+# 设置 yarn 网络超时和重试，使用官方源（Docker 容器内更稳定）
+RUN yarn config set network-timeout 600000 && \
+    yarn config set registry https://registry.yarnpkg.com && \
+    yarn install --frozen-lockfile --network-timeout 600000
 
 FROM base AS builder
 ENV NODE_ENV=production
