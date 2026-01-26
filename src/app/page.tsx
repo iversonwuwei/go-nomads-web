@@ -309,8 +309,16 @@ export default function Home() {
             </a>
           </div>
         </nav>
-        <aside>
+        <aside className="space-y-2 text-sm text-base-content/80">
           <p>© 2026 行途. All rights reserved.</p>
+          <a
+            className="link link-hover"
+            href="https://beian.miit.gov.cn/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            辽ICP备2026001591号
+          </a>
         </aside>
       </footer>
 
