@@ -11,14 +11,18 @@ RUN if command -v apk >/dev/null 2>&1; then \
 	else \
 		apt-get update && apt-get install -y --no-install-recommends libc6 && rm -rf /var/lib/apt/lists/*; \
 	fi
-COPY package.json yarn.lock ./
+COPY package.json yarn.lock .yarnrc.yml ./
+COPY .yarn ./.yarn
+# Activate the project-pinned Yarn (Corepack) to match packageManager
+RUN corepack enable && corepack prepare yarn@4.5.1 --activate
 # 设置 yarn 网络超时和重试，使用官方源（Docker 容器内更稳定）
-RUN yarn config set network-timeout 600000 && \
-    yarn config set registry https://registry.yarnpkg.com && \
-    yarn install --frozen-lockfile --network-timeout 600000
+RUN yarn config set npmRegistryServer https://registry.yarnpkg.com && \
+	yarn install --immutable --network-timeout 600000
 
 FROM base AS builder
 ENV NODE_ENV=production
+COPY --from=deps /app/.yarn ./.yarn
+COPY --from=deps /app/.yarnrc.yml ./
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 RUN yarn build
