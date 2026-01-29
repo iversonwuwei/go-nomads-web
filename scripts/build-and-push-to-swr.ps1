@@ -17,7 +17,8 @@ param(
 $ErrorActionPreference = 'Stop'
 
 if ($Help) {
-  Write-Host @"Usage: ./build-and-push-to-swr.ps1 [-Login] [-BuildOnly] [-PushOnly] [-Tag <tag>] [-Help]
+  Write-Host @"
+Usage: ./build-and-push-to-swr.ps1 [-Login] [-BuildOnly] [-PushOnly] [-Tag <tag>] [-Help]
 Env vars: SWR_REGISTRY (default swr.ap-southeast-3.myhuaweicloud.com), SWR_ORGANIZATION (default go-nomads), SWR_AK/SWR_SK, SWR_REGION (default ap-southeast-3)
 "@
   exit 0
