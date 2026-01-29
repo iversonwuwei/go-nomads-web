@@ -1,13 +1,17 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.3.0/schema.json",
-  "extends": ["biome/presets/next"],
+  "$schema": "https://biomejs.dev/schemas/2.3.11/schema.json",
   "linter": {
     "enabled": true
   },
   "formatter": {
     "enabled": true
   },
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
+    }
+  },
   "files": {
-    "ignore": ["node_modules", ".next", "build", "dist"]
+    "includes": ["**/*", "!!**/node_modules", "!!**/.next", "!!**/build", "!!**/dist"]
   }
 }
