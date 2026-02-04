@@ -1,0 +1,132 @@
+# ============================================================
+# Go-Nomads Web CI/CD Pipeline
+# Gitee Go + 华为云 SWR (Software Repository for Container)
+# ============================================================
+#
+# 环境变量配置（需要在 Gitee 仓库 -> 设置 -> 流水线 -> 变量中配置）:
+#   - SWR_AK: 华为云 Access Key (加密)
+#   - SWR_SK: 华为云 Secret Key (加密)
+#   - SWR_REGION: 华为云区域 (如: cn-north-4)
+#   - SWR_ORGANIZATION: SWR 组织名称 (如: go-nomads)
+#   - SWR_LOGIN_SERVER: SWR 登录服务器 (如: swr.cn-north-4.myhuaweicloud.com)
+# ============================================================
+
+version: '1.0'
+name: go-nomads-web-cicd
+displayName: Go-Nomads Web CI/CD
+
+# 全局变量
+env:
+  NODE_VERSION: '20'
+  DOCKER_BUILDKIT: '1'
+
+stages:
+  # ============================================================
+  # 阶段 1: 构建和测试
+  # ============================================================
+  - stage:
+    name: build_and_test
+    displayName: 构建和测试
+    steps:
+      - step: shell@agent
+        name: node_build
+        displayName: Next.js 构建
+        agentSelector:
+          labels:
+            - docker
+        script:
+          - echo "===== 设置 Node.js ====="
+          - |
+            if ! command -v node &> /dev/null; then
+              curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
+              apt-get install -y nodejs
+            fi
+          - node --version
+          - npm --version
+          - echo "===== 安装依赖 ====="
+          - npm ci || npm install
+          - echo "===== 代码检查 ====="
+          - npm run lint || true
+          - echo "===== 构建 Next.js ====="
+          - npm run build
+          - echo "===== 构建完成 ====="
+
+  # ============================================================
+  # 阶段 2: 构建 Docker 镜像并推送到华为云 SWR
+  # ============================================================
+  - stage:
+    name: build_and_push_image
+    displayName: 构建并推送镜像到 SWR
+    when:
+      - branch:
+          include:
+            - main
+            - master
+            - develop
+            - 'release/*'
+    steps:
+      - step: shell@agent
+        name: docker_build_push
+        displayName: 构建并推送 Docker 镜像
+        agentSelector:
+          labels:
+            - docker
+        script:
+          - |
+            # 配置变量
+            SERVICE_NAME="go-nomads-web"
+            IMAGE="${SWR_LOGIN_SERVER}/${SWR_ORGANIZATION}/${SERVICE_NAME}"
+            TAG="${GITEE_COMMIT_SHA:0:8}"
+            
+            echo "===== 登录华为云 SWR ====="
+            docker login -u "${SWR_REGION}@${SWR_AK}" -p "${SWR_SK}" ${SWR_LOGIN_SERVER}
+            
+            echo "===== 构建 Docker 镜像 ====="
+            docker build \
+              --build-arg NODE_ENV=production \
+              -t ${IMAGE}:${TAG} \
+              -t ${IMAGE}:latest \
+              .
+            
+            echo "===== 推送镜像到 SWR ====="
+            docker push ${IMAGE}:${TAG}
+            docker push ${IMAGE}:latest
+            
+            echo "✓ 镜像推送成功"
+            echo "  - ${IMAGE}:${TAG}"
+            echo "  - ${IMAGE}:latest"
+
+  # ============================================================
+  # 阶段 3: 部署通知
+  # ============================================================
+  - stage:
+    name: notify
+    displayName: 构建通知
+    steps:
+      - step: shell@agent
+        name: send_notification
+        displayName: 发送通知
+        agentSelector:
+          labels:
+            - docker
+        script:
+          - |
+            echo "===== 构建完成 ====="
+            echo "分支: ${GITEE_BRANCH}"
+            echo "提交: ${GITEE_COMMIT_SHA}"
+            echo "Web 镜像已推送到华为云 SWR"
+
+# ============================================================
+# 触发条件
+# ============================================================
+triggers:
+  push:
+    branches:
+      include:
+        - main
+        - master
+        - develop
+        - 'release/*'
+  tag:
+    include:
+      - 'v*'
