@@ -62,11 +62,11 @@ jobs:
 
       - name: 登录华为云 SWR
         run: |
-          docker login -u "${{ secrets.SWR_REGION }}@${{ secrets.SWR_AK }}" -p "${{ secrets.SWR_SK }}" ${{ secrets.SWR_LOGIN_SERVER }}
+          docker login -u "${{ vars.SWR_REGION }}@${{ secrets.SWR_AK }}" -p "${{ secrets.SWR_SK }}" ${{ vars.SWR_LOGIN_SERVER }}
 
       - name: 构建并推送 Web 镜像
         run: |
-          IMAGE="${{ secrets.SWR_LOGIN_SERVER }}/${{ secrets.SWR_ORGANIZATION }}/go-nomads-web"
+          IMAGE="${{ vars.SWR_LOGIN_SERVER }}/${{ vars.SWR_ORGANIZATION }}/go-nomads-web"
           TAG="${{ github.sha }}"
           SHORT_TAG="${TAG:0:8}"
           
@@ -91,28 +91,28 @@ jobs:
       - name: 部署到阿里云服务器
         uses: appleboy/ssh-action@v1.0.3
         with:
-          host: ${{ secrets.ALIYUN_SERVER_HOST }}
-          username: ${{ secrets.ALIYUN_SERVER_USER }}
+          host: ${{ vars.ALIYUN_SERVER_HOST }}
+          username: ${{ vars.ALIYUN_SERVER_USER }}
           key: ${{ secrets.ALIYUN_SERVER_SSH_KEY }}
           script: |
             echo "===== 登录华为云 SWR ====="
-            docker login -u "${{ secrets.SWR_REGION }}@${{ secrets.SWR_AK }}" -p "${{ secrets.SWR_SK }}" ${{ secrets.SWR_LOGIN_SERVER }}
+            docker login -u "${{ vars.SWR_REGION }}@${{ secrets.SWR_AK }}" -p "${{ secrets.SWR_SK }}" ${{ vars.SWR_LOGIN_SERVER }}
             
             echo "===== 进入部署目录 ====="
-            cd /opt/go-nomads
+            cd ${{ vars.ALIYUN_DEPLOY_PATH }}
             
             echo "===== 拉取最新 Web 镜像 ====="
-            docker-compose -f docker-compose-web-swr.yml pull
+            docker compose -f docker-compose-web-swr.yml pull
             
             echo "===== 重启 Web 服务 ====="
-            docker-compose -f docker-compose-web-swr.yml down || true
-            docker-compose -f docker-compose-web-swr.yml up -d
+            docker compose -f docker-compose-web-swr.yml down || true
+            docker compose -f docker-compose-web-swr.yml up -d
             
             echo "===== 清理旧镜像 ====="
             docker image prune -f
             
             echo "===== 检查服务状态 ====="
-            docker-compose -f docker-compose-web-swr.yml ps
+            docker compose -f docker-compose-web-swr.yml ps
             
             echo "✓ Web 部署完成"
 
