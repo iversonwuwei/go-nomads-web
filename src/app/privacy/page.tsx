@@ -156,10 +156,7 @@ export default function PrivacyPage() {
         </div>
       </main>
 
-      {/* 页脚 */}
-      <footer className="border-t border-base-300 py-8 text-center text-sm text-base-content/50">
-        <p>© 2026 行途（Go Nomads）· 保留所有权利</p>
-      </footer>
+
     </div>
   );
 }
