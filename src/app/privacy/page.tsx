@@ -143,7 +143,7 @@ export default function PrivacyPage() {
             <section key={id} id={id}>
               <h2 className="text-2xl font-semibold mb-4">{title}</h2>
               <div className="prose prose-sm max-w-none text-base-content/80 whitespace-pre-line leading-relaxed [&>*]:my-0">
-                {content.split("\n\n").map((para, i) => (
+                {content.split("\n\n").map((para) => (
                   <p key={`${id}-p-${para.slice(0, 20)}`} className="mb-4">
                     {para.split(/\*\*(.*?)\*\*/g).map((seg, j) =>
                       j % 2 === 1 ? <strong key={`${id}-s-${seg.slice(0, 12)}`}>{seg}</strong> : seg
