@@ -1,0 +1,3 @@
+[    3874ms] [WARNING] [universalReport] Beacon report fail: [{"eventCode":"rqd_js_init","eventTime":"1771409779623","mapValue":{"A99":"Y","A100":"1","A72":"4.5.16-web","A88":"1771409779623"}}] @ https://cdn.app.open.qq.com/dt-report/dt-report.umd.20230703.js:42
+[    3874ms] [WARNING] [universalReport] Beacon report fail: [{"eventCode":"rqd_applaunched","eventTime":"1771409779623","mapValue":{"A21":"Y","A99":"Y","A100":"2","A72":"4.5.16-web","A88":"1771409779623"}}] @ https://cdn.app.open.qq.com/dt-report/dt-report.umd.20230703.js:42
+[    7983ms] [ERROR] Refused to get unsafe header "ws-status-code" @ :34
