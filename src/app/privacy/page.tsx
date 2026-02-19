@@ -1,226 +1,154 @@
+import { fetchPrivacyPolicy } from "@/app/lib/api";
 import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "隐私政策 - 行途",
-  description: "行途（Go Nomads）隐私政策，了解我们如何收集、使用和保护您的个人信息。",
+	title: "隐私政策 - 行途",
+	description:
+		"行途（Go Nomads）隐私政策，了解我们如何收集、使用和保护您的个人信息。",
 };
 
-/* ───── 章节数据 ───── */
-const sections = [
-  {
-    id: "intro",
-    title: "引言",
-    content: `欢迎使用「行途」（Go Nomads）。行途是一款专为数字游民打造的一站式社区与服务平台，提供城市探索、共享办公空间查询、社区活动、即时通讯、AI 行程规划等功能。我们深知个人信息对您的重要性，并将竭尽全力保护您的隐私安全。本隐私政策详细说明了我们在您使用行途移动应用程序（iOS/Android）、网站及相关服务时，如何收集、使用、存储、共享和保护您的个人信息。使用我们的服务即表示您同意本政策中描述的数据处理方式。`,
-  },
-  {
-    id: "collect",
-    title: "我们收集的信息",
-    content: `我们可能收集以下类型的信息：
+/* ───── 页面（async Server Component + ISR） ───── */
+export default async function PrivacyPage() {
+	const doc = await fetchPrivacyPolicy();
 
-**1. 您主动提供的信息**
-• 账号信息：手机号码、邮箱地址、用户名、头像、个人简介等注册与个人资料信息。
-• 社区内容：您发布的帖子、评论、活动信息、共享办公空间评价等用户生成内容。
-• 通讯信息：您通过即时聊天功能发送的消息内容（端到端加密传输）。
-• 支付信息：当您使用付费功能时，我们会收集必要的交易信息，但不直接存储您的银行卡号或支付密码。
-• 行程数据：您在 AI 行程规划功能中输入的旅行偏好和目的地信息。
+	// API 获取失败时的降级 UI
+	if (!doc) {
+		return (
+			<div className="min-h-screen bg-base-200">
+				<Nav />
+				<main className="max-w-3xl mx-auto px-6 py-16 text-center">
+					<h1 className="text-4xl font-bold mb-4">隐私政策</h1>
+					<p className="text-base-content/60">
+						暂时无法加载隐私政策内容，请稍后再试或联系{" "}
+						<a href="mailto:hi@gonomads.app" className="link link-primary">
+							hi@gonomads.app
+						</a>
+					</p>
+				</main>
+			</div>
+		);
+	}
 
-**2. 自动收集的信息**
-• 设备信息：设备品牌及型号、操作系统版本、屏幕分辨率、语言设置。
-• 设备标识信息：我们接入的第三方SDK（高德定位SDK、高德地图SDK）在提供服务时可能采集匿名设备标识符（OAID），用于服务优化和统计分析。收集方式：由SDK自动采集（可选项）。使用范围：仅用于服务优化，不用于广告追踪或用户画像。本应用自身不主动收集IMEI、MEID等设备唯一标识符。
-• 设备MAC地址：为实现即时通讯和网络定位等服务，我们接入的第三方SDK（腾讯云即时通信IM SDK、高德定位SDK）在提供服务时可能通过系统网络接口采集您的设备MAC地址，用于设备标识和网络连接管理。收集方式：由SDK在初始化及运行过程中自动采集。使用范围：仅用于SDK内部服务运行（即时通讯连接管理和网络定位辅助），不用于广告追踪或用户画像。
-• 日志信息：访问时间、浏览页面、崩溃日志、功能使用频率。
-• 网络信息：IP地址、网络类型（WiFi/4G/5G）、运营商信息、网络连接状态。高德定位SDK在提供定位服务时还可能采集WiFi信息（包括WiFi连接状态、SSID、BSSID、信号强度）和基站信息，用于辅助网络定位。
-• 传感器信息：使用重力、加速度等传感器信息，以识别您的设备横竖屏状态。高德SDK在提供定位和地图服务时也会采集传感器信息用于辅助定位。
-• 软件安装列表：为实现社交分享、第三方登录跳转、支付跳转和地图导航功能，本应用会查询特定第三方应用（包括微信、微博、抖音、Facebook、Twitter/X、WhatsApp、Telegram、LinkedIn、钉钉、高德地图、百度地图、腾讯地图、Google地图、PayPal等）的安装状态。收集方式：通过Android系统PackageManager查询接口，在用户触发分享、登录或导航功能时查询。使用范围：仅用于判断设备是否安装了对应应用以决定是否展示相关功能选项，不会获取您设备上的完整应用安装列表。此外，微信OpenSDK在初始化时也会自动检测微信客户端的安装状态。
-• 剪贴板信息：(1) 本应用使用的应用框架（Flutter引擎）在文本输入框获取焦点时，会自动读取系统剪贴板描述信息（仅判断剪贴板中是否存在可粘贴的内容类型，不读取剪贴板的具体文本内容），用于在文本编辑菜单中显示"粘贴"选项，此行为由应用框架在文本输入时自动触发。(2) 当您使用分享功能或接收分享信息时，应用可能访问剪贴板以读取其中包含的口令、分享码或链接，用于实现分享跳转和活动联动等功能，此行为由用户主动触发分享或接收操作时发生。使用范围：剪贴板信息仅在本地处理，用于输入辅助和分享功能，不会上传至服务器或与第三方共享。
+	// 格式化生效日期
+	const effectiveDate = doc.effectiveDate
+		? new Date(doc.effectiveDate).toLocaleDateString("zh-CN", {
+				year: "numeric",
+				month: "long",
+				day: "numeric",
+			})
+		: "";
 
-(3) 为识别您的设备并预防恶意程序及反作弊、提高服务安全性、保障运营质量及效率，我们会收集您的设备信息（包括IMEI、设备序列号、OAID、MEID、Android ID、IMSI、GUID、MAC地址、SIM卡序列号）、已安装APP信息或运行中的进程信息。
-(4) 为实现垃圾清理与运行加速功能，我们将请求您的存储权限获取外置存储信息(SD卡数据)，用以检查手机CPU、内存和SD卡情况。
-(5) 当你播放视频等内容时，为了适配你的设备状态，我们会调用设备的重力、加速度等传感器信息，以识别你的设备横竖屏状态。
-(6) 在你分享或接收被分享的信息时，需要在本地访问你的剪切板，读取其中包含的口令、分享码、链接，以实现跳转、分享、活动联动等功能或服务。
+	return (
+		<div className="min-h-screen bg-base-200">
+			<Nav />
 
-**3. 经您授权后收集的信息**
-• 精确位置（ACCESS_FINE_LOCATION）：基于GPS/基站/Wi-Fi获取，用于推荐附近城市、办公空间和活动，开启可能增加耗电量。
-• 大致位置（ACCESS_COARSE_LOCATION）：基于基站/Wi-Fi获取，用于城市级推荐。
-• 后台位置（ACCESS_BACKGROUND_LOCATION）：后台获取位置用于旅行足迹自动记录，可随时关闭。
-• 日历读写（READ_CALENDAR/WRITE_CALENDAR）：展示和添加活动日程。
-• 麦克风（RECORD_AUDIO）：录制语音消息，仅主动触发时使用。
-• 存储读写：选择图片、缓存数据写入以及获取外置存储信息（SD卡数据），用以检查手机CPU、内存和SD卡情况。
-• 相机（CAMERA）：拍摄头像和社区图片。
-• 通知（POST_NOTIFICATIONS）：消息提醒和活动通知。
+			<main className="max-w-3xl mx-auto px-6 py-16">
+				<h1 className="text-4xl font-bold mb-2">
+					{doc.title || "隐私政策"}
+				</h1>
+				{effectiveDate && (
+					<p className="text-base-content/60 mb-2">
+						生效日期：{effectiveDate}
+					</p>
+				)}
+				<p className="text-base-content/40 text-sm mb-12">
+					版本 {doc.version}
+				</p>
 
-所有敏感权限均在使用对应功能时才申请，未经明确授权不会主动收集。您可以随时在设备系统设置中查看和管理已授权的权限。`,
-  },
-  {
-    id: "usage",
-    title: "信息使用方式",
-    content: `我们收集的信息将用于以下用途：
+				{/* ───── 章节内容 ───── */}
+				<div className="space-y-12">
+					{doc.sections.map((section) => (
+						<section key={section.title}>
+							<h2 className="text-2xl font-semibold mb-4">
+								{section.title}
+							</h2>
+							<div className="prose prose-sm max-w-none text-base-content/80 whitespace-pre-line leading-relaxed [&>*]:my-0">
+								{section.content.split("\n\n").map((para) => (
+									<p key={para.slice(0, 40)} className="mb-4">
+										{para.split(/\*\*(.*?)\*\*/g).map((seg, si) =>
+											si % 2 === 1 ? (
+												// biome-ignore lint/suspicious/noArrayIndexKey: bold segments have no stable id
+												<strong key={si}>
+													{seg}
+												</strong>
+											) : (
+												seg
+											),
+										)}
+									</p>
+								))}
+							</div>
+						</section>
+					))}
+				</div>
 
-• **提供核心服务**：账号注册与登录、城市信息展示、共享办公空间查询、社区功能、即时通讯、AI 行程规划。
-• **个性化体验**：根据您的位置和偏好推荐城市、办公空间和社区活动。
-• **服务改进**：分析服务使用情况与性能数据，优化产品功能与用户体验。
-• **安全保障**：识别与防范欺诈行为、垃圾信息及安全威胁，保护您的账号安全。
-• **通知与沟通**：发送服务通知、活动提醒和安全警报。
-• **付费功能**：处理订阅和付费交易，提供客户支持。
-• **法律合规**：遵守适用的法律法规要求。`,
-  },
-  {
-    id: "sharing",
-    title: "信息共享与披露",
-    content: `我们不会出售您的个人信息。仅在以下情形下，我们可能会与第三方共享您的信息：
+				{/* ───── 第三方 SDK 清单表格 ───── */}
+				{doc.sdkList && doc.sdkList.length > 0 && (
+					<div className="mt-16">
+						<h2 className="text-2xl font-semibold mb-6">
+							第三方 SDK 信息清单
+						</h2>
+						<div className="overflow-x-auto">
+							<table className="table table-zebra table-sm w-full">
+								<thead>
+									<tr>
+										<th>SDK 名称</th>
+										<th>所属公司</th>
+										<th>用途</th>
+										<th>收集的数据</th>
+										<th>隐私政策</th>
+									</tr>
+								</thead>
+								<tbody>
+									{doc.sdkList.map((sdk) => (
+										<tr key={sdk.name}>
+											<td className="font-medium">{sdk.name}</td>
+											<td>{sdk.company}</td>
+											<td>{sdk.purpose}</td>
+											<td>
+												<ul className="list-disc list-inside text-xs">
+													{sdk.dataCollected.map((d) => (
+														<li key={d}>{d}</li>
+													))}
+												</ul>
+											</td>
+											<td>
+												<a
+													href={sdk.privacyUrl}
+													target="_blank"
+													rel="noopener noreferrer"
+													className="link link-primary text-xs"
+												>
+													查看
+												</a>
+											</td>
+										</tr>
+									))}
+								</tbody>
+							</table>
+						</div>
+					</div>
+				)}
+			</main>
+		</div>
+	);
+}
 
-• **服务提供商**：我们与受信任的第三方合作来运营服务，包括云存储（服务器托管）、消息推送、支付处理和数据分析服务商。这些合作方仅能在为我们提供服务的范围内访问您的信息，并受到严格的数据保护协议约束。
-• **社区互动**：您在社区中公开发布的内容（帖子、评价、活动信息）对其他用户可见，请谨慎分享个人敏感信息。
-• **法律要求**：当法律法规要求、政府部门依法调查或为保护我们及用户的合法权益时，我们可能会披露您的信息。
-• **业务转让**：如发生合并、收购或资产出售，您的信息可能作为交易资产的一部分被转移，届时我们会通知您。
-• **征得同意**：在上述情形之外，我们将在征得您明确同意后才共享您的信息。`,
-  },
-  {
-    id: "sdk",
-    title: "第三方SDK说明",
-    content: `为实现应用相关功能，我们集成了以下第三方SDK。各SDK可能收集的个人信息详情如下：
-
-**【地图与定位类】**
-• 高德定位SDK（高德软件有限公司）
-  用途：提供定位服务
-  收集信息：精确/粗略位置信息、GNSS信息、WiFi信息（WiFi状态、SSID、BSSID、信号强度）、基站信息、IP地址、设备MAC地址、设备品牌及型号、操作系统、运营商信息、屏幕分辨率、传感器信息、设备信号强度信息、OAID（可选，用于服务优化）、应用名及版本号
-  隐私政策：https://lbs.amap.com/pages/privacy/
-
-• 高德地图SDK（高德软件有限公司）
-  用途：地图显示和交互
-  收集信息：位置信息（经纬度）、设备品牌及型号、操作系统、运营商信息、屏幕分辨率、传感器信息、设备信号强度信息、OAID（可选，用于服务优化）、应用名及版本号
-  隐私政策：https://lbs.amap.com/pages/privacy/
-
-**【第三方登录类】**
-• 微信OpenSDK（深圳市腾讯计算机系统有限公司）
-  用途：微信登录和分享
-  收集信息：用户主动分享的内容、用户授权的微信头像和昵称、微信客户端安装状态（仅Android，用于确认设备是否支持微信登录分享功能）
-  隐私政策：https://support.weixin.qq.com/cgi-bin/mmsupportacctnodeweb-bin/pages/RYiYJkLOrQwu0nb8
-
-• 抖音开放平台（北京抖音科技有限公司）
-  用途：抖音授权登录
-  接入方式：通过OAuth 2.0网页授权流程实现，非原生SDK集成，不在本地采集设备信息
-  收集信息：经用户授权后获取抖音昵称和头像等公开资料
-  隐私政策：https://www.douyin.com/agreements/?id=6773901168964798477
-
-• Google Sign-In（Google LLC）
-  用途：Google账号登录
-  收集信息：经用户授权后获取Google账号信息（邮箱、昵称、头像）
-  隐私政策：https://policies.google.com/privacy
-
-**【社交通讯类】**
-• 腾讯云即时通信IM SDK（腾讯云计算（北京）有限责任公司）
-  用途：即时通信服务
-  收集信息：设备MAC地址、网络连接状态（WiFi/4G/5G状态）、设备型号、系统版本
-  隐私政策：https://cloud.tencent.com/document/product/269/58094
-
-**【基础功能类】**
-• Supabase SDK（Supabase Inc.）：后端服务与数据存储，收集账号认证信息和网络请求数据。隐私政策：https://supabase.com/privacy
-• Flutter引擎（Google LLC）：应用运行框架，在文本输入时自动读取剪贴板描述信息用于粘贴菜单判断，不读取或上传剪贴板具体内容。
-• Google定位服务（Google LLC）：海外定位服务（通过系统Google Play Services提供），收集精确/粗略位置信息和IP地址。隐私政策：https://policies.google.com/privacy
-• Flutter本地通知插件（开源社区）：本地消息通知，仅使用通知权限状态，不收集个人信息。
-
-请参阅各SDK隐私政策了解详情。您可在移动应用「设置 > 隐私政策 > 第三方SDK清单」查看完整列表。`,
-  },
-  {
-    id: "storage",
-    title: "数据存储与安全",
-    content: `• **存储位置**：您的数据存储在位于安全数据中心的云服务器上，我们选择符合行业安全标准的云服务提供商。
-• **存储期限**：我们仅在实现本政策所述目的所需的最短时间内保留您的个人信息。当您注销账号后，我们将在合理期限内删除或匿名化您的个人数据，法律法规另有要求的除外。
-• **安全措施**：我们采用业界标准的安全技术保护您的数据，包括但不限于：
-  — HTTPS/TLS 加密传输
-  — 数据库加密存储
-  — 访问控制与权限管理
-  — 定期安全审计与漏洞扫描
-  — 消息通讯端到端加密
-• **安全事件**：尽管我们尽力保护数据安全，但无法保证绝对安全。如发生数据泄露，我们将按照法律要求及时通知受影响的用户并采取补救措施。`,
-  },
-  {
-    id: "cookies",
-    title: "Cookie 与追踪技术",
-    content: `我们的网站和应用可能使用以下技术：
-
-• **必要性 Cookie**：维持您的登录状态和基本功能偏好，无法关闭。
-• **分析类 Cookie**：帮助我们了解用户如何使用服务，以便改进产品体验（如页面访问量、功能使用率）。
-• **设备标识符**：在移动应用中用于推送通知和崩溃分析。
-
-您可以通过浏览器设置管理或禁用 Cookie。请注意，禁用某些 Cookie 可能导致部分功能无法正常使用。我们不使用 Cookie 向第三方广告平台提供您的个人数据。`,
-  },
-  {
-    id: "rights",
-    title: "您的权利",
-    content: `根据适用的数据保护法律，您享有以下权利：
-
-• **访问权**：您可以随时在应用内查看和访问您的个人资料信息。
-• **更正权**：您可以在个人设置中修改、更新您的账号信息和个人资料。
-• **删除权**：您可以申请删除您的账号及关联的个人数据。请通过「设置 > 账号 > 注销账号」操作，或发送邮件至 hi@gonomads.app 提交删除请求。我们将在 15 个工作日内处理。
-• **数据导出**：您可以申请导出您的个人数据副本，我们将以通用格式提供。
-• **撤回同意**：您可以随时在设备系统设置中撤回位置、相机、通知等权限的授权。撤回同意不影响此前基于您同意的处理行为的合法性。
-• **限制处理**：在特定情况下，您有权要求我们限制对您个人信息的处理。
-
-如需行使上述权利，请联系 hi@gonomads.app，我们将在核实您的身份后尽快处理。`,
-  },
-  {
-    id: "children",
-    title: "儿童隐私",
-    content: `行途的服务面向 16 周岁及以上的用户。我们不会在知情的情况下收集 16 周岁以下儿童的个人信息。如果我们发现无意中收集了儿童的个人信息，将立即采取措施删除相关数据。如果您是家长或监护人，发现您的孩子在未经同意的情况下向我们提供了个人信息，请联系 hi@gonomads.app，我们将及时处理。`,
-  },
-  {
-    id: "changes",
-    title: "隐私政策变更",
-    content: `我们可能会不时更新本隐私政策，以反映服务变化或法律法规的要求。更新后的政策将在本页面发布，并更新顶部的「生效日期」。对于重大变更，我们将通过应用内通知、推送消息或电子邮件等方式提前告知您。建议您定期查阅本政策，了解我们最新的隐私保护措施。继续使用我们的服务即表示您接受更新后的隐私政策。`,
-  },
-  {
-    id: "contact",
-    title: "联系我们",
-    content: `如果您对本隐私政策有任何疑问、意见或请求，欢迎通过以下方式联系我们：
-
-• 电子邮件：hi@gonomads.app
-• 应用内反馈：设置 > 帮助与反馈
-
-我们将在收到您的请求后 15 个工作日内予以回复。感谢您对行途的信任与支持。`,
-  },
-];
-
-/* ───── 页面 ───── */
-export default function PrivacyPage() {
-  return (
-    <div className="min-h-screen bg-base-200">
-      {/* 导航 */}
-      <nav className="navbar sticky top-0 z-50 bg-base-100/80 backdrop-blur-lg border-b border-base-200">
-        <div className="navbar-start">
-          <Link href="/" className="text-xl font-bold text-primary">行途</Link>
-        </div>
-        <div className="navbar-end">
-          <Link href="/" className="btn btn-ghost btn-sm">返回首页</Link>
-        </div>
-      </nav>
-
-      {/* 正文 */}
-      <main className="max-w-3xl mx-auto px-6 py-16">
-        <h1 className="text-4xl font-bold mb-2">隐私政策</h1>
-        <p className="text-base-content/60 mb-12">生效日期：2026 年 2 月 18 日</p>
-
-        <div className="space-y-12">
-          {sections.map(({ id, title, content }) => (
-            <section key={id} id={id}>
-              <h2 className="text-2xl font-semibold mb-4">{title}</h2>
-              <div className="prose prose-sm max-w-none text-base-content/80 whitespace-pre-line leading-relaxed [&>*]:my-0">
-                {content.split("\n\n").map((para) => (
-                  <p key={`${id}-p-${para.slice(0, 20)}`} className="mb-4">
-                    {para.split(/\*\*(.*?)\*\*/g).map((seg, j) =>
-                      j % 2 === 1 ? <strong key={`${id}-s-${seg.slice(0, 12)}`}>{seg}</strong> : seg
-                    )}
-                  </p>
-                ))}
-              </div>
-            </section>
-          ))}
-        </div>
-      </main>
-
-
-    </div>
-  );
+/* ───── 导航栏组件 ───── */
+function Nav() {
+	return (
+		<nav className="navbar sticky top-0 z-50 bg-base-100/80 backdrop-blur-lg border-b border-base-200">
+			<div className="navbar-start">
+				<Link href="/" className="text-xl font-bold text-primary">
+					行途
+				</Link>
+			</div>
+			<div className="navbar-end">
+				<Link href="/" className="btn btn-ghost btn-sm">
+					返回首页
+				</Link>
+			</div>
+		</nav>
+	);
 }
