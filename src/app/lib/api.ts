@@ -1,12 +1,17 @@
 // ============================================================
 // Go Nomads Web — API 工具层
-// 后端基地址：https://api.go-nomads.com/api/v1
+// 通过环境变量 API_BASE 配置后端地址（仅服务端运行时读取）
+// 默认：https://api.go-nomads.com/api/v1
+// Docker 本地：http://go-nomads-gateway:5000/api/v1
 // ============================================================
 
-const API_BASE = "https://api.go-nomads.com/api/v1";
+/** 服务端 API 基地址（Server Components / Route Handlers 使用） */
+function getApiBase(): string {
+	return process.env.API_BASE || "https://api.go-nomads.com/api/v1";
+}
 
 // ─── 通用响应信封 ────────────────────────────────────
-interface ApiResponse<T> {
+export interface ApiResponse<T> {
 	success: boolean;
 	message: string;
 	data: T | null;
@@ -51,9 +56,10 @@ export async function fetchPrivacyPolicy(
 	lang = "zh",
 ): Promise<LegalDocument | null> {
 	try {
+		const base = getApiBase();
 		const res = await fetch(
-			`${API_BASE}/users/legal/privacy-policy?lang=${lang}`,
-			{ next: { revalidate: 3600 } }, // 每小时重新验证
+			`${base}/users/legal/privacy-policy?lang=${lang}`,
+			{ cache: "no-store" }, // 页面已 force-dynamic，不缓存
 		);
 
 		if (!res.ok) return null;
@@ -66,13 +72,15 @@ export async function fetchPrivacyPolicy(
 	}
 }
 
-// ─── 获取隐私政策（客户端组件用，无 ISR） ─────────────
+// ─── 获取隐私政策（客户端组件用，走 Route Handler 代理） ──
 export async function fetchPrivacyPolicyClient(
 	lang = "zh",
 ): Promise<LegalDocument | null> {
 	try {
+		// 客户端使用相对路径调用 Next.js Route Handler 代理
+		// 避免 NEXT_PUBLIC_* 构建时内联限制
 		const res = await fetch(
-			`${API_BASE}/users/legal/privacy-policy?lang=${lang}`,
+			`/api/legal/privacy-policy?lang=${lang}`,
 		);
 
 		if (!res.ok) return null;

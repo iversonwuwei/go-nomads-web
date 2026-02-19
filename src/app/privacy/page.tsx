@@ -8,7 +8,10 @@ export const metadata: Metadata = {
 		"行途（Go Nomads）隐私政策，了解我们如何收集、使用和保护您的个人信息。",
 };
 
-/* ───── 页面（async Server Component + ISR） ───── */
+/** 强制动态渲染 —— 构建时无 API 可用，避免预渲染为 fallback */
+export const dynamic = "force-dynamic";
+
+/* ───── 页面（async Server Component） ───── */
 export default async function PrivacyPage() {
 	const doc = await fetchPrivacyPolicy();
 
