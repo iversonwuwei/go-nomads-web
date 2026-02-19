@@ -1,15 +1,18 @@
 "use client";
 
 import {
-    CalendarDaysIcon,
-    ChatBubbleLeftRightIcon,
-    DevicePhoneMobileIcon,
-    GlobeAltIcon,
-    MapPinIcon,
-    UserGroupIcon,
+	CalendarDaysIcon,
+	ChatBubbleLeftRightIcon,
+	DevicePhoneMobileIcon,
+	GlobeAltIcon,
+	MapPinIcon,
+	UserGroupIcon,
 } from "@heroicons/react/24/outline";
 import Image from "next/image";
-import { type JSX, useState } from "react";
+import Link from "next/link";
+import { type JSX, useEffect, useState } from "react";
+import type { LegalSummary } from "./lib/api";
+import { fetchPrivacyPolicyClient } from "./lib/api";
 
 const features = [
 	{
@@ -67,11 +70,34 @@ export default function Home() {
 	);
 	const [toast, setToast] = useState<string | null>(null);
 	const [showQR, setShowQR] = useState(false);
+	const [privacySummary, setPrivacySummary] = useState<LegalSummary[] | null>(
+		null,
+	);
+	const [privacyFetched, setPrivacyFetched] = useState(false);
+
+	// 派生加载状态，避免在 effect 中同步 setState
+	const privacyLoading = modal === "privacy" && !privacyFetched;
 
 	const showToast = (msg: string) => {
 		setToast(msg);
 		setTimeout(() => setToast(null), 3000);
 	};
+
+	// 打开隐私弹窗时从后端获取 summary 数据
+	useEffect(() => {
+		if (modal !== "privacy" || privacyFetched) return;
+
+		let cancelled = false;
+		fetchPrivacyPolicyClient()
+			.then((doc) => {
+				if (!cancelled && doc) setPrivacySummary(doc.summary);
+			})
+			.finally(() => {
+				if (!cancelled) setPrivacyFetched(true);
+			});
+
+		return () => { cancelled = true; };
+	}, [modal, privacyFetched]);
 
 	const modalTitle: Record<Exclude<typeof modal, null>, string> = {
 		about: "关于我们",
@@ -92,13 +118,43 @@ export default function Home() {
 		),
 		privacy: (
 			<div className="space-y-3 text-sm text-base-content/80">
-				<p>我们只收集提供服务所需的最小数据，并采用加密存储与传输。</p>
-				<ul className="list-disc list-inside space-y-1">
-					<li>账号：用于登录与同步行程</li>
-					<li>设备与日志：用于性能与安全审计</li>
-					<li>删除与导出：可随时申请导出或删除数据</li>
-					<li>第三方：仅在必要时与服务提供商共享，遵循最小化原则</li>
-				</ul>
+				{privacyLoading ? (
+					<div className="flex justify-center py-8">
+						<span className="loading loading-spinner loading-md" />
+					</div>
+				) : privacySummary ? (
+					<div className="space-y-4">
+						{privacySummary.map((item) => (
+							<div key={item.title} className="flex gap-3">
+								<div className="shrink-0 w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary text-sm">
+									{item.icon === "analytics_outlined" || item.icon === "analytics" ? "📊" :
+									 item.icon === "location_on" ? "📍" :
+									 item.icon === "person" ? "👤" :
+									 item.icon === "security" ? "🔒" :
+									 item.icon === "extension" ? "🧩" :
+									 item.icon === "verified_user" ? "✅" : "📋"}
+								</div>
+								<div>
+									<p className="font-medium text-base-content">{item.title}</p>
+									<p className="text-xs text-base-content/60 mt-1 leading-relaxed">{item.content}</p>
+								</div>
+							</div>
+						))}
+						<div className="pt-2 border-t border-base-200">
+							<Link href="/privacy" className="link link-primary text-xs">
+								查看隐私政策全文 →
+							</Link>
+						</div>
+					</div>
+				) : (
+					<div className="space-y-3">
+						<p>我们只收集提供服务所需的最小数据，并采用加密存储与传输。</p>
+						<p className="text-xs text-base-content/50">加载详细信息失败，请查看隐私政策全文。</p>
+						<Link href="/privacy" className="link link-primary text-xs">
+							查看隐私政策全文 →
+						</Link>
+					</div>
+				)}
 			</div>
 		),
 		terms: (
@@ -119,9 +175,9 @@ export default function Home() {
 			{/* Navigation */}
 			<nav className="navbar sticky top-0 z-50 bg-base-100/80 backdrop-blur-lg border-b border-base-200">
 				<div className="navbar-start">
-					<a className="text-xl font-bold text-primary" href="/">
+					<Link className="text-xl font-bold text-primary" href="/">
 						行途
-					</a>
+					</Link>
 				</div>
 				<div className="navbar-center hidden lg:flex">
 					<ul className="menu menu-horizontal px-1 gap-2">
