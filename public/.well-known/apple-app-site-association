@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "X8KVNA6D7G.com.gonomads.GoNomadsApp",
+        "paths": [
+          "/app/*",
+          "/universal_link/*"
+        ]
+      }
+    ]
+  }
+}

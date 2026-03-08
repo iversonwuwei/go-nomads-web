@@ -1,0 +1,13 @@
+[
+	{
+		"relation": ["delegate_permission/common.handle_all_urls"],
+		"target": {
+			"namespace": "android_app",
+			"package_name": "com.gonomads.go_nomads_app",
+			"sha256_cert_fingerprints": [
+				"6B:CE:A8:F4:2F:31:FF:79:A2:95:1F:8E:A1:32:C6:F7:4B:E9:58:76:82:63:B8:C4:57:2F:6E:76:D2:58:1D:03",
+				"09:86:8B:62:7E:18:07:36:B0:25:7B:44:A1:3E:65:CA:01:8E:B3:17:B4:D2:BB:91:56:A4:E9:55:17:50:F4:76"
+			]
+		}
+	}
+]
