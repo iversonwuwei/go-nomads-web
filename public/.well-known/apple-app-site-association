@@ -6,7 +6,8 @@
         "appID": "X8KVNA6D7G.com.gonomads.GoNomadsApp",
         "paths": [
           "/app/*",
-          "/universal_link/*"
+          "/universal_link/*",
+          "/qq_conn/102822014/*"
         ]
       }
     ]
