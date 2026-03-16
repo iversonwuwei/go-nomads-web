@@ -1,0 +1,2242 @@
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e8]:
+        - link [ref=e10] [cursor=pointer]:
+          - /url: /demand
+          - img [ref=e11]
+        - generic [ref=e12]: Demand API
+      - generic [ref=e13]:
+        - generic [ref=e16]:
+          - img [ref=e17]
+          - text: Search
+          - generic [ref=e19]: /
+        - list [ref=e20]:
+          - link "Home" [ref=e23] [cursor=pointer]:
+            - /url: /demand
+            - img [ref=e25]
+            - generic [ref=e27]: Home
+          - link "Get started" [ref=e30] [cursor=pointer]:
+            - /url: /demand/docs
+            - generic [ref=e32]: Get started
+          - listitem [ref=e36] [cursor=pointer]:
+            - generic [ref=e38]: Travel services
+          - listitem [ref=e42] [cursor=pointer]:
+            - generic [ref=e44]: API references
+          - link "News" [ref=e47] [cursor=pointer]:
+            - /url: /demand/news
+            - img [ref=e49]
+            - generic [ref=e51]: News
+        - link [ref=e53] [cursor=pointer]:
+          - generic [ref=e55]:
+            - img [ref=e56]
+            - img [ref=e57]
+  - generic [ref=e59]:
+    - complementary [ref=e60]:
+      - list [ref=e62]:
+        - link "GETTING STARTED" [ref=e64] [cursor=pointer]:
+          - /url: /demand/docs
+          - img [ref=e65]
+          - generic [ref=e68]: GETTING STARTED
+        - link "FUNDAMENTALS" [ref=e70] [cursor=pointer]:
+          - img [ref=e71]
+          - generic [ref=e74]: FUNDAMENTALS
+        - link "MIGRATION GUIDES" [ref=e76] [cursor=pointer]:
+          - /url: /demand/docs/migration-guide/overview
+          - img [ref=e77]
+          - generic [ref=e80]: MIGRATION GUIDES
+        - link "ACCOMMODATION" [ref=e82] [cursor=pointer]:
+          - /url: /demand/docs/accommodations/about-accommodation
+          - img [ref=e83]
+          - generic [ref=e86]: ACCOMMODATION
+        - link "CARS" [ref=e88] [cursor=pointer]:
+          - /url: /demand/docs/cars/overview
+          - img [ref=e89]
+          - generic [ref=e92]: CARS
+        - link "ATTRACTIONS (3.2 Beta)" [ref=e94] [cursor=pointer]:
+          - /url: /demand/docs/attractions/about-attractions
+          - img [ref=e95]
+          - generic [ref=e98]: ATTRACTIONS (3.2 Beta)
+        - link "ORDERS" [ref=e100] [cursor=pointer]:
+          - /url: /demand/docs/orders-api/overview
+          - img [ref=e101]
+          - generic [ref=e104]: ORDERS
+        - link "PAYMENTS" [ref=e106] [cursor=pointer]:
+          - /url: /demand/docs/payments/overview
+          - img [ref=e107]
+          - generic [ref=e110]: PAYMENTS
+        - link "MESSAGING" [ref=e112] [cursor=pointer]:
+          - /url: /demand/docs/messaging/about-messaging
+          - img [ref=e113]
+          - generic [ref=e116]: MESSAGING
+        - link "SUPPORT" [ref=e118] [cursor=pointer]:
+          - img [ref=e119]
+          - generic [ref=e122]: SUPPORT
+        - link "CHANGELOG" [ref=e124] [cursor=pointer]:
+          - /url: /demand/docs/whats-new/changelog
+          - img [ref=e125]
+          - generic [ref=e128]: CHANGELOG
+        - link "COMPLIANCE" [ref=e130] [cursor=pointer]:
+          - img [ref=e131]
+          - generic [ref=e134]: COMPLIANCE
+        - generic [ref=e135]:
+          - link "API REFERENCES" [ref=e136] [cursor=pointer]:
+            - /url: /demand/docs/open-api/about-api-references
+            - img [ref=e137]
+            - generic [ref=e140]: API REFERENCES
+          - list [ref=e142]:
+            - link "Version 3.2" [ref=e144] [cursor=pointer]:
+              - /url: /demand/docs/open-api/3.2/demand-api
+              - img [ref=e145]
+              - generic [ref=e148]: Version 3.2
+            - link "Version 3.2 - Beta" [ref=e150] [cursor=pointer]:
+              - /url: /demand/docs/open-api/3.2-beta/demand-api
+              - img [ref=e151]
+              - generic [ref=e154]: Version 3.2 - Beta
+            - generic [ref=e155]:
+              - link "Version 3.1" [ref=e156] [cursor=pointer]:
+                - /url: /demand/docs/open-api/demand-api
+                - img [ref=e157]
+                - generic [ref=e160]: Version 3.1
+              - list [ref=e162]:
+                - generic:
+                  - link "Travel services":
+                    - generic:
+                      - generic: Travel services
+                - link "Accommodation" [ref=e164] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/accommodations
+                  - img [ref=e738]
+                  - generic [ref=e168]: Accommodation
+                - link "Car rentals" [ref=e170] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/cars
+                  - img [ref=e740]
+                  - generic [ref=e174]: Car rentals
+                - generic:
+                  - link "Common":
+                    - generic:
+                      - generic: Common
+                - generic [ref=e175]:
+                  - link "Locations" [ref=e176] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations
+                    - img [ref=e742]
+                    - generic [ref=e180]: Locations
+                  - list [ref=e745]:
+                    - link "Airports post" [ref=e747] [cursor=pointer]:
+                      - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/airports
+                      - generic [ref=e749]: Airports
+                      - generic [ref=e751]: post
+                    - link "Cities post" [ref=e753] [cursor=pointer]:
+                      - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/cities
+                      - generic [ref=e755]: Cities
+                      - generic [ref=e757]: post
+                    - link "Countries post" [ref=e759] [cursor=pointer]:
+                      - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/countries
+                      - generic [ref=e761]: Countries
+                      - generic [ref=e763]: post
+                    - link "Districts post" [ref=e765] [cursor=pointer]:
+                      - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/districts
+                      - generic [ref=e767]: Districts
+                      - generic [ref=e769]: post
+                    - link "Landmarks post" [ref=e771] [cursor=pointer]:
+                      - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/landmarks
+                      - generic [ref=e773]: Landmarks
+                      - generic [ref=e775]: post
+                    - link "Regions post" [ref=e777] [cursor=pointer]:
+                      - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/regions
+                      - generic [ref=e779]: Regions
+                      - generic [ref=e781]: post
+                - link "Payments" [ref=e182] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/commonpayments
+                  - img [ref=e183]
+                  - generic [ref=e186]: Payments
+                - link "Languages" [ref=e188] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/commonlanguages
+                  - img [ref=e782]
+                  - generic [ref=e192]: Languages
+                - generic:
+                  - link "Orders":
+                    - generic:
+                      - generic: Orders
+                - link "Orders" [ref=e194] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/orders
+                  - img [ref=e784]
+                  - generic [ref=e198]: Orders
+                - generic:
+                  - link "Messaging":
+                    - generic:
+                      - generic: Messaging
+                - link "Messages" [ref=e200] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/messages
+                  - img [ref=e786]
+                  - generic [ref=e204]: Messages
+                - link "Conversations" [ref=e206] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/conversations
+                  - img [ref=e207]
+                  - generic [ref=e210]: Conversations
+                - link "Attachments" [ref=e212] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/attachments
+                  - img [ref=e213]
+                  - generic [ref=e216]: Attachments
+      - generic [ref=e219]:
+        - button "Hide sidebar" [ref=e220] [cursor=pointer]:
+          - img [ref=e221]
+        - generic "Change layout" [ref=e224] [cursor=pointer]:
+          - img [ref=e226]
+          - img [ref=e230]
+    - generic [ref=e236]:
+      - generic [ref=e238]:
+        - link "API REFERENCES" [ref=e240] [cursor=pointer]:
+          - /url: /demand/docs/open-api/about-api-references
+        - generic [ref=e241]: /
+        - link "Version 3.1" [ref=e243] [cursor=pointer]:
+          - /url: /demand/docs/open-api/demand-api
+        - generic [ref=e788]: /
+        - link "Locations" [ref=e790] [cursor=pointer]:
+          - /url: /demand/docs/open-api/demand-api/commonlocations
+        - generic [ref=e791]: /
+        - generic [ref=e793]: Cities
+      - generic [ref=e244]:
+        - generic [ref=e248]:
+          - heading "Booking.com Demand API (3.1)" [level=1] [ref=e249]:
+            - text: Booking.com Demand API
+            - generic [ref=e250]: (3.1)
+          - article [ref=e252]:
+            - paragraph [ref=e253]: The Booking.com Demand API enables Affiliate Partners to access Booking.com's travel inventory, including accommodations, car rentals, and flights.
+            - paragraph [ref=e254]: Use Demand API to search, retrieve details, check availability, manage bookings and run reports using orders details.
+            - list [ref=e255]:
+              - listitem [ref=e256]: RESTful API with JSON responses.
+              - listitem [ref=e257]: Make HTTPS POST requests to interact with endpoints.
+              - listitem [ref=e258]: Requires authentication using your Affiliate ID and token credentials.
+            - paragraph [ref=e259]:
+              - link "Check the try out guide!" [ref=e260] [cursor=pointer]:
+                - /url: /demand/docs/getting-started/try-out-the-api
+        - generic [ref=e261]:
+          - generic [ref=e262]:
+            - generic [ref=e265]: Download OpenAPI description
+            - generic [ref=e267]:
+              - generic [ref=e268]:
+                - generic [ref=e269]:
+                  - img [ref=e270]
+                  - link "demand-api.json" [ref=e275] [cursor=pointer]:
+                    - /url: /_spec/demand/docs/open-api/demand-api.json?download
+                - link [ref=e276] [cursor=pointer]:
+                  - /url: /_spec/demand/docs/open-api/demand-api.json?download
+                  - button [ref=e277]:
+                    - img [ref=e278]
+              - generic [ref=e281]:
+                - generic [ref=e282]:
+                  - img [ref=e283]
+                  - link "demand-api.yaml" [ref=e287] [cursor=pointer]:
+                    - /url: /_spec/demand/docs/open-api/demand-api.yaml?download
+                - link [ref=e288] [cursor=pointer]:
+                  - /url: /_spec/demand/docs/open-api/demand-api.yaml?download
+                  - button [ref=e289]:
+                    - img [ref=e290]
+          - generic [ref=e293]:
+            - generic [ref=e296]: Languages
+            - generic [ref=e298]:
+              - generic [ref=e299]:
+                - button "curl" [ref=e300] [cursor=pointer]:
+                  - generic [ref=e301]:
+                    - img [ref=e303]
+                    - generic "curl" [ref=e309]
+                - button "JavaScript" [ref=e310] [cursor=pointer]:
+                  - generic [ref=e311]:
+                    - img [ref=e313]
+                    - generic "JavaScript" [ref=e317]
+                - button "Node.js" [ref=e318] [cursor=pointer]:
+                  - generic [ref=e319]:
+                    - img [ref=e321]
+                    - generic "Node.js" [ref=e325]
+                - button "Python" [ref=e326] [cursor=pointer]:
+                  - generic [ref=e327]:
+                    - img [ref=e329]
+                    - generic "Python" [ref=e333]
+                - button "Java" [ref=e334] [cursor=pointer]:
+                  - generic [ref=e335]:
+                    - img [ref=e337]
+                    - generic "Java" [ref=e347]
+              - button [ref=e349] [cursor=pointer]:
+                - img [ref=e350]
+          - generic [ref=e354]:
+            - generic [ref=e357]: Servers
+            - generic [ref=e359]:
+              - generic [ref=e360]:
+                - text: Production environment
+                - generic [ref=e361]:
+                  - generic [ref=e362]: https://demandapi.booking.com/3.1/
+                  - button [ref=e364] [cursor=pointer]:
+                    - img [ref=e365]
+              - generic [ref=e367]:
+                - text: Sandbox environment
+                - generic [ref=e368]:
+                  - generic [ref=e369]: https://demandapi-sandbox.booking.com/3.1/
+                  - button [ref=e371] [cursor=pointer]:
+                    - img [ref=e372]
+      - generic [ref=e375]:
+        - generic [ref=e376]:
+          - generic [ref=e377]:
+            - heading "link to Accommodation Accommodation" [level=2] [ref=e378]:
+              - link "link to Accommodation" [ref=e379] [cursor=pointer]:
+                - /url: /demand/docs/open-api/demand-api/accommodations
+                - img [ref=e380]
+              - text: Accommodation
+            - article [ref=e384]:
+              - paragraph [ref=e385]:
+                - text: This API collection is specific for the stay part of the connected trip.
+                - text: Use these endpoints to search for stays such as hotels and apartments, check availability, retrieve reviews, and get detailed property information.
+          - generic [ref=e386]:
+            - generic [ref=e387]: Operations
+            - button "post /accommodations/search" [active] [ref=e388] [cursor=pointer]:
+              - generic [ref=e389]:
+                - generic [ref=e391]: post
+                - generic [ref=e392]: /accommodations/search
+            - button "post /accommodations/availability" [ref=e393] [cursor=pointer]:
+              - generic [ref=e394]:
+                - generic [ref=e396]: post
+                - generic [ref=e397]: /accommodations/availability
+            - button "post /accommodations/bulk-availability" [ref=e398] [cursor=pointer]:
+              - generic [ref=e399]:
+                - generic [ref=e401]: post
+                - generic [ref=e402]: /accommodations/bulk-availability
+            - button "post /accommodations/chains" [ref=e403] [cursor=pointer]:
+              - generic [ref=e404]:
+                - generic [ref=e406]: post
+                - generic [ref=e407]: /accommodations/chains
+            - button "post /accommodations/constants" [ref=e408] [cursor=pointer]:
+              - generic [ref=e409]:
+                - generic [ref=e411]: post
+                - generic [ref=e412]: /accommodations/constants
+            - button "post /accommodations/details" [ref=e413] [cursor=pointer]:
+              - generic [ref=e414]:
+                - generic [ref=e416]: post
+                - generic [ref=e417]: /accommodations/details
+            - button "post /accommodations/details/changes" [ref=e418] [cursor=pointer]:
+              - generic [ref=e419]:
+                - generic [ref=e421]: post
+                - generic [ref=e422]: /accommodations/details/changes
+            - button "post /accommodations/reviews" [ref=e423] [cursor=pointer]:
+              - generic [ref=e424]:
+                - generic [ref=e426]: post
+                - generic [ref=e427]: /accommodations/reviews
+            - button "Show 1 more..." [ref=e428] [cursor=pointer]
+        - button "+ Show" [ref=e794] [cursor=pointer]
+      - generic [ref=e431]:
+        - generic [ref=e432]:
+          - generic [ref=e433]:
+            - heading "link to Car rentals Car rentals" [level=2] [ref=e434]:
+              - link "link to Car rentals" [ref=e435] [cursor=pointer]:
+                - /url: /demand/docs/open-api/demand-api/cars
+                - img [ref=e436]
+              - text: Car rentals
+            - article [ref=e440]:
+              - paragraph [ref=e441]:
+                - text: This API collection is specific to the car rentals part of the connected trip.
+                - text: Use these endpoints to search for car rentals, check car details and look for depots and suppliers.
+          - generic [ref=e442]:
+            - generic [ref=e443]: Operations
+            - button "post /cars/search" [ref=e444] [cursor=pointer]:
+              - generic [ref=e445]:
+                - generic [ref=e447]: post
+                - generic [ref=e448]: /cars/search
+            - button "post /cars/depots" [ref=e449] [cursor=pointer]:
+              - generic [ref=e450]:
+                - generic [ref=e452]: post
+                - generic [ref=e453]: /cars/depots
+            - button "post /cars/depots/reviews/scores" [ref=e454] [cursor=pointer]:
+              - generic [ref=e455]:
+                - generic [ref=e457]: post
+                - generic [ref=e458]: /cars/depots/reviews/scores
+            - button "post /cars/details" [ref=e459] [cursor=pointer]:
+              - generic [ref=e460]:
+                - generic [ref=e462]: post
+                - generic [ref=e463]: /cars/details
+            - button "post /cars/suppliers" [ref=e464] [cursor=pointer]:
+              - generic [ref=e465]:
+                - generic [ref=e467]: post
+                - generic [ref=e468]: /cars/suppliers
+            - button "post /cars/constants" [ref=e469] [cursor=pointer]:
+              - generic [ref=e470]:
+                - generic [ref=e472]: post
+                - generic [ref=e473]: /cars/constants
+        - button "+ Show" [ref=e474] [cursor=pointer]
+      - generic [ref=e477]:
+        - generic [ref=e478]:
+          - heading "link to Locations Locations" [level=2] [ref=e479]:
+            - link "link to Locations" [ref=e480] [cursor=pointer]:
+              - /url: /demand/docs/open-api/demand-api/commonlocations
+              - img [ref=e481]
+            - text: Locations
+          - article [ref=e485]:
+            - paragraph [ref=e486]:
+              - text: Provides identifiers for a wide range of geographical locations, including airports, countries, cities, and regions.
+              - text: Use these identifiers to construct your requests.
+              - text: "Note: These identifiers are available across all travel services and you can use them for both accommodotation and car rentals requests."
+        - generic [ref=e487]:
+          - generic [ref=e488]: Operations
+          - button "post /common/locations/airports" [ref=e489] [cursor=pointer]:
+            - generic [ref=e490]:
+              - generic [ref=e492]: post
+              - generic [ref=e493]: /common/locations/airports
+          - button "post /common/locations/cities" [ref=e494] [cursor=pointer]:
+            - generic [ref=e495]:
+              - generic [ref=e497]: post
+              - generic [ref=e498]: /common/locations/cities
+          - button "post /common/locations/countries" [ref=e499] [cursor=pointer]:
+            - generic [ref=e500]:
+              - generic [ref=e502]: post
+              - generic [ref=e503]: /common/locations/countries
+          - button "post /common/locations/districts" [ref=e504] [cursor=pointer]:
+            - generic [ref=e505]:
+              - generic [ref=e507]: post
+              - generic [ref=e508]: /common/locations/districts
+          - button "post /common/locations/landmarks" [ref=e509] [cursor=pointer]:
+            - generic [ref=e510]:
+              - generic [ref=e512]: post
+              - generic [ref=e513]: /common/locations/landmarks
+          - button "post /common/locations/regions" [ref=e514] [cursor=pointer]:
+            - generic [ref=e515]:
+              - generic [ref=e517]: post
+              - generic [ref=e518]: /common/locations/regions
+      - generic [ref=e796]:
+        - heading "link to Airports Airports" [level=2] [ref=e799]:
+          - link "link to Airports" [ref=e800] [cursor=pointer]:
+            - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/airports
+            - img [ref=e801]
+          - text: Airports
+        - generic [ref=e804]:
+          - generic [ref=e805]:
+            - generic [ref=e807]:
+              - heading "link to /commonlocations/common/locations/airports#commonlocations/common/locations/airports/request Request" [level=4] [ref=e808]:
+                - link "link to /commonlocations/common/locations/airports#commonlocations/common/locations/airports/request" [ref=e809] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/airports#commonlocations/common/locations/airports/request
+                - text: Request
+              - article [ref=e811]:
+                - paragraph [ref=e812]:
+                  - text: "This endpoint returns a list of airport codes and their names in the selected languages. The airports returned may be filtered by a location id. For example, you can get the list of airports in The Netherlands by passing:"
+                  - code [ref=e813]: "{\"country\":\"nl\"}"
+                  - text: . To get the full list call the endpoint passing an empty body. The airport codes returned are what is used as input and output for other endpoints. This endpoint implements pagination of the results.
+              - 'button "Security: BearerAuth" [ref=e814] [cursor=pointer]':
+                - img [ref=e815]
+                - generic [ref=e818]: "Security:"
+                - generic [ref=e819]: BearerAuth
+            - generic [ref=e820]:
+              - generic [ref=e821]:
+                - link "link to /commonlocations/common/locations/airports#commonlocations/common/locations/airports/request/header" [ref=e822] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/airports#commonlocations/common/locations/airports/request/header
+                - text: Headers
+              - generic [ref=e823]:
+                - generic [ref=e824]:
+                  - generic [ref=e825]:
+                    - link "link to /commonlocations/common/locations/airports#commonlocations/common/locations/airports/t=request&in=header&path=x-affiliate-id" [ref=e826] [cursor=pointer]:
+                      - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/airports#commonlocations/common/locations/airports/t=request&in=header&path=x-affiliate-id
+                    - text: X-Affiliate-Id
+                  - emphasis [ref=e827]: integer
+                  - generic [ref=e828]: required
+                - article [ref=e830]:
+                  - paragraph [ref=e831]: Include here your Affiliate identifier number
+            - generic [ref=e832]:
+              - link "link to /commonlocations/common/locations/airports#commonlocations/common/locations/airports/request/body" [ref=e833] [cursor=pointer]:
+                - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/airports#commonlocations/common/locations/airports/request/body
+              - text: Body
+              - generic [ref=e834]: application/json
+            - generic [ref=e835]:
+              - generic [ref=e836]:
+                - generic [ref=e837]:
+                  - link "link to /commonlocations/common/locations/airports#commonlocations/common/locations/airports/t=request&path=airport" [ref=e838] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/airports#commonlocations/common/locations/airports/t=request&path=airport
+                  - text: airport
+                - emphasis [ref=e839]: string
+                - generic [ref=e840]: "^[A-Z]{3}$"
+              - article [ref=e842]:
+                - paragraph [ref=e843]:
+                  - text: A three-letter code that uniquely identifies an airport as defined by the International Air Transport Association (IATA). The full list can be obtained by calling
+                  - link "common/locations/airports" [ref=e844] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/airports
+                  - text: .
+              - generic [ref=e845]:
+                - generic [ref=e846]: "Example:"
+                - generic [ref=e847]: "\"AMS\""
+            - generic [ref=e848]:
+              - generic [ref=e849]:
+                - generic [ref=e850]:
+                  - link "link to /commonlocations/common/locations/airports#commonlocations/common/locations/airports/t=request&path=city" [ref=e851] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/airports#commonlocations/common/locations/airports/t=request&path=city
+                  - text: city
+                - emphasis [ref=e852]: integer
+              - article [ref=e854]:
+                - paragraph [ref=e855]:
+                  - text: A signed integer number that uniquely identifies a city. The full list can be obtained by calling
+                  - link "common/locations/cities" [ref=e856] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/cities
+                  - text: .
+            - generic [ref=e857]:
+              - generic [ref=e858]:
+                - generic [ref=e859]:
+                  - link "link to /commonlocations/common/locations/airports#commonlocations/common/locations/airports/t=request&path=country" [ref=e860] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/airports#commonlocations/common/locations/airports/t=request&path=country
+                  - text: country
+                - emphasis [ref=e861]: string
+                - generic [ref=e862]: "^[a-z]{2}$"
+              - article [ref=e864]:
+                - paragraph [ref=e865]:
+                  - text: "A two-letter code that uniquely identifies a country. This code is defined by the ISO 3166-1 alpha-2 standard (ISO2) as described here: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2. The full list can be obtained by calling"
+                  - link "common/locations/countries" [ref=e866] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/countries
+                  - text: .
+              - generic [ref=e867]:
+                - generic [ref=e868]: "Example:"
+                - generic [ref=e869]: "\"nl\""
+            - generic [ref=e870]:
+              - generic [ref=e871]:
+                - generic [ref=e872]:
+                  - link "link to /commonlocations/common/locations/airports#commonlocations/common/locations/airports/t=request&path=district" [ref=e873] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/airports#commonlocations/common/locations/airports/t=request&path=district
+                  - text: district
+                - emphasis [ref=e874]: integer,
+                - emphasis [ref=e875]: ">= 1"
+              - article [ref=e877]:
+                - paragraph [ref=e878]:
+                  - text: A signed integer number that uniquely identifies a district. Typically, districts define known areas within a city. The full list can be obtained by calling
+                  - link "common/locations/districts" [ref=e879] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/districts
+                  - text: .
+            - generic [ref=e880]:
+              - generic [ref=e881]:
+                - generic [ref=e882]:
+                  - link "link to /commonlocations/common/locations/airports#commonlocations/common/locations/airports/t=request&path=landmark" [ref=e883] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/airports#commonlocations/common/locations/airports/t=request&path=landmark
+                  - text: landmark
+                - emphasis [ref=e884]: integer,
+                - emphasis [ref=e885]: ">= 1"
+              - article [ref=e887]:
+                - paragraph [ref=e888]:
+                  - text: A signed integer number that uniquely identifies a relevant geographical landmark, like a monument or a natural attraction. The full list can be obtained by calling
+                  - link "common/locations/landmarks" [ref=e889] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/landmarks
+                  - text: .
+            - generic [ref=e890]:
+              - generic [ref=e891]:
+                - generic [ref=e892]:
+                  - link "link to /commonlocations/common/locations/airports#commonlocations/common/locations/airports/t=request&path=languages" [ref=e893] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/airports#commonlocations/common/locations/airports/t=request&path=languages
+                  - text: languages
+                - emphasis [ref=e894]: Array of strings
+              - generic [ref=e895]:
+                - generic [ref=e896]: Default
+                - generic [ref=e897]: "[\"en-gb\"]"
+              - generic [ref=e898]:
+                - generic [ref=e899]: "Example:"
+                - generic [ref=e900]: "[\"en-us\"]"
+            - generic [ref=e901]:
+              - generic [ref=e902]:
+                - generic [ref=e903]:
+                  - link "link to /commonlocations/common/locations/airports#commonlocations/common/locations/airports/t=request&path=page" [ref=e904] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/airports#commonlocations/common/locations/airports/t=request&path=page
+                  - text: page
+                - emphasis [ref=e905]: string
+              - article [ref=e907]:
+                - paragraph [ref=e908]:
+                  - text: Pagination token used to retrieve the next page of results. Obtained from
+                  - code [ref=e909]: next_page
+                  - text: .
+            - generic [ref=e910]:
+              - generic [ref=e911]:
+                - generic [ref=e912]:
+                  - link "link to /commonlocations/common/locations/airports#commonlocations/common/locations/airports/t=request&path=region" [ref=e913] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/airports#commonlocations/common/locations/airports/t=request&path=region
+                  - text: region
+                - emphasis [ref=e914]: integer,
+                - emphasis [ref=e915]: ">= 1"
+              - article [ref=e917]:
+                - paragraph [ref=e918]:
+                  - text: A signed integer number that uniquely identifies a geographical region. Regions usually define official administrative areas within a country, but may also include multiple countries and in some cases un-official but popular designations for geographical areas. An example of a region that crosses multiple countries is the Alps in Europe. The full list can be obtained by calling
+                  - link "common/locations/regions" [ref=e919] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/regions
+                  - text: .
+            - generic [ref=e920]:
+              - generic [ref=e921]:
+                - generic [ref=e922]:
+                  - link "link to /commonlocations/common/locations/airports#commonlocations/common/locations/airports/t=request&path=rows" [ref=e923] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/airports#commonlocations/common/locations/airports/t=request&path=rows
+                  - text: rows
+                - emphasis [ref=e924]: integer,
+                - emphasis [ref=e925]: multiple of 10,
+                - emphasis [ref=e926]: "[ 10 .. 1000 ]"
+              - article [ref=e928]:
+                - paragraph [ref=e929]: The maximum number of results to return.
+              - generic [ref=e930]:
+                - generic [ref=e931]: Default
+                - generic [ref=e932]: "100"
+          - generic [ref=e934]:
+            - generic [ref=e935]:
+              - button "post /common/locations/airports" [ref=e937] [cursor=pointer]:
+                - generic [ref=e939]: post
+                - generic [ref=e940]: /common/locations/airports
+                - img [ref=e941]
+              - button "curl" [ref=e944] [cursor=pointer]:
+                - text: curl
+                - img [ref=e945]
+            - generic [ref=e950]:
+              - generic [ref=e952]:
+                - button [ref=e953] [cursor=pointer]:
+                  - img [ref=e954]
+                - button [ref=e959] [cursor=pointer]:
+                  - img [ref=e960]
+              - generic [ref=e963]:
+                - generic [ref=e964]: curl -i -X POST \
+                - generic [ref=e965]: https://demandapi.booking.com/3.1/common/locations/airports \
+                - generic [ref=e966]: "-H 'Authorization: Bearer <YOUR_string_HERE>' \\"
+                - generic [ref=e967]: "-H 'Content-Type: application/json' \\"
+                - generic [ref=e968]: "-H 'X-Affiliate-Id: 0' \\"
+                - generic [ref=e969]: "-d '{"
+                - generic [ref=e970]: "\"country\": \"nl\","
+                - generic [ref=e971]: "\"languages\": ["
+                - generic [ref=e972]: "\"en-gb\","
+                - generic [ref=e973]: "\"zh-cn\""
+                - generic [ref=e974]: "]"
+                - generic [ref=e975]: "}'"
+            - button "Try it" [ref=e977] [cursor=pointer]:
+              - img [ref=e978]
+              - text: Try it
+        - generic [ref=e981]:
+          - generic [ref=e982]:
+            - generic [ref=e983]:
+              - heading "link to /commonlocations/common/locations/airports#commonlocations/common/locations/airports/response&c=200 Responses" [level=4] [ref=e984]:
+                - link "link to /commonlocations/common/locations/airports#commonlocations/common/locations/airports/response&c=200" [ref=e985] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/airports#commonlocations/common/locations/airports/response&c=200
+                - text: Responses
+              - list [ref=e986]:
+                - listitem [ref=e987]:
+                  - button "200" [ref=e988] [cursor=pointer]
+              - button "Expand all" [ref=e989] [cursor=pointer]:
+                - text: Expand all
+                - img [ref=e990]
+            - generic [ref=e993]:
+              - article [ref=e995]:
+                - paragraph [ref=e996]: Successful response.
+              - generic [ref=e997]:
+                - link "link to /commonlocations/common/locations/airports#commonlocations/common/locations/airports/response&c=200/body" [ref=e998] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/airports#commonlocations/common/locations/airports/response&c=200/body
+                - text: Body
+                - generic [ref=e999]: application/json
+              - generic [ref=e1000]:
+                - generic [ref=e1001]:
+                  - generic [ref=e1002]:
+                    - link "link to /commonlocations/common/locations/airports#commonlocations/common/locations/airports/t=response&c=200&path=request_id" [ref=e1003] [cursor=pointer]:
+                      - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/airports#commonlocations/common/locations/airports/t=response&c=200&path=request_id
+                    - text: request_id
+                  - emphasis [ref=e1004]: string
+                - article [ref=e1006]:
+                  - paragraph [ref=e1007]: Uniquely identifies the request. Please provide this identifier when contacting support.
+              - generic [ref=e1008]:
+                - generic [ref=e1009]:
+                  - generic [ref=e1010]:
+                    - link "link to /commonlocations/common/locations/airports#commonlocations/common/locations/airports/t=response&c=200&path=data" [ref=e1011] [cursor=pointer]:
+                      - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/airports#commonlocations/common/locations/airports/t=response&c=200&path=data
+                    - text: data
+                  - emphasis [ref=e1012]: Array of objects,
+                  - emphasis [ref=e1013]: (AirportOutput)
+                - button "+ Show 2 array properties" [ref=e1015] [cursor=pointer]:
+                  - generic [ref=e1016]: +
+                  - text: Show 2 array properties
+              - generic [ref=e1017]:
+                - generic [ref=e1018]:
+                  - generic [ref=e1019]:
+                    - link "link to /commonlocations/common/locations/airports#commonlocations/common/locations/airports/t=response&c=200&path=next_page" [ref=e1020] [cursor=pointer]:
+                      - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/airports#commonlocations/common/locations/airports/t=response&c=200&path=next_page
+                    - text: next_page
+                  - emphasis [ref=e1021]: any
+                - article [ref=e1023]:
+                  - paragraph [ref=e1024]:
+                    - text: Indicates that more results are available. Use this pagination token to retrieve the next page of results (via parameter
+                    - code [ref=e1025]: page
+                    - text: ). - string - 'null'
+          - generic [ref=e1027]:
+            - generic [ref=e1028]:
+              - generic [ref=e1029]: Response
+              - list [ref=e1030]:
+                - listitem [ref=e1031]:
+                  - button "200" [ref=e1032] [cursor=pointer]
+            - generic [ref=e1034]:
+              - generic [ref=e1037]: application/json
+              - generic [ref=e1040]:
+                - generic [ref=e1042]:
+                  - button [ref=e1043] [cursor=pointer]:
+                    - img [ref=e1044]
+                  - button [ref=e1048] [cursor=pointer]:
+                    - img [ref=e1049]
+                  - button [ref=e1052] [cursor=pointer]:
+                    - img [ref=e1053]
+                  - button [ref=e1057] [cursor=pointer]:
+                    - img [ref=e1058]
+                - generic [ref=e1061]:
+                  - text: "{ \"request_id\": \"01fr9ez700exycb98w90w5r9sh\","
+                  - button "collapse" [ref=e1062] [cursor=pointer]:
+                    - img [ref=e1063]
+                  - text: "\"data\": ["
+                  - button "collapse" [ref=e1065] [cursor=pointer]:
+                    - img [ref=e1066]
+                  - text: "{ … }, \"...\" ], \"next_page\": null }"
+      - generic [ref=e1069]:
+        - heading "link to Cities Cities" [level=2] [ref=e1072]:
+          - link "link to Cities" [ref=e1073] [cursor=pointer]:
+            - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/cities
+            - img [ref=e1074]
+          - text: Cities
+        - generic [ref=e1077]:
+          - generic [ref=e1078]:
+            - generic [ref=e1080]:
+              - heading "link to /commonlocations/common/locations/cities#commonlocations/common/locations/cities/request Request" [level=4] [ref=e1081]:
+                - link "link to /commonlocations/common/locations/cities#commonlocations/common/locations/cities/request" [ref=e1082] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/cities#commonlocations/common/locations/cities/request
+                - text: Request
+              - article [ref=e1084]:
+                - paragraph [ref=e1085]:
+                  - text: "This endpoint returns a list of city codes and their names in the selected languages. The cities returned may be filtered by a location id. For example, you can get the list of cities in The Netherlands by passing:"
+                  - code [ref=e1086]: "{\"country\":\"nl\"}"
+                  - text: . To get the full list call the endpoint passing an empty body. The city codes returned are what is used as input and output for other endpoints. This endpoint implements pagination of the results.
+              - 'button "Security: BearerAuth" [ref=e1087] [cursor=pointer]':
+                - img [ref=e1088]
+                - generic [ref=e1091]: "Security:"
+                - generic [ref=e1092]: BearerAuth
+            - generic [ref=e1093]:
+              - generic [ref=e1094]:
+                - link "link to /commonlocations/common/locations/cities#commonlocations/common/locations/cities/request/header" [ref=e1095] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/cities#commonlocations/common/locations/cities/request/header
+                - text: Headers
+              - generic [ref=e1096]:
+                - generic [ref=e1097]:
+                  - generic [ref=e1098]:
+                    - link "link to /commonlocations/common/locations/cities#commonlocations/common/locations/cities/t=request&in=header&path=x-affiliate-id" [ref=e1099] [cursor=pointer]:
+                      - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/cities#commonlocations/common/locations/cities/t=request&in=header&path=x-affiliate-id
+                    - text: X-Affiliate-Id
+                  - emphasis [ref=e1100]: integer
+                  - generic [ref=e1101]: required
+                - article [ref=e1103]:
+                  - paragraph [ref=e1104]: Include here your Affiliate identifier number
+            - generic [ref=e1105]:
+              - link "link to /commonlocations/common/locations/cities#commonlocations/common/locations/cities/request/body" [ref=e1106] [cursor=pointer]:
+                - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/cities#commonlocations/common/locations/cities/request/body
+              - text: Body
+              - generic [ref=e1107]: application/json
+            - generic [ref=e1108]:
+              - generic [ref=e1109]:
+                - generic [ref=e1110]:
+                  - link "link to /commonlocations/common/locations/cities#commonlocations/common/locations/cities/t=request&path=airport" [ref=e1111] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/cities#commonlocations/common/locations/cities/t=request&path=airport
+                  - text: airport
+                - emphasis [ref=e1112]: string
+                - generic [ref=e1113]: "^[A-Z]{3}$"
+              - article [ref=e1115]:
+                - paragraph [ref=e1116]:
+                  - text: A three-letter code that uniquely identifies an airport as defined by the International Air Transport Association (IATA). The full list can be obtained by calling
+                  - link "common/locations/airports" [ref=e1117] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/airports
+                  - text: .
+              - generic [ref=e1118]:
+                - generic [ref=e1119]: "Example:"
+                - generic [ref=e1120]: "\"AMS\""
+            - generic [ref=e1121]:
+              - generic [ref=e1122]:
+                - generic [ref=e1123]:
+                  - link "link to /commonlocations/common/locations/cities#commonlocations/common/locations/cities/t=request&path=city" [ref=e1124] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/cities#commonlocations/common/locations/cities/t=request&path=city
+                  - text: city
+                - emphasis [ref=e1125]: integer
+              - article [ref=e1127]:
+                - paragraph [ref=e1128]:
+                  - text: A signed integer number that uniquely identifies a city. The full list can be obtained by calling
+                  - link "common/locations/cities" [ref=e1129] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/cities
+                  - text: .
+            - generic [ref=e1130]:
+              - generic [ref=e1131]:
+                - generic [ref=e1132]:
+                  - link "link to /commonlocations/common/locations/cities#commonlocations/common/locations/cities/t=request&path=country" [ref=e1133] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/cities#commonlocations/common/locations/cities/t=request&path=country
+                  - text: country
+                - emphasis [ref=e1134]: string
+                - generic [ref=e1135]: "^[a-z]{2}$"
+              - article [ref=e1137]:
+                - paragraph [ref=e1138]:
+                  - text: "A two-letter code that uniquely identifies a country. This code is defined by the ISO 3166-1 alpha-2 standard (ISO2) as described here: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2. The full list can be obtained by calling"
+                  - link "common/locations/countries" [ref=e1139] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/countries
+                  - text: .
+              - generic [ref=e1140]:
+                - generic [ref=e1141]: "Example:"
+                - generic [ref=e1142]: "\"nl\""
+            - generic [ref=e1143]:
+              - generic [ref=e1144]:
+                - generic [ref=e1145]:
+                  - link "link to /commonlocations/common/locations/cities#commonlocations/common/locations/cities/t=request&path=district" [ref=e1146] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/cities#commonlocations/common/locations/cities/t=request&path=district
+                  - text: district
+                - emphasis [ref=e1147]: integer,
+                - emphasis [ref=e1148]: ">= 1"
+              - article [ref=e1150]:
+                - paragraph [ref=e1151]:
+                  - text: A signed integer number that uniquely identifies a district. Typically, districts define known areas within a city. The full list can be obtained by calling
+                  - link "common/locations/districts" [ref=e1152] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/districts
+                  - text: .
+            - generic [ref=e1153]:
+              - generic [ref=e1154]:
+                - generic [ref=e1155]:
+                  - link "link to /commonlocations/common/locations/cities#commonlocations/common/locations/cities/t=request&path=landmark" [ref=e1156] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/cities#commonlocations/common/locations/cities/t=request&path=landmark
+                  - text: landmark
+                - emphasis [ref=e1157]: integer,
+                - emphasis [ref=e1158]: ">= 1"
+              - article [ref=e1160]:
+                - paragraph [ref=e1161]:
+                  - text: A signed integer number that uniquely identifies a relevant geographical landmark, like a monument or a natural attraction. The full list can be obtained by calling
+                  - link "common/locations/landmarks" [ref=e1162] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/landmarks
+                  - text: .
+            - generic [ref=e1163]:
+              - generic [ref=e1164]:
+                - generic [ref=e1165]:
+                  - link "link to /commonlocations/common/locations/cities#commonlocations/common/locations/cities/t=request&path=languages" [ref=e1166] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/cities#commonlocations/common/locations/cities/t=request&path=languages
+                  - text: languages
+                - emphasis [ref=e1167]: Array of strings
+              - generic [ref=e1168]:
+                - generic [ref=e1169]: Default
+                - generic [ref=e1170]: "[\"en-gb\"]"
+              - generic [ref=e1171]:
+                - generic [ref=e1172]: "Example:"
+                - generic [ref=e1173]: "[\"en-us\"]"
+            - generic [ref=e1174]:
+              - generic [ref=e1175]:
+                - generic [ref=e1176]:
+                  - link "link to /commonlocations/common/locations/cities#commonlocations/common/locations/cities/t=request&path=page" [ref=e1177] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/cities#commonlocations/common/locations/cities/t=request&path=page
+                  - text: page
+                - emphasis [ref=e1178]: string
+              - article [ref=e1180]:
+                - paragraph [ref=e1181]:
+                  - text: Pagination token used to retrieve the next page of results. Obtained from
+                  - code [ref=e1182]: next_page
+                  - text: .
+            - generic [ref=e1183]:
+              - generic [ref=e1184]:
+                - generic [ref=e1185]:
+                  - link "link to /commonlocations/common/locations/cities#commonlocations/common/locations/cities/t=request&path=region" [ref=e1186] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/cities#commonlocations/common/locations/cities/t=request&path=region
+                  - text: region
+                - emphasis [ref=e1187]: integer,
+                - emphasis [ref=e1188]: ">= 1"
+              - article [ref=e1190]:
+                - paragraph [ref=e1191]:
+                  - text: A signed integer number that uniquely identifies a geographical region. Regions usually define official administrative areas within a country, but may also include multiple countries and in some cases un-official but popular designations for geographical areas. An example of a region that crosses multiple countries is the Alps in Europe. The full list can be obtained by calling
+                  - link "common/locations/regions" [ref=e1192] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/regions
+                  - text: .
+            - generic [ref=e1193]:
+              - generic [ref=e1194]:
+                - generic [ref=e1195]:
+                  - link "link to /commonlocations/common/locations/cities#commonlocations/common/locations/cities/t=request&path=rows" [ref=e1196] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/cities#commonlocations/common/locations/cities/t=request&path=rows
+                  - text: rows
+                - emphasis [ref=e1197]: integer,
+                - emphasis [ref=e1198]: multiple of 10,
+                - emphasis [ref=e1199]: "[ 10 .. 1000 ]"
+              - article [ref=e1201]:
+                - paragraph [ref=e1202]: The maximum number of results to return.
+              - generic [ref=e1203]:
+                - generic [ref=e1204]: Default
+                - generic [ref=e1205]: "100"
+          - generic [ref=e1207]:
+            - generic [ref=e1208]:
+              - button "post /common/locations/cities" [ref=e1210] [cursor=pointer]:
+                - generic [ref=e1212]: post
+                - generic [ref=e1213]: /common/locations/cities
+                - img [ref=e1214]
+              - button "curl" [ref=e1217] [cursor=pointer]:
+                - text: curl
+                - img [ref=e1218]
+            - generic [ref=e1223]:
+              - generic [ref=e1225]:
+                - button [ref=e1226] [cursor=pointer]:
+                  - img [ref=e1227]
+                - button [ref=e1232] [cursor=pointer]:
+                  - img [ref=e1233]
+              - generic [ref=e1236]:
+                - generic [ref=e1237]: curl -i -X POST \
+                - generic [ref=e1238]: https://demandapi.booking.com/3.1/common/locations/cities \
+                - generic [ref=e1239]: "-H 'Authorization: Bearer <YOUR_string_HERE>' \\"
+                - generic [ref=e1240]: "-H 'Content-Type: application/json' \\"
+                - generic [ref=e1241]: "-H 'X-Affiliate-Id: 0' \\"
+                - generic [ref=e1242]: "-d '{"
+                - generic [ref=e1243]: "\"country\": \"nl\","
+                - generic [ref=e1244]: "\"languages\": ["
+                - generic [ref=e1245]: "\"en-gb\","
+                - generic [ref=e1246]: "\"zh-cn\""
+                - generic [ref=e1247]: "]"
+                - generic [ref=e1248]: "}'"
+            - button "Try it" [ref=e1250] [cursor=pointer]:
+              - img [ref=e1251]
+              - text: Try it
+        - generic [ref=e1254]:
+          - generic [ref=e1255]:
+            - generic [ref=e1256]:
+              - heading "link to /commonlocations/common/locations/cities#commonlocations/common/locations/cities/response&c=200 Responses" [level=4] [ref=e1257]:
+                - link "link to /commonlocations/common/locations/cities#commonlocations/common/locations/cities/response&c=200" [ref=e1258] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/cities#commonlocations/common/locations/cities/response&c=200
+                - text: Responses
+              - list [ref=e1259]:
+                - listitem [ref=e1260]:
+                  - button "200" [ref=e1261] [cursor=pointer]
+              - button "Expand all" [ref=e1262] [cursor=pointer]:
+                - text: Expand all
+                - img [ref=e1263]
+            - generic [ref=e1266]:
+              - article [ref=e1268]:
+                - paragraph [ref=e1269]: Successful response.
+              - generic [ref=e1270]:
+                - link "link to /commonlocations/common/locations/cities#commonlocations/common/locations/cities/response&c=200/body" [ref=e1271] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/cities#commonlocations/common/locations/cities/response&c=200/body
+                - text: Body
+                - generic [ref=e1272]: application/json
+              - generic [ref=e1273]:
+                - generic [ref=e1274]:
+                  - generic [ref=e1275]:
+                    - link "link to /commonlocations/common/locations/cities#commonlocations/common/locations/cities/t=response&c=200&path=request_id" [ref=e1276] [cursor=pointer]:
+                      - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/cities#commonlocations/common/locations/cities/t=response&c=200&path=request_id
+                    - text: request_id
+                  - emphasis [ref=e1277]: string
+                - article [ref=e1279]:
+                  - paragraph [ref=e1280]: Uniquely identifies the request. Please provide this identifier when contacting support.
+              - generic [ref=e1281]:
+                - generic [ref=e1282]:
+                  - generic [ref=e1283]:
+                    - link "link to /commonlocations/common/locations/cities#commonlocations/common/locations/cities/t=response&c=200&path=data" [ref=e1284] [cursor=pointer]:
+                      - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/cities#commonlocations/common/locations/cities/t=response&c=200&path=data
+                    - text: data
+                  - emphasis [ref=e1285]: Array of objects,
+                  - emphasis [ref=e1286]: (CityOutput)
+                - button "+ Show 3 array properties" [ref=e1288] [cursor=pointer]:
+                  - generic [ref=e1289]: +
+                  - text: Show 3 array properties
+              - generic [ref=e1290]:
+                - generic [ref=e1291]:
+                  - generic [ref=e1292]:
+                    - link "link to /commonlocations/common/locations/cities#commonlocations/common/locations/cities/t=response&c=200&path=next_page" [ref=e1293] [cursor=pointer]:
+                      - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/cities#commonlocations/common/locations/cities/t=response&c=200&path=next_page
+                    - text: next_page
+                  - emphasis [ref=e1294]: string or null
+                - article [ref=e1296]:
+                  - paragraph [ref=e1297]:
+                    - text: Indicates that more results are available. Use this pagination token to retrieve the next page of results (via parameter
+                    - code [ref=e1298]: page
+                    - text: ).
+          - generic [ref=e1300]:
+            - generic [ref=e1301]:
+              - generic [ref=e1302]: Response
+              - list [ref=e1303]:
+                - listitem [ref=e1304]:
+                  - button "200" [ref=e1305] [cursor=pointer]
+            - generic [ref=e1307]:
+              - generic [ref=e1310]: application/json
+              - generic [ref=e1313]:
+                - generic [ref=e1315]:
+                  - button [ref=e1316] [cursor=pointer]:
+                    - img [ref=e1317]
+                  - button [ref=e1321] [cursor=pointer]:
+                    - img [ref=e1322]
+                  - button [ref=e1325] [cursor=pointer]:
+                    - img [ref=e1326]
+                  - button [ref=e1330] [cursor=pointer]:
+                    - img [ref=e1331]
+                - generic [ref=e1334]:
+                  - text: "{ \"request_id\": \"01fr9ez700exycb98w90w5r9sh\","
+                  - button "collapse" [ref=e1335] [cursor=pointer]:
+                    - img [ref=e1336]
+                  - text: "\"data\": ["
+                  - button "collapse" [ref=e1338] [cursor=pointer]:
+                    - img [ref=e1339]
+                  - text: "{ … }, \"...\" ], \"next_page\": \"...\" }"
+      - generic [ref=e1342]:
+        - heading "link to Countries Countries" [level=2] [ref=e1345]:
+          - link "link to Countries" [ref=e1346] [cursor=pointer]:
+            - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/countries
+            - img [ref=e1347]
+          - text: Countries
+        - generic [ref=e1350]:
+          - generic [ref=e1351]:
+            - generic [ref=e1353]:
+              - heading "link to /commonlocations/common/locations/countries#commonlocations/common/locations/countries/request Request" [level=4] [ref=e1354]:
+                - link "link to /commonlocations/common/locations/countries#commonlocations/common/locations/countries/request" [ref=e1355] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/countries#commonlocations/common/locations/countries/request
+                - text: Request
+              - article [ref=e1357]:
+                - paragraph [ref=e1358]:
+                  - text: "This endpoint returns a list of country codes and their names in the selected languages. The countries returned may be filtered by a location id. For example, you can get the list of countries that are associated with the European Alps region by passing:"
+                  - code [ref=e1359]: "{\"region\":1199}"
+                  - text: .
+                  - text: To get the full list call the endpoint passing an empty body. The returned country codes are used as input and output for other endpoints.
+                  - text: This endpoint implements pagination of the results.
+              - 'button "Security: BearerAuth" [ref=e1360] [cursor=pointer]':
+                - img [ref=e1361]
+                - generic [ref=e1364]: "Security:"
+                - generic [ref=e1365]: BearerAuth
+            - generic [ref=e1366]:
+              - generic [ref=e1367]:
+                - link "link to /commonlocations/common/locations/countries#commonlocations/common/locations/countries/request/header" [ref=e1368] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/countries#commonlocations/common/locations/countries/request/header
+                - text: Headers
+              - generic [ref=e1369]:
+                - generic [ref=e1370]:
+                  - generic [ref=e1371]:
+                    - link "link to /commonlocations/common/locations/countries#commonlocations/common/locations/countries/t=request&in=header&path=x-affiliate-id" [ref=e1372] [cursor=pointer]:
+                      - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/countries#commonlocations/common/locations/countries/t=request&in=header&path=x-affiliate-id
+                    - text: X-Affiliate-Id
+                  - emphasis [ref=e1373]: integer
+                  - generic [ref=e1374]: required
+                - article [ref=e1376]:
+                  - paragraph [ref=e1377]: Include here your Affiliate identifier number
+            - generic [ref=e1378]:
+              - link "link to /commonlocations/common/locations/countries#commonlocations/common/locations/countries/request/body" [ref=e1379] [cursor=pointer]:
+                - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/countries#commonlocations/common/locations/countries/request/body
+              - text: Body
+              - generic [ref=e1380]: application/json
+            - generic [ref=e1381]:
+              - generic [ref=e1382]:
+                - generic [ref=e1383]:
+                  - link "link to /commonlocations/common/locations/countries#commonlocations/common/locations/countries/t=request&path=airport" [ref=e1384] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/countries#commonlocations/common/locations/countries/t=request&path=airport
+                  - text: airport
+                - emphasis [ref=e1385]: string
+                - generic [ref=e1386]: "^[A-Z]{3}$"
+              - article [ref=e1388]:
+                - paragraph [ref=e1389]:
+                  - text: A three-letter code that uniquely identifies an airport as defined by the International Air Transport Association (IATA). The full list can be obtained by calling
+                  - link "common/locations/airports" [ref=e1390] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/airports
+                  - text: .
+              - generic [ref=e1391]:
+                - generic [ref=e1392]: "Example:"
+                - generic [ref=e1393]: "\"AMS\""
+            - generic [ref=e1394]:
+              - generic [ref=e1395]:
+                - generic [ref=e1396]:
+                  - link "link to /commonlocations/common/locations/countries#commonlocations/common/locations/countries/t=request&path=city" [ref=e1397] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/countries#commonlocations/common/locations/countries/t=request&path=city
+                  - text: city
+                - emphasis [ref=e1398]: integer
+              - article [ref=e1400]:
+                - paragraph [ref=e1401]:
+                  - text: A signed integer number that uniquely identifies a city. The full list can be obtained by calling
+                  - link "common/locations/cities" [ref=e1402] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/cities
+                  - text: .
+            - generic [ref=e1403]:
+              - generic [ref=e1404]:
+                - generic [ref=e1405]:
+                  - link "link to /commonlocations/common/locations/countries#commonlocations/common/locations/countries/t=request&path=country" [ref=e1406] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/countries#commonlocations/common/locations/countries/t=request&path=country
+                  - text: country
+                - emphasis [ref=e1407]: string
+                - generic [ref=e1408]: "^[a-z]{2}$"
+              - article [ref=e1410]:
+                - paragraph [ref=e1411]:
+                  - text: "A two-letter code that uniquely identifies a country. This code is defined by the ISO 3166-1 alpha-2 standard (ISO2) as described here: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2. The full list can be obtained by calling"
+                  - link "common/locations/countries" [ref=e1412] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/countries
+                  - text: .
+              - generic [ref=e1413]:
+                - generic [ref=e1414]: "Example:"
+                - generic [ref=e1415]: "\"nl\""
+            - generic [ref=e1416]:
+              - generic [ref=e1417]:
+                - generic [ref=e1418]:
+                  - link "link to /commonlocations/common/locations/countries#commonlocations/common/locations/countries/t=request&path=district" [ref=e1419] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/countries#commonlocations/common/locations/countries/t=request&path=district
+                  - text: district
+                - emphasis [ref=e1420]: integer,
+                - emphasis [ref=e1421]: ">= 1"
+              - article [ref=e1423]:
+                - paragraph [ref=e1424]:
+                  - text: A signed integer number that uniquely identifies a district. Typically, districts define known areas within a city. The full list can be obtained by calling
+                  - link "common/locations/districts" [ref=e1425] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/districts
+                  - text: .
+            - generic [ref=e1426]:
+              - generic [ref=e1427]:
+                - generic [ref=e1428]:
+                  - link "link to /commonlocations/common/locations/countries#commonlocations/common/locations/countries/t=request&path=landmark" [ref=e1429] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/countries#commonlocations/common/locations/countries/t=request&path=landmark
+                  - text: landmark
+                - emphasis [ref=e1430]: integer,
+                - emphasis [ref=e1431]: ">= 1"
+              - article [ref=e1433]:
+                - paragraph [ref=e1434]:
+                  - text: A signed integer number that uniquely identifies a relevant geographical landmark, like a monument or a natural attraction. The full list can be obtained by calling
+                  - link "common/locations/landmarks" [ref=e1435] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/landmarks
+                  - text: .
+            - generic [ref=e1436]:
+              - generic [ref=e1437]:
+                - generic [ref=e1438]:
+                  - link "link to /commonlocations/common/locations/countries#commonlocations/common/locations/countries/t=request&path=languages" [ref=e1439] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/countries#commonlocations/common/locations/countries/t=request&path=languages
+                  - text: languages
+                - emphasis [ref=e1440]: Array of strings
+              - generic [ref=e1441]:
+                - generic [ref=e1442]: Default
+                - generic [ref=e1443]: "[\"en-gb\"]"
+              - generic [ref=e1444]:
+                - generic [ref=e1445]: "Example:"
+                - generic [ref=e1446]: "[\"en-us\"]"
+            - generic [ref=e1447]:
+              - generic [ref=e1448]:
+                - generic [ref=e1449]:
+                  - link "link to /commonlocations/common/locations/countries#commonlocations/common/locations/countries/t=request&path=page" [ref=e1450] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/countries#commonlocations/common/locations/countries/t=request&path=page
+                  - text: page
+                - emphasis [ref=e1451]: string
+              - article [ref=e1453]:
+                - paragraph [ref=e1454]:
+                  - text: Pagination token used to retrieve the next page of results. Obtained from
+                  - code [ref=e1455]: next_page
+                  - text: .
+            - generic [ref=e1456]:
+              - generic [ref=e1457]:
+                - generic [ref=e1458]:
+                  - link "link to /commonlocations/common/locations/countries#commonlocations/common/locations/countries/t=request&path=region" [ref=e1459] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/countries#commonlocations/common/locations/countries/t=request&path=region
+                  - text: region
+                - emphasis [ref=e1460]: integer,
+                - emphasis [ref=e1461]: ">= 1"
+              - article [ref=e1463]:
+                - paragraph [ref=e1464]:
+                  - text: A signed integer number that uniquely identifies a geographical region. Regions usually define official administrative areas within a country, but may also include multiple countries and in some cases un-official but popular designations for geographical areas. An example of a region that crosses multiple countries is the Alps in Europe. The full list can be obtained by calling
+                  - link "common/locations/regions" [ref=e1465] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/regions
+                  - text: .
+            - generic [ref=e1466]:
+              - generic [ref=e1467]:
+                - generic [ref=e1468]:
+                  - link "link to /commonlocations/common/locations/countries#commonlocations/common/locations/countries/t=request&path=rows" [ref=e1469] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/countries#commonlocations/common/locations/countries/t=request&path=rows
+                  - text: rows
+                - emphasis [ref=e1470]: integer,
+                - emphasis [ref=e1471]: multiple of 10,
+                - emphasis [ref=e1472]: "[ 10 .. 1000 ]"
+              - article [ref=e1474]:
+                - paragraph [ref=e1475]: The maximum number of results to return.
+              - generic [ref=e1476]:
+                - generic [ref=e1477]: Default
+                - generic [ref=e1478]: "100"
+          - generic [ref=e1480]:
+            - generic [ref=e1481]:
+              - button "post /common/locations/countries" [ref=e1483] [cursor=pointer]:
+                - generic [ref=e1485]: post
+                - generic [ref=e1486]: /common/locations/countries
+                - img [ref=e1487]
+              - button "curl" [ref=e1490] [cursor=pointer]:
+                - text: curl
+                - img [ref=e1491]
+            - generic [ref=e1496]:
+              - generic [ref=e1498]:
+                - button [ref=e1499] [cursor=pointer]:
+                  - img [ref=e1500]
+                - button [ref=e1505] [cursor=pointer]:
+                  - img [ref=e1506]
+              - generic [ref=e1509]:
+                - generic [ref=e1510]: curl -i -X POST \
+                - generic [ref=e1511]: https://demandapi.booking.com/3.1/common/locations/countries \
+                - generic [ref=e1512]: "-H 'Authorization: Bearer <YOUR_string_HERE>' \\"
+                - generic [ref=e1513]: "-H 'Content-Type: application/json' \\"
+                - generic [ref=e1514]: "-H 'X-Affiliate-Id: 0' \\"
+                - generic [ref=e1515]: "-d '{"
+                - generic [ref=e1516]: "\"languages\": ["
+                - generic [ref=e1517]: "\"en-gb\","
+                - generic [ref=e1518]: "\"zh-cn\""
+                - generic [ref=e1519]: "]"
+                - generic [ref=e1520]: "}'"
+            - button "Try it" [ref=e1522] [cursor=pointer]:
+              - img [ref=e1523]
+              - text: Try it
+        - generic [ref=e1526]:
+          - generic [ref=e1527]:
+            - generic [ref=e1528]:
+              - heading "link to /commonlocations/common/locations/countries#commonlocations/common/locations/countries/response&c=200 Responses" [level=4] [ref=e1529]:
+                - link "link to /commonlocations/common/locations/countries#commonlocations/common/locations/countries/response&c=200" [ref=e1530] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/countries#commonlocations/common/locations/countries/response&c=200
+                - text: Responses
+              - list [ref=e1531]:
+                - listitem [ref=e1532]:
+                  - button "200" [ref=e1533] [cursor=pointer]
+              - button "Expand all" [ref=e1534] [cursor=pointer]:
+                - text: Expand all
+                - img [ref=e1535]
+            - generic [ref=e1538]:
+              - article [ref=e1540]:
+                - paragraph [ref=e1541]: Successful response.
+              - generic [ref=e1542]:
+                - link "link to /commonlocations/common/locations/countries#commonlocations/common/locations/countries/response&c=200/body" [ref=e1543] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/countries#commonlocations/common/locations/countries/response&c=200/body
+                - text: Body
+                - generic [ref=e1544]: application/json
+              - generic [ref=e1545]:
+                - generic [ref=e1546]:
+                  - generic [ref=e1547]:
+                    - link "link to /commonlocations/common/locations/countries#commonlocations/common/locations/countries/t=response&c=200&path=request_id" [ref=e1548] [cursor=pointer]:
+                      - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/countries#commonlocations/common/locations/countries/t=response&c=200&path=request_id
+                    - text: request_id
+                  - emphasis [ref=e1549]: string
+                - article [ref=e1551]:
+                  - paragraph [ref=e1552]: Uniquely identifies the request. Please provide this identifier when contacting support.
+              - generic [ref=e1553]:
+                - generic [ref=e1554]:
+                  - generic [ref=e1555]:
+                    - link "link to /commonlocations/common/locations/countries#commonlocations/common/locations/countries/t=response&c=200&path=data" [ref=e1556] [cursor=pointer]:
+                      - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/countries#commonlocations/common/locations/countries/t=response&c=200&path=data
+                    - text: data
+                  - emphasis [ref=e1557]: Array of objects,
+                  - emphasis [ref=e1558]: (CountryOutput)
+                - button "+ Show 2 array properties" [ref=e1560] [cursor=pointer]:
+                  - generic [ref=e1561]: +
+                  - text: Show 2 array properties
+              - generic [ref=e1562]:
+                - generic [ref=e1563]:
+                  - generic [ref=e1564]:
+                    - link "link to /commonlocations/common/locations/countries#commonlocations/common/locations/countries/t=response&c=200&path=next_page" [ref=e1565] [cursor=pointer]:
+                      - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/countries#commonlocations/common/locations/countries/t=response&c=200&path=next_page
+                    - text: next_page
+                  - emphasis [ref=e1566]: string or null
+                - article [ref=e1568]:
+                  - paragraph [ref=e1569]:
+                    - text: Indicates that more results are available. Use this pagination token to retrieve the next page of results (via parameter
+                    - code [ref=e1570]: page
+                    - text: ).
+          - generic [ref=e1572]:
+            - generic [ref=e1573]:
+              - generic [ref=e1574]: Response
+              - list [ref=e1575]:
+                - listitem [ref=e1576]:
+                  - button "200" [ref=e1577] [cursor=pointer]
+            - generic [ref=e1579]:
+              - generic [ref=e1582]: application/json
+              - generic [ref=e1585]:
+                - generic [ref=e1587]:
+                  - button [ref=e1588] [cursor=pointer]:
+                    - img [ref=e1589]
+                  - button [ref=e1593] [cursor=pointer]:
+                    - img [ref=e1594]
+                  - button [ref=e1597] [cursor=pointer]:
+                    - img [ref=e1598]
+                  - button [ref=e1602] [cursor=pointer]:
+                    - img [ref=e1603]
+                - generic [ref=e1606]:
+                  - text: "{ \"request_id\": \"01fr9ez700exycb98w90w5r9sh\","
+                  - button "collapse" [ref=e1607] [cursor=pointer]:
+                    - img [ref=e1608]
+                  - text: "\"data\": ["
+                  - button "collapse" [ref=e1610] [cursor=pointer]:
+                    - img [ref=e1611]
+                  - text: "{ … }, \"...\" ], \"next_page\": \"...\" }"
+      - generic [ref=e1614]:
+        - heading "link to Districts Districts" [level=2] [ref=e1617]:
+          - link "link to Districts" [ref=e1618] [cursor=pointer]:
+            - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/districts
+            - img [ref=e1619]
+          - text: Districts
+        - generic [ref=e1622]:
+          - generic [ref=e1623]:
+            - generic [ref=e1625]:
+              - heading "link to /commonlocations/common/locations/districts#commonlocations/common/locations/districts/request Request" [level=4] [ref=e1626]:
+                - link "link to /commonlocations/common/locations/districts#commonlocations/common/locations/districts/request" [ref=e1627] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/districts#commonlocations/common/locations/districts/request
+                - text: Request
+              - article [ref=e1629]:
+                - paragraph [ref=e1630]:
+                  - text: "This endpoint returns a list of districts with translations in the selected languages. The districts returned may be filtered by a location id. For example, you can get the list of districts in Amsterdam by passing:"
+                  - code [ref=e1631]: "{\"city\":-2140479}"
+                  - text: .
+                  - text: To get the full list call the endpoint passing an empty body. The district ids returned are what is used as input and output for other endpoints.
+                  - text: This endpoint implements pagination of the results.
+              - 'button "Security: BearerAuth" [ref=e1632] [cursor=pointer]':
+                - img [ref=e1633]
+                - generic [ref=e1636]: "Security:"
+                - generic [ref=e1637]: BearerAuth
+            - generic [ref=e1638]:
+              - generic [ref=e1639]:
+                - link "link to /commonlocations/common/locations/districts#commonlocations/common/locations/districts/request/header" [ref=e1640] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/districts#commonlocations/common/locations/districts/request/header
+                - text: Headers
+              - generic [ref=e1641]:
+                - generic [ref=e1642]:
+                  - generic [ref=e1643]:
+                    - link "link to /commonlocations/common/locations/districts#commonlocations/common/locations/districts/t=request&in=header&path=x-affiliate-id" [ref=e1644] [cursor=pointer]:
+                      - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/districts#commonlocations/common/locations/districts/t=request&in=header&path=x-affiliate-id
+                    - text: X-Affiliate-Id
+                  - emphasis [ref=e1645]: integer
+                  - generic [ref=e1646]: required
+                - article [ref=e1648]:
+                  - paragraph [ref=e1649]: Include here your Affiliate identifier number
+            - generic [ref=e1650]:
+              - link "link to /commonlocations/common/locations/districts#commonlocations/common/locations/districts/request/body" [ref=e1651] [cursor=pointer]:
+                - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/districts#commonlocations/common/locations/districts/request/body
+              - text: Body
+              - generic [ref=e1652]: application/json
+            - generic [ref=e1653]:
+              - generic [ref=e1654]:
+                - generic [ref=e1655]:
+                  - link "link to /commonlocations/common/locations/districts#commonlocations/common/locations/districts/t=request&path=airport" [ref=e1656] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/districts#commonlocations/common/locations/districts/t=request&path=airport
+                  - text: airport
+                - emphasis [ref=e1657]: string
+                - generic [ref=e1658]: "^[A-Z]{3}$"
+              - article [ref=e1660]:
+                - paragraph [ref=e1661]:
+                  - text: A three-letter code that uniquely identifies an airport as defined by the International Air Transport Association (IATA). The full list can be obtained by calling
+                  - link "common/locations/airports" [ref=e1662] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/airports
+                  - text: .
+              - generic [ref=e1663]:
+                - generic [ref=e1664]: "Example:"
+                - generic [ref=e1665]: "\"AMS\""
+            - generic [ref=e1666]:
+              - generic [ref=e1667]:
+                - generic [ref=e1668]:
+                  - link "link to /commonlocations/common/locations/districts#commonlocations/common/locations/districts/t=request&path=city" [ref=e1669] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/districts#commonlocations/common/locations/districts/t=request&path=city
+                  - text: city
+                - emphasis [ref=e1670]: integer
+              - article [ref=e1672]:
+                - paragraph [ref=e1673]:
+                  - text: A signed integer number that uniquely identifies a city. The full list can be obtained by calling
+                  - link "common/locations/cities" [ref=e1674] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/cities
+                  - text: .
+            - generic [ref=e1675]:
+              - generic [ref=e1676]:
+                - generic [ref=e1677]:
+                  - link "link to /commonlocations/common/locations/districts#commonlocations/common/locations/districts/t=request&path=country" [ref=e1678] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/districts#commonlocations/common/locations/districts/t=request&path=country
+                  - text: country
+                - emphasis [ref=e1679]: string
+                - generic [ref=e1680]: "^[a-z]{2}$"
+              - article [ref=e1682]:
+                - paragraph [ref=e1683]:
+                  - text: "A two-letter code that uniquely identifies a country. This code is defined by the ISO 3166-1 alpha-2 standard (ISO2) as described here: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2. The full list can be obtained by calling"
+                  - link "common/locations/countries" [ref=e1684] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/countries
+                  - text: .
+              - generic [ref=e1685]:
+                - generic [ref=e1686]: "Example:"
+                - generic [ref=e1687]: "\"nl\""
+            - generic [ref=e1688]:
+              - generic [ref=e1689]:
+                - generic [ref=e1690]:
+                  - link "link to /commonlocations/common/locations/districts#commonlocations/common/locations/districts/t=request&path=district" [ref=e1691] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/districts#commonlocations/common/locations/districts/t=request&path=district
+                  - text: district
+                - emphasis [ref=e1692]: integer,
+                - emphasis [ref=e1693]: ">= 1"
+              - article [ref=e1695]:
+                - paragraph [ref=e1696]:
+                  - text: A signed integer number that uniquely identifies a district. Typically, districts define known areas within a city. The full list can be obtained by calling
+                  - link "common/locations/districts" [ref=e1697] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/districts
+                  - text: .
+            - generic [ref=e1698]:
+              - generic [ref=e1699]:
+                - generic [ref=e1700]:
+                  - link "link to /commonlocations/common/locations/districts#commonlocations/common/locations/districts/t=request&path=landmark" [ref=e1701] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/districts#commonlocations/common/locations/districts/t=request&path=landmark
+                  - text: landmark
+                - emphasis [ref=e1702]: integer,
+                - emphasis [ref=e1703]: ">= 1"
+              - article [ref=e1705]:
+                - paragraph [ref=e1706]:
+                  - text: A signed integer number that uniquely identifies a relevant geographical landmark, like a monument or a natural attraction. The full list can be obtained by calling
+                  - link "common/locations/landmarks" [ref=e1707] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/landmarks
+                  - text: .
+            - generic [ref=e1708]:
+              - generic [ref=e1709]:
+                - generic [ref=e1710]:
+                  - link "link to /commonlocations/common/locations/districts#commonlocations/common/locations/districts/t=request&path=languages" [ref=e1711] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/districts#commonlocations/common/locations/districts/t=request&path=languages
+                  - text: languages
+                - emphasis [ref=e1712]: Array of strings
+              - generic [ref=e1713]:
+                - generic [ref=e1714]: Default
+                - generic [ref=e1715]: "[\"en-gb\"]"
+              - generic [ref=e1716]:
+                - generic [ref=e1717]: "Example:"
+                - generic [ref=e1718]: "[\"en-us\"]"
+            - generic [ref=e1719]:
+              - generic [ref=e1720]:
+                - generic [ref=e1721]:
+                  - link "link to /commonlocations/common/locations/districts#commonlocations/common/locations/districts/t=request&path=page" [ref=e1722] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/districts#commonlocations/common/locations/districts/t=request&path=page
+                  - text: page
+                - emphasis [ref=e1723]: string
+              - article [ref=e1725]:
+                - paragraph [ref=e1726]:
+                  - text: Pagination token used to retrieve the next page of results. Obtained from
+                  - code [ref=e1727]: next_page
+                  - text: .
+            - generic [ref=e1728]:
+              - generic [ref=e1729]:
+                - generic [ref=e1730]:
+                  - link "link to /commonlocations/common/locations/districts#commonlocations/common/locations/districts/t=request&path=region" [ref=e1731] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/districts#commonlocations/common/locations/districts/t=request&path=region
+                  - text: region
+                - emphasis [ref=e1732]: integer,
+                - emphasis [ref=e1733]: ">= 1"
+              - article [ref=e1735]:
+                - paragraph [ref=e1736]:
+                  - text: A signed integer number that uniquely identifies a geographical region. Regions usually define official administrative areas within a country, but may also include multiple countries and in some cases un-official but popular designations for geographical areas. An example of a region that crosses multiple countries is the Alps in Europe. The full list can be obtained by calling
+                  - link "common/locations/regions" [ref=e1737] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/regions
+                  - text: .
+            - generic [ref=e1738]:
+              - generic [ref=e1739]:
+                - generic [ref=e1740]:
+                  - link "link to /commonlocations/common/locations/districts#commonlocations/common/locations/districts/t=request&path=rows" [ref=e1741] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/districts#commonlocations/common/locations/districts/t=request&path=rows
+                  - text: rows
+                - emphasis [ref=e1742]: integer,
+                - emphasis [ref=e1743]: multiple of 10,
+                - emphasis [ref=e1744]: "[ 10 .. 1000 ]"
+              - article [ref=e1746]:
+                - paragraph [ref=e1747]: The maximum number of results to return.
+              - generic [ref=e1748]:
+                - generic [ref=e1749]: Default
+                - generic [ref=e1750]: "100"
+          - generic [ref=e1752]:
+            - generic [ref=e1753]:
+              - button "post /common/locations/districts" [ref=e1755] [cursor=pointer]:
+                - generic [ref=e1757]: post
+                - generic [ref=e1758]: /common/locations/districts
+                - img [ref=e1759]
+              - button "curl" [ref=e1762] [cursor=pointer]:
+                - text: curl
+                - img [ref=e1763]
+            - generic [ref=e1768]:
+              - generic [ref=e1770]:
+                - button [ref=e1771] [cursor=pointer]:
+                  - img [ref=e1772]
+                - button [ref=e1777] [cursor=pointer]:
+                  - img [ref=e1778]
+              - generic [ref=e1781]:
+                - generic [ref=e1782]: curl -i -X POST \
+                - generic [ref=e1783]: https://demandapi.booking.com/3.1/common/locations/districts \
+                - generic [ref=e1784]: "-H 'Authorization: Bearer <YOUR_string_HERE>' \\"
+                - generic [ref=e1785]: "-H 'Content-Type: application/json' \\"
+                - generic [ref=e1786]: "-H 'X-Affiliate-Id: 0' \\"
+                - generic [ref=e1787]: "-d '{"
+                - generic [ref=e1788]: "\"city\": -2140479,"
+                - generic [ref=e1789]: "\"languages\": ["
+                - generic [ref=e1790]: "\"en-gb\","
+                - generic [ref=e1791]: "\"zh-cn\""
+                - generic [ref=e1792]: "]"
+                - generic [ref=e1793]: "}'"
+            - button "Try it" [ref=e1795] [cursor=pointer]:
+              - img [ref=e1796]
+              - text: Try it
+        - generic [ref=e1799]:
+          - generic [ref=e1800]:
+            - generic [ref=e1801]:
+              - heading "link to /commonlocations/common/locations/districts#commonlocations/common/locations/districts/response&c=200 Responses" [level=4] [ref=e1802]:
+                - link "link to /commonlocations/common/locations/districts#commonlocations/common/locations/districts/response&c=200" [ref=e1803] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/districts#commonlocations/common/locations/districts/response&c=200
+                - text: Responses
+              - list [ref=e1804]:
+                - listitem [ref=e1805]:
+                  - button "200" [ref=e1806] [cursor=pointer]
+              - button "Expand all" [ref=e1807] [cursor=pointer]:
+                - text: Expand all
+                - img [ref=e1808]
+            - generic [ref=e1811]:
+              - article [ref=e1813]:
+                - paragraph [ref=e1814]: Successful response.
+              - generic [ref=e1815]:
+                - link "link to /commonlocations/common/locations/districts#commonlocations/common/locations/districts/response&c=200/body" [ref=e1816] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/districts#commonlocations/common/locations/districts/response&c=200/body
+                - text: Body
+                - generic [ref=e1817]: application/json
+              - generic [ref=e1818]:
+                - generic [ref=e1819]:
+                  - generic [ref=e1820]:
+                    - link "link to /commonlocations/common/locations/districts#commonlocations/common/locations/districts/t=response&c=200&path=request_id" [ref=e1821] [cursor=pointer]:
+                      - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/districts#commonlocations/common/locations/districts/t=response&c=200&path=request_id
+                    - text: request_id
+                  - emphasis [ref=e1822]: string
+                - article [ref=e1824]:
+                  - paragraph [ref=e1825]: Uniquely identifies the request. Please provide this identifier when contacting support.
+              - generic [ref=e1826]:
+                - generic [ref=e1827]:
+                  - generic [ref=e1828]:
+                    - link "link to /commonlocations/common/locations/districts#commonlocations/common/locations/districts/t=response&c=200&path=data" [ref=e1829] [cursor=pointer]:
+                      - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/districts#commonlocations/common/locations/districts/t=response&c=200&path=data
+                    - text: data
+                  - emphasis [ref=e1830]: Array of objects,
+                  - emphasis [ref=e1831]: (DistrictOutput)
+                - button "+ Show 3 array properties" [ref=e1833] [cursor=pointer]:
+                  - generic [ref=e1834]: +
+                  - text: Show 3 array properties
+              - generic [ref=e1835]:
+                - generic [ref=e1836]:
+                  - generic [ref=e1837]:
+                    - link "link to /commonlocations/common/locations/districts#commonlocations/common/locations/districts/t=response&c=200&path=next_page" [ref=e1838] [cursor=pointer]:
+                      - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/districts#commonlocations/common/locations/districts/t=response&c=200&path=next_page
+                    - text: next_page
+                  - emphasis [ref=e1839]: string or null
+                - article [ref=e1841]:
+                  - paragraph [ref=e1842]:
+                    - text: Indicates that more results are available. Use this pagination token to retrieve the next page of results (via parameter
+                    - code [ref=e1843]: page
+                    - text: ).
+          - generic [ref=e1845]:
+            - generic [ref=e1846]:
+              - generic [ref=e1847]: Response
+              - list [ref=e1848]:
+                - listitem [ref=e1849]:
+                  - button "200" [ref=e1850] [cursor=pointer]
+            - generic [ref=e1852]:
+              - generic [ref=e1855]: application/json
+              - generic [ref=e1858]:
+                - generic [ref=e1860]:
+                  - button [ref=e1861] [cursor=pointer]:
+                    - img [ref=e1862]
+                  - button [ref=e1866] [cursor=pointer]:
+                    - img [ref=e1867]
+                  - button [ref=e1870] [cursor=pointer]:
+                    - img [ref=e1871]
+                  - button [ref=e1875] [cursor=pointer]:
+                    - img [ref=e1876]
+                - generic [ref=e1879]:
+                  - text: "{ \"request_id\": \"01fr9ez700exycb98w90w5r9sh\","
+                  - button "collapse" [ref=e1880] [cursor=pointer]:
+                    - img [ref=e1881]
+                  - text: "\"data\": ["
+                  - button "collapse" [ref=e1883] [cursor=pointer]:
+                    - img [ref=e1884]
+                  - text: "{ … }, \"...\" ], \"next_page\": null }"
+      - generic [ref=e1887]:
+        - heading "link to Landmarks Landmarks" [level=2] [ref=e1890]:
+          - link "link to Landmarks" [ref=e1891] [cursor=pointer]:
+            - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/landmarks
+            - img [ref=e1892]
+          - text: Landmarks
+        - generic [ref=e1895]:
+          - generic [ref=e1896]:
+            - generic [ref=e1898]:
+              - heading "link to /commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/request Request" [level=4] [ref=e1899]:
+                - link "link to /commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/request" [ref=e1900] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/request
+                - text: Request
+              - article [ref=e1902]:
+                - paragraph [ref=e1903]:
+                  - text: "This endpoint returns a list of relevant geographical landmark codes and their names in the selected languages. The landmarks returned may be filtered by a location id. For example, you can get the list of landmarks that are associated with the city of Paris in France by passing:"
+                  - code [ref=e1904]: "{\"city\":-1456928}"
+                  - text: .
+                  - text: To get the full list call the endpoint passing an empty body. The landmark codes returned are what is used as input and output for other endpoints.
+                  - text: This endpoint implements pagination of the results.
+              - 'button "Security: BearerAuth" [ref=e1905] [cursor=pointer]':
+                - img [ref=e1906]
+                - generic [ref=e1909]: "Security:"
+                - generic [ref=e1910]: BearerAuth
+            - generic [ref=e1911]:
+              - generic [ref=e1912]:
+                - link "link to /commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/request/header" [ref=e1913] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/request/header
+                - text: Headers
+              - generic [ref=e1914]:
+                - generic [ref=e1915]:
+                  - generic [ref=e1916]:
+                    - link "link to /commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/t=request&in=header&path=x-affiliate-id" [ref=e1917] [cursor=pointer]:
+                      - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/t=request&in=header&path=x-affiliate-id
+                    - text: X-Affiliate-Id
+                  - emphasis [ref=e1918]: integer
+                  - generic [ref=e1919]: required
+                - article [ref=e1921]:
+                  - paragraph [ref=e1922]: Include here your Affiliate identifier number
+            - generic [ref=e1923]:
+              - link "link to /commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/request/body" [ref=e1924] [cursor=pointer]:
+                - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/request/body
+              - text: Body
+              - generic [ref=e1925]: application/json
+            - generic [ref=e1926]:
+              - generic [ref=e1927]:
+                - generic [ref=e1928]:
+                  - link "link to /commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/t=request&path=airport" [ref=e1929] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/t=request&path=airport
+                  - text: airport
+                - emphasis [ref=e1930]: string
+                - generic [ref=e1931]: "^[A-Z]{3}$"
+              - article [ref=e1933]:
+                - paragraph [ref=e1934]:
+                  - text: A three-letter code that uniquely identifies an airport as defined by the International Air Transport Association (IATA). The full list can be obtained by calling
+                  - link "common/locations/airports" [ref=e1935] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/airports
+                  - text: .
+              - generic [ref=e1936]:
+                - generic [ref=e1937]: "Example:"
+                - generic [ref=e1938]: "\"AMS\""
+            - generic [ref=e1939]:
+              - generic [ref=e1940]:
+                - generic [ref=e1941]:
+                  - link "link to /commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/t=request&path=city" [ref=e1942] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/t=request&path=city
+                  - text: city
+                - emphasis [ref=e1943]: integer
+              - article [ref=e1945]:
+                - paragraph [ref=e1946]:
+                  - text: A signed integer number that uniquely identifies a city. The full list can be obtained by calling
+                  - link "common/locations/cities" [ref=e1947] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/cities
+                  - text: .
+            - generic [ref=e1948]:
+              - generic [ref=e1949]:
+                - generic [ref=e1950]:
+                  - link "link to /commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/t=request&path=country" [ref=e1951] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/t=request&path=country
+                  - text: country
+                - emphasis [ref=e1952]: string
+                - generic [ref=e1953]: "^[a-z]{2}$"
+              - article [ref=e1955]:
+                - paragraph [ref=e1956]:
+                  - text: "A two-letter code that uniquely identifies a country. This code is defined by the ISO 3166-1 alpha-2 standard (ISO2) as described here: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2. The full list can be obtained by calling"
+                  - link "common/locations/countries" [ref=e1957] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/countries
+                  - text: .
+              - generic [ref=e1958]:
+                - generic [ref=e1959]: "Example:"
+                - generic [ref=e1960]: "\"nl\""
+            - generic [ref=e1961]:
+              - generic [ref=e1962]:
+                - generic [ref=e1963]:
+                  - link "link to /commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/t=request&path=district" [ref=e1964] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/t=request&path=district
+                  - text: district
+                - emphasis [ref=e1965]: integer,
+                - emphasis [ref=e1966]: ">= 1"
+              - article [ref=e1968]:
+                - paragraph [ref=e1969]:
+                  - text: A signed integer number that uniquely identifies a district. Typically, districts define known areas within a city. The full list can be obtained by calling
+                  - link "common/locations/districts" [ref=e1970] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/districts
+                  - text: .
+            - generic [ref=e1971]:
+              - generic [ref=e1972]:
+                - generic [ref=e1973]:
+                  - link "link to /commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/t=request&path=landmark" [ref=e1974] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/t=request&path=landmark
+                  - text: landmark
+                - emphasis [ref=e1975]: integer,
+                - emphasis [ref=e1976]: ">= 1"
+              - article [ref=e1978]:
+                - paragraph [ref=e1979]:
+                  - text: A signed integer number that uniquely identifies a relevant geographical landmark, like a monument or a natural attraction. The full list can be obtained by calling
+                  - link "common/locations/landmarks" [ref=e1980] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/landmarks
+                  - text: .
+            - generic [ref=e1981]:
+              - generic [ref=e1982]:
+                - generic [ref=e1983]:
+                  - link "link to /commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/t=request&path=languages" [ref=e1984] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/t=request&path=languages
+                  - text: languages
+                - emphasis [ref=e1985]: Array of strings
+              - generic [ref=e1986]:
+                - generic [ref=e1987]: Default
+                - generic [ref=e1988]: "[\"en-gb\"]"
+              - generic [ref=e1989]:
+                - generic [ref=e1990]: "Example:"
+                - generic [ref=e1991]: "[\"en-us\"]"
+            - generic [ref=e1992]:
+              - generic [ref=e1993]:
+                - generic [ref=e1994]:
+                  - link "link to /commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/t=request&path=page" [ref=e1995] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/t=request&path=page
+                  - text: page
+                - emphasis [ref=e1996]: string
+              - article [ref=e1998]:
+                - paragraph [ref=e1999]:
+                  - text: Pagination token used to retrieve the next page of results. Obtained from
+                  - code [ref=e2000]: next_page
+                  - text: .
+            - generic [ref=e2001]:
+              - generic [ref=e2002]:
+                - generic [ref=e2003]:
+                  - link "link to /commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/t=request&path=region" [ref=e2004] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/t=request&path=region
+                  - text: region
+                - emphasis [ref=e2005]: integer,
+                - emphasis [ref=e2006]: ">= 1"
+              - article [ref=e2008]:
+                - paragraph [ref=e2009]:
+                  - text: A signed integer number that uniquely identifies a geographical region. Regions usually define official administrative areas within a country, but may also include multiple countries and in some cases un-official but popular designations for geographical areas. An example of a region that crosses multiple countries is the Alps in Europe. The full list can be obtained by calling
+                  - link "common/locations/regions" [ref=e2010] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/regions
+                  - text: .
+            - generic [ref=e2011]:
+              - generic [ref=e2012]:
+                - generic [ref=e2013]:
+                  - link "link to /commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/t=request&path=rows" [ref=e2014] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/t=request&path=rows
+                  - text: rows
+                - emphasis [ref=e2015]: integer,
+                - emphasis [ref=e2016]: multiple of 10,
+                - emphasis [ref=e2017]: "[ 10 .. 1000 ]"
+              - article [ref=e2019]:
+                - paragraph [ref=e2020]: The maximum number of results to return.
+              - generic [ref=e2021]:
+                - generic [ref=e2022]: Default
+                - generic [ref=e2023]: "100"
+          - generic [ref=e2025]:
+            - generic [ref=e2026]:
+              - button "post /common/locations/landmarks" [ref=e2028] [cursor=pointer]:
+                - generic [ref=e2030]: post
+                - generic [ref=e2031]: /common/locations/landmarks
+                - img [ref=e2032]
+              - button "curl" [ref=e2035] [cursor=pointer]:
+                - text: curl
+                - img [ref=e2036]
+            - generic [ref=e2041]:
+              - generic [ref=e2043]:
+                - button [ref=e2044] [cursor=pointer]:
+                  - img [ref=e2045]
+                - button [ref=e2050] [cursor=pointer]:
+                  - img [ref=e2051]
+              - generic [ref=e2054]:
+                - generic [ref=e2055]: curl -i -X POST \
+                - generic [ref=e2056]: https://demandapi.booking.com/3.1/common/locations/landmarks \
+                - generic [ref=e2057]: "-H 'Authorization: Bearer <YOUR_string_HERE>' \\"
+                - generic [ref=e2058]: "-H 'Content-Type: application/json' \\"
+                - generic [ref=e2059]: "-H 'X-Affiliate-Id: 0' \\"
+                - generic [ref=e2060]: "-d '{"
+                - generic [ref=e2061]: "\"city\": -2140479,"
+                - generic [ref=e2062]: "\"languages\": ["
+                - generic [ref=e2063]: "\"en-gb\","
+                - generic [ref=e2064]: "\"zh-cn\""
+                - generic [ref=e2065]: "]"
+                - generic [ref=e2066]: "}'"
+            - button "Try it" [ref=e2068] [cursor=pointer]:
+              - img [ref=e2069]
+              - text: Try it
+        - generic [ref=e2072]:
+          - generic [ref=e2073]:
+            - generic [ref=e2074]:
+              - heading "link to /commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/response&c=200 Responses" [level=4] [ref=e2075]:
+                - link "link to /commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/response&c=200" [ref=e2076] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/response&c=200
+                - text: Responses
+              - list [ref=e2077]:
+                - listitem [ref=e2078]:
+                  - button "200" [ref=e2079] [cursor=pointer]
+              - button "Expand all" [ref=e2080] [cursor=pointer]:
+                - text: Expand all
+                - img [ref=e2081]
+            - generic [ref=e2084]:
+              - article [ref=e2086]:
+                - paragraph [ref=e2087]: Successful response.
+              - generic [ref=e2088]:
+                - link "link to /commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/response&c=200/body" [ref=e2089] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/response&c=200/body
+                - text: Body
+                - generic [ref=e2090]: application/json
+              - generic [ref=e2091]:
+                - generic [ref=e2092]:
+                  - generic [ref=e2093]:
+                    - link "link to /commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/t=response&c=200&path=request_id" [ref=e2094] [cursor=pointer]:
+                      - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/t=response&c=200&path=request_id
+                    - text: request_id
+                  - emphasis [ref=e2095]: string
+                - article [ref=e2097]:
+                  - paragraph [ref=e2098]: Uniquely identifies the request. Please provide this identifier when contacting support.
+              - generic [ref=e2099]:
+                - generic [ref=e2100]:
+                  - generic [ref=e2101]:
+                    - link "link to /commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/t=response&c=200&path=data" [ref=e2102] [cursor=pointer]:
+                      - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/t=response&c=200&path=data
+                    - text: data
+                  - emphasis [ref=e2103]: Array of objects,
+                  - emphasis [ref=e2104]: (LandmarkOutput)
+                - button "+ Show 3 array properties" [ref=e2106] [cursor=pointer]:
+                  - generic [ref=e2107]: +
+                  - text: Show 3 array properties
+              - generic [ref=e2108]:
+                - generic [ref=e2109]:
+                  - generic [ref=e2110]:
+                    - link "link to /commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/t=response&c=200&path=next_page" [ref=e2111] [cursor=pointer]:
+                      - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/landmarks#commonlocations/common/locations/landmarks/t=response&c=200&path=next_page
+                    - text: next_page
+                  - emphasis [ref=e2112]: string or null
+                - article [ref=e2114]:
+                  - paragraph [ref=e2115]:
+                    - text: Indicates that more results are available. Use this pagination token to retrieve the next page of results (via parameter
+                    - code [ref=e2116]: page
+                    - text: ).
+          - generic [ref=e2118]:
+            - generic [ref=e2119]:
+              - generic [ref=e2120]: Response
+              - list [ref=e2121]:
+                - listitem [ref=e2122]:
+                  - button "200" [ref=e2123] [cursor=pointer]
+            - generic [ref=e2125]:
+              - generic [ref=e2128]: application/json
+              - generic [ref=e2131]:
+                - generic [ref=e2133]:
+                  - button [ref=e2134] [cursor=pointer]:
+                    - img [ref=e2135]
+                  - button [ref=e2139] [cursor=pointer]:
+                    - img [ref=e2140]
+                  - button [ref=e2143] [cursor=pointer]:
+                    - img [ref=e2144]
+                  - button [ref=e2148] [cursor=pointer]:
+                    - img [ref=e2149]
+                - generic [ref=e2152]:
+                  - text: "{ \"request_id\": \"01fr9ez700exycb98w90w5r9sh\","
+                  - button "collapse" [ref=e2153] [cursor=pointer]:
+                    - img [ref=e2154]
+                  - text: "\"data\": ["
+                  - button "collapse" [ref=e2156] [cursor=pointer]:
+                    - img [ref=e2157]
+                  - text: "{ … }, \"...\" ], \"next_page\": \"...\" }"
+      - generic [ref=e2160]:
+        - heading "link to Regions Regions" [level=2] [ref=e2163]:
+          - link "link to Regions" [ref=e2164] [cursor=pointer]:
+            - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/regions
+            - img [ref=e2165]
+          - text: Regions
+        - generic [ref=e2168]:
+          - generic [ref=e2169]:
+            - generic [ref=e2171]:
+              - heading "link to /commonlocations/common/locations/regions#commonlocations/common/locations/regions/request Request" [level=4] [ref=e2172]:
+                - link "link to /commonlocations/common/locations/regions#commonlocations/common/locations/regions/request" [ref=e2173] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/regions#commonlocations/common/locations/regions/request
+                - text: Request
+              - article [ref=e2175]:
+                - paragraph [ref=e2176]:
+                  - text: "This endpoint returns a list of regions with translations in the selected languages. The regions returned may be filtered by a location id. For example, you can get the list of regions in the Netherlands or that the Netherlands is a part of by passing:"
+                  - code [ref=e2177]: "{\"country\":\"nl\"}"
+                  - text: . To get the full list call the endpoint passing an empty body. The region ids returned are what is used as input and output for other endpoints. This endpoint implements pagination of the results.
+              - 'button "Security: BearerAuth" [ref=e2178] [cursor=pointer]':
+                - img [ref=e2179]
+                - generic [ref=e2182]: "Security:"
+                - generic [ref=e2183]: BearerAuth
+            - generic [ref=e2184]:
+              - generic [ref=e2185]:
+                - link "link to /commonlocations/common/locations/regions#commonlocations/common/locations/regions/request/header" [ref=e2186] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/regions#commonlocations/common/locations/regions/request/header
+                - text: Headers
+              - generic [ref=e2187]:
+                - generic [ref=e2188]:
+                  - generic [ref=e2189]:
+                    - link "link to /commonlocations/common/locations/regions#commonlocations/common/locations/regions/t=request&in=header&path=x-affiliate-id" [ref=e2190] [cursor=pointer]:
+                      - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/regions#commonlocations/common/locations/regions/t=request&in=header&path=x-affiliate-id
+                    - text: X-Affiliate-Id
+                  - emphasis [ref=e2191]: integer
+                  - generic [ref=e2192]: required
+                - article [ref=e2194]:
+                  - paragraph [ref=e2195]: Include here your Affiliate identifier number
+            - generic [ref=e2196]:
+              - link "link to /commonlocations/common/locations/regions#commonlocations/common/locations/regions/request/body" [ref=e2197] [cursor=pointer]:
+                - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/regions#commonlocations/common/locations/regions/request/body
+              - text: Body
+              - generic [ref=e2198]: application/json
+            - generic [ref=e2199]:
+              - generic [ref=e2200]:
+                - generic [ref=e2201]:
+                  - link "link to /commonlocations/common/locations/regions#commonlocations/common/locations/regions/t=request&path=airport" [ref=e2202] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/regions#commonlocations/common/locations/regions/t=request&path=airport
+                  - text: airport
+                - emphasis [ref=e2203]: string
+                - generic [ref=e2204]: "^[A-Z]{3}$"
+              - article [ref=e2206]:
+                - paragraph [ref=e2207]:
+                  - text: A three-letter code that uniquely identifies an airport as defined by the International Air Transport Association (IATA). The full list can be obtained by calling
+                  - link "common/locations/airports" [ref=e2208] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/airports
+                  - text: .
+              - generic [ref=e2209]:
+                - generic [ref=e2210]: "Example:"
+                - generic [ref=e2211]: "\"AMS\""
+            - generic [ref=e2212]:
+              - generic [ref=e2213]:
+                - generic [ref=e2214]:
+                  - link "link to /commonlocations/common/locations/regions#commonlocations/common/locations/regions/t=request&path=city" [ref=e2215] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/regions#commonlocations/common/locations/regions/t=request&path=city
+                  - text: city
+                - emphasis [ref=e2216]: integer
+              - article [ref=e2218]:
+                - paragraph [ref=e2219]:
+                  - text: A signed integer number that uniquely identifies a city. The full list can be obtained by calling
+                  - link "common/locations/cities" [ref=e2220] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/cities
+                  - text: .
+            - generic [ref=e2221]:
+              - generic [ref=e2222]:
+                - generic [ref=e2223]:
+                  - link "link to /commonlocations/common/locations/regions#commonlocations/common/locations/regions/t=request&path=country" [ref=e2224] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/regions#commonlocations/common/locations/regions/t=request&path=country
+                  - text: country
+                - emphasis [ref=e2225]: string
+                - generic [ref=e2226]: "^[a-z]{2}$"
+              - article [ref=e2228]:
+                - paragraph [ref=e2229]:
+                  - text: "A two-letter code that uniquely identifies a country. This code is defined by the ISO 3166-1 alpha-2 standard (ISO2) as described here: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2. The full list can be obtained by calling"
+                  - link "common/locations/countries" [ref=e2230] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/countries
+                  - text: .
+              - generic [ref=e2231]:
+                - generic [ref=e2232]: "Example:"
+                - generic [ref=e2233]: "\"nl\""
+            - generic [ref=e2234]:
+              - generic [ref=e2235]:
+                - generic [ref=e2236]:
+                  - link "link to /commonlocations/common/locations/regions#commonlocations/common/locations/regions/t=request&path=landmark" [ref=e2237] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/regions#commonlocations/common/locations/regions/t=request&path=landmark
+                  - text: landmark
+                - emphasis [ref=e2238]: integer,
+                - emphasis [ref=e2239]: ">= 1"
+              - article [ref=e2241]:
+                - paragraph [ref=e2242]:
+                  - text: A signed integer number that uniquely identifies a relevant geographical landmark, like a monument or a natural attraction. The full list can be obtained by calling
+                  - link "common/locations/landmarks" [ref=e2243] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/landmarks
+                  - text: .
+            - generic [ref=e2244]:
+              - generic [ref=e2245]:
+                - generic [ref=e2246]:
+                  - link "link to /commonlocations/common/locations/regions#commonlocations/common/locations/regions/t=request&path=languages" [ref=e2247] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/regions#commonlocations/common/locations/regions/t=request&path=languages
+                  - text: languages
+                - emphasis [ref=e2248]: Array of strings
+              - generic [ref=e2249]:
+                - generic [ref=e2250]: Default
+                - generic [ref=e2251]: "[\"en-gb\"]"
+              - generic [ref=e2252]:
+                - generic [ref=e2253]: "Example:"
+                - generic [ref=e2254]: "[\"en-us\"]"
+            - generic [ref=e2255]:
+              - generic [ref=e2256]:
+                - generic [ref=e2257]:
+                  - link "link to /commonlocations/common/locations/regions#commonlocations/common/locations/regions/t=request&path=page" [ref=e2258] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/regions#commonlocations/common/locations/regions/t=request&path=page
+                  - text: page
+                - emphasis [ref=e2259]: string
+              - article [ref=e2261]:
+                - paragraph [ref=e2262]:
+                  - text: Pagination token used to retrieve the next page of results. Obtained from
+                  - code [ref=e2263]: next_page
+                  - text: .
+            - generic [ref=e2264]:
+              - generic [ref=e2265]:
+                - generic [ref=e2266]:
+                  - link "link to /commonlocations/common/locations/regions#commonlocations/common/locations/regions/t=request&path=region" [ref=e2267] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/regions#commonlocations/common/locations/regions/t=request&path=region
+                  - text: region
+                - emphasis [ref=e2268]: integer,
+                - emphasis [ref=e2269]: ">= 1"
+              - article [ref=e2271]:
+                - paragraph [ref=e2272]:
+                  - text: A signed integer number that uniquely identifies a geographical region. Regions usually define official administrative areas within a country, but may also include multiple countries and in some cases un-official but popular designations for geographical areas. An example of a region that crosses multiple countries is the Alps in Europe. The full list can be obtained by calling
+                  - link "common/locations/regions" [ref=e2273] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/regions
+                  - text: .
+            - generic [ref=e2274]:
+              - generic [ref=e2275]:
+                - generic [ref=e2276]:
+                  - link "link to /commonlocations/common/locations/regions#commonlocations/common/locations/regions/t=request&path=rows" [ref=e2277] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/regions#commonlocations/common/locations/regions/t=request&path=rows
+                  - text: rows
+                - emphasis [ref=e2278]: integer,
+                - emphasis [ref=e2279]: multiple of 10,
+                - emphasis [ref=e2280]: "[ 10 .. 1000 ]"
+              - article [ref=e2282]:
+                - paragraph [ref=e2283]: The maximum number of results to return.
+              - generic [ref=e2284]:
+                - generic [ref=e2285]: Default
+                - generic [ref=e2286]: "100"
+          - generic [ref=e2288]:
+            - generic [ref=e2289]:
+              - button "post /common/locations/regions" [ref=e2291] [cursor=pointer]:
+                - generic [ref=e2293]: post
+                - generic [ref=e2294]: /common/locations/regions
+                - img [ref=e2295]
+              - button "curl" [ref=e2298] [cursor=pointer]:
+                - text: curl
+                - img [ref=e2299]
+            - generic [ref=e2304]:
+              - generic [ref=e2306]:
+                - button [ref=e2307] [cursor=pointer]:
+                  - img [ref=e2308]
+                - button [ref=e2313] [cursor=pointer]:
+                  - img [ref=e2314]
+              - generic [ref=e2317]:
+                - generic [ref=e2318]: curl -i -X POST \
+                - generic [ref=e2319]: https://demandapi.booking.com/3.1/common/locations/regions \
+                - generic [ref=e2320]: "-H 'Authorization: Bearer <YOUR_string_HERE>' \\"
+                - generic [ref=e2321]: "-H 'Content-Type: application/json' \\"
+                - generic [ref=e2322]: "-H 'X-Affiliate-Id: 0' \\"
+                - generic [ref=e2323]: "-d '{"
+                - generic [ref=e2324]: "\"country\": \"nl\","
+                - generic [ref=e2325]: "\"languages\": ["
+                - generic [ref=e2326]: "\"en-gb\","
+                - generic [ref=e2327]: "\"zh-cn\""
+                - generic [ref=e2328]: "]"
+                - generic [ref=e2329]: "}'"
+            - button "Try it" [ref=e2331] [cursor=pointer]:
+              - img [ref=e2332]
+              - text: Try it
+        - generic [ref=e2335]:
+          - generic [ref=e2336]:
+            - generic [ref=e2337]:
+              - heading "link to /commonlocations/common/locations/regions#commonlocations/common/locations/regions/response&c=200 Responses" [level=4] [ref=e2338]:
+                - link "link to /commonlocations/common/locations/regions#commonlocations/common/locations/regions/response&c=200" [ref=e2339] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/regions#commonlocations/common/locations/regions/response&c=200
+                - text: Responses
+              - list [ref=e2340]:
+                - listitem [ref=e2341]:
+                  - button "200" [ref=e2342] [cursor=pointer]
+              - button "Expand all" [ref=e2343] [cursor=pointer]:
+                - text: Expand all
+                - img [ref=e2344]
+            - generic [ref=e2347]:
+              - article [ref=e2349]:
+                - paragraph [ref=e2350]: Successful response.
+              - generic [ref=e2351]:
+                - link "link to /commonlocations/common/locations/regions#commonlocations/common/locations/regions/response&c=200/body" [ref=e2352] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/regions#commonlocations/common/locations/regions/response&c=200/body
+                - text: Body
+                - generic [ref=e2353]: application/json
+              - generic [ref=e2354]:
+                - generic [ref=e2355]:
+                  - generic [ref=e2356]:
+                    - link "link to /commonlocations/common/locations/regions#commonlocations/common/locations/regions/t=response&c=200&path=request_id" [ref=e2357] [cursor=pointer]:
+                      - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/regions#commonlocations/common/locations/regions/t=response&c=200&path=request_id
+                    - text: request_id
+                  - emphasis [ref=e2358]: string
+                - article [ref=e2360]:
+                  - paragraph [ref=e2361]: Uniquely identifies the request. Please provide this identifier when contacting support.
+              - generic [ref=e2362]:
+                - generic [ref=e2363]:
+                  - generic [ref=e2364]:
+                    - link "link to /commonlocations/common/locations/regions#commonlocations/common/locations/regions/t=response&c=200&path=data" [ref=e2365] [cursor=pointer]:
+                      - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/regions#commonlocations/common/locations/regions/t=response&c=200&path=data
+                    - text: data
+                  - emphasis [ref=e2366]: Array of objects,
+                  - emphasis [ref=e2367]: (RegionOutput)
+                - button "+ Show 2 array properties" [ref=e2369] [cursor=pointer]:
+                  - generic [ref=e2370]: +
+                  - text: Show 2 array properties
+              - generic [ref=e2371]:
+                - generic [ref=e2372]:
+                  - generic [ref=e2373]:
+                    - link "link to /commonlocations/common/locations/regions#commonlocations/common/locations/regions/t=response&c=200&path=next_page" [ref=e2374] [cursor=pointer]:
+                      - /url: /demand/docs/open-api/demand-api/commonlocations/common/locations/regions#commonlocations/common/locations/regions/t=response&c=200&path=next_page
+                    - text: next_page
+                  - emphasis [ref=e2375]: string or null
+                - article [ref=e2377]:
+                  - paragraph [ref=e2378]:
+                    - text: Indicates that more results are available. Use this pagination token to retrieve the next page of results (via parameter
+                    - code [ref=e2379]: page
+                    - text: ).
+          - generic [ref=e2381]:
+            - generic [ref=e2382]:
+              - generic [ref=e2383]: Response
+              - list [ref=e2384]:
+                - listitem [ref=e2385]:
+                  - button "200" [ref=e2386] [cursor=pointer]
+            - generic [ref=e2388]:
+              - generic [ref=e2391]: application/json
+              - generic [ref=e2394]:
+                - generic [ref=e2396]:
+                  - button [ref=e2397] [cursor=pointer]:
+                    - img [ref=e2398]
+                  - button [ref=e2402] [cursor=pointer]:
+                    - img [ref=e2403]
+                  - button [ref=e2406] [cursor=pointer]:
+                    - img [ref=e2407]
+                  - button [ref=e2411] [cursor=pointer]:
+                    - img [ref=e2412]
+                - generic [ref=e2415]:
+                  - text: "{ \"request_id\": \"01fr9ez700exycb98w90w5r9sh\","
+                  - button "collapse" [ref=e2416] [cursor=pointer]:
+                    - img [ref=e2417]
+                  - text: "\"data\": ["
+                  - button "collapse" [ref=e2419] [cursor=pointer]:
+                    - img [ref=e2420]
+                  - text: "{ … }, \"...\" ], \"next_page\": null }"
+      - generic [ref=e521]:
+        - generic [ref=e522]:
+          - generic [ref=e523]:
+            - heading "link to Payments Payments" [level=2] [ref=e524]:
+              - link "link to Payments" [ref=e525] [cursor=pointer]:
+                - /url: /demand/docs/open-api/demand-api/commonpayments
+                - img [ref=e526]
+              - text: Payments
+            - article [ref=e530]:
+              - paragraph [ref=e531]: Provides generic payment-related endpoints, including supported currencies and payment types.
+          - generic [ref=e532]:
+            - generic [ref=e533]: Operations
+            - button "post /common/payments/cards" [ref=e534] [cursor=pointer]:
+              - generic [ref=e535]:
+                - generic [ref=e537]: post
+                - generic [ref=e538]: /common/payments/cards
+            - button "post /common/payments/currencies" [ref=e539] [cursor=pointer]:
+              - generic [ref=e540]:
+                - generic [ref=e542]: post
+                - generic [ref=e543]: /common/payments/currencies
+        - button "+ Show" [ref=e544] [cursor=pointer]
+      - generic [ref=e546]:
+        - generic [ref=e547]:
+          - generic [ref=e548]:
+            - heading "link to Languages Languages" [level=2] [ref=e549]:
+              - link "link to Languages" [ref=e550] [cursor=pointer]:
+                - /url: /demand/docs/open-api/demand-api/commonlanguages
+                - img [ref=e551]
+              - text: Languages
+            - article [ref=e555]:
+              - paragraph [ref=e556]: Provides a list of supported language codes for use in API requests.
+          - generic [ref=e557]:
+            - generic [ref=e558]: Operations
+            - button "post /common/languages" [ref=e559] [cursor=pointer]:
+              - generic [ref=e560]:
+                - generic [ref=e562]: post
+                - generic [ref=e563]: /common/languages
+        - button "+ Show" [ref=e564] [cursor=pointer]
+      - generic [ref=e566]:
+        - generic [ref=e567]:
+          - generic [ref=e568]:
+            - heading "link to Orders Orders" [level=2] [ref=e569]:
+              - link "link to Orders" [ref=e570] [cursor=pointer]:
+                - /url: /demand/docs/open-api/demand-api/orders
+                - img [ref=e571]
+              - text: Orders
+            - article [ref=e575]:
+              - paragraph [ref=e576]:
+                - text: Enables management of booking orders within the Demand API.
+                - text: Use these endpoints to preview and create new orders, check order details, cancel or modify existing orders. This collection is required to integrate booking and order management functionality.
+          - generic [ref=e577]:
+            - generic [ref=e578]: Operations
+            - button "post /orders/preview" [ref=e579] [cursor=pointer]:
+              - generic [ref=e580]:
+                - generic [ref=e582]: post
+                - generic [ref=e583]: /orders/preview
+            - button "post /orders/create" [ref=e584] [cursor=pointer]:
+              - generic [ref=e585]:
+                - generic [ref=e587]: post
+                - generic [ref=e588]: /orders/create
+            - button "post /orders/details" [ref=e589] [cursor=pointer]:
+              - generic [ref=e590]:
+                - generic [ref=e592]: post
+                - generic [ref=e593]: /orders/details
+            - button "post /orders/details/accommodations" [ref=e594] [cursor=pointer]:
+              - generic [ref=e595]:
+                - generic [ref=e597]: post
+                - generic [ref=e598]: /orders/details/accommodations
+            - button "post /orders/details/cars" [ref=e599] [cursor=pointer]:
+              - generic [ref=e600]:
+                - generic [ref=e602]: post
+                - generic [ref=e603]: /orders/details/cars
+            - button "post /orders/details/flights" [ref=e604] [cursor=pointer]:
+              - generic [ref=e605]:
+                - generic [ref=e607]: post
+                - generic [ref=e608]: /orders/details/flights
+            - button "post /orders/modify" [ref=e609] [cursor=pointer]:
+              - generic [ref=e610]:
+                - generic [ref=e612]: post
+                - generic [ref=e613]: /orders/modify
+            - button "post /orders/cancel" [ref=e614] [cursor=pointer]:
+              - generic [ref=e615]:
+                - generic [ref=e617]: post
+                - generic [ref=e618]: /orders/cancel
+        - button "+ Show" [ref=e619] [cursor=pointer]
+      - generic [ref=e621]:
+        - generic [ref=e622]:
+          - generic [ref=e623]:
+            - heading "link to Messages Messages" [level=2] [ref=e624]:
+              - link "link to Messages" [ref=e625] [cursor=pointer]:
+                - /url: /demand/docs/open-api/demand-api/messages
+                - img [ref=e626]
+              - text: Messages
+            - article [ref=e630]:
+              - paragraph [ref=e631]:
+                - text: Provides endpoints for two-way post-booking communication between guests and properties.
+                - text: Use these endpoints to send and retrieve messages, exchange images, and check conversation details.
+          - generic [ref=e632]:
+            - generic [ref=e633]: Operations
+            - button "post /messages/send" [ref=e634] [cursor=pointer]:
+              - generic [ref=e635]:
+                - generic [ref=e637]: post
+                - generic [ref=e638]: /messages/send
+            - button "post /messages/latest" [ref=e639] [cursor=pointer]:
+              - generic [ref=e640]:
+                - generic [ref=e642]: post
+                - generic [ref=e643]: /messages/latest
+            - button "post /messages/latest/confirm" [ref=e644] [cursor=pointer]:
+              - generic [ref=e645]:
+                - generic [ref=e647]: post
+                - generic [ref=e648]: /messages/latest/confirm
+        - button "+ Show" [ref=e649] [cursor=pointer]
+      - generic [ref=e651]:
+        - generic [ref=e652]:
+          - generic [ref=e653]:
+            - heading "link to Conversations Conversations" [level=2] [ref=e654]:
+              - link "link to Conversations" [ref=e655] [cursor=pointer]:
+                - /url: /demand/docs/open-api/demand-api/conversations
+                - img [ref=e656]
+              - text: Conversations
+            - article [ref=e660]:
+              - paragraph [ref=e661]:
+                - text: Provides endpoints to retrieve and manage messaging conversations.
+                - text: Use these endpoints to list conversations, fetch conversation details, and track updates.
+          - generic [ref=e662]:
+            - generic [ref=e663]: Operations
+            - button "post /messages/conversations" [ref=e664] [cursor=pointer]:
+              - generic [ref=e665]:
+                - generic [ref=e667]: post
+                - generic [ref=e668]: /messages/conversations
+        - button "+ Show" [ref=e669] [cursor=pointer]
+      - generic [ref=e671]:
+        - generic [ref=e672]:
+          - generic [ref=e673]:
+            - heading "link to Attachments Attachments" [level=2] [ref=e674]:
+              - link "link to Attachments" [ref=e675] [cursor=pointer]:
+                - /url: /demand/docs/open-api/demand-api/attachments
+                - img [ref=e676]
+              - text: Attachments
+            - article [ref=e680]:
+              - paragraph [ref=e681]:
+                - text: Provides endpoints for handling message attachments.
+                - text: Use these endpoints to upload and download images shared within conversations.
+          - generic [ref=e682]:
+            - generic [ref=e683]: Operations
+            - button "post /messages/attachments/upload" [ref=e684] [cursor=pointer]:
+              - generic [ref=e685]:
+                - generic [ref=e687]: post
+                - generic [ref=e688]: /messages/attachments/upload
+            - button "post /messages/attachments/download" [ref=e689] [cursor=pointer]:
+              - generic [ref=e690]:
+                - generic [ref=e692]: post
+                - generic [ref=e693]: /messages/attachments/download
+            - button "post /messages/attachments/metadata" [ref=e694] [cursor=pointer]:
+              - generic [ref=e695]:
+                - generic [ref=e697]: post
+                - generic [ref=e698]: /messages/attachments/metadata
+        - button "+ Show" [ref=e699] [cursor=pointer]
+  - contentinfo [ref=e700]:
+    - generic [ref=e701]:
+      - link "About Booking.com" [ref=e703] [cursor=pointer]:
+        - /url: https://www.booking.com/content/about.html
+      - link "Frequently asked questions" [ref=e705] [cursor=pointer]:
+        - /url: https://affiliates.support.booking.com/kb/s/topic/0TO67000000MnHMGA0/our-products
+      - link "Careers" [ref=e707] [cursor=pointer]:
+        - /url: https://careers.booking.com/
+      - link "Press centre" [ref=e709] [cursor=pointer]:
+        - /url: https://news.booking.com/
+      - link "Privacy and Cookies" [ref=e711] [cursor=pointer]:
+        - /url: https://admin.booking.com/hotel/hoteladmin/privacy.html
+    - generic [ref=e713]: © Copyright Booking.com

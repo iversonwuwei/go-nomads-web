@@ -1,0 +1,571 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - navigation [ref=e4]:
+      - generic [ref=e6]:
+        - generic [ref=e8]:
+          - link [ref=e10] [cursor=pointer]:
+            - /url: /demand
+            - img [ref=e11]
+          - generic [ref=e12]: Demand API
+        - generic [ref=e13]:
+          - generic [ref=e16]:
+            - img [ref=e17]
+            - text: Search
+            - generic [ref=e19]: /
+          - list [ref=e20]:
+            - link "Home" [ref=e23] [cursor=pointer]:
+              - /url: /demand
+              - img [ref=e25]
+              - generic [ref=e27]: Home
+            - link "Get started" [ref=e30] [cursor=pointer]:
+              - /url: /demand/docs
+              - generic [ref=e32]: Get started
+            - listitem [ref=e36] [cursor=pointer]:
+              - generic [ref=e38]: Travel services
+            - listitem [ref=e42] [cursor=pointer]:
+              - generic [ref=e44]: API references
+            - link "News" [ref=e47] [cursor=pointer]:
+              - /url: /demand/news
+              - img [ref=e49]
+              - generic [ref=e51]: News
+          - link [ref=e53] [cursor=pointer]:
+            - generic [ref=e55]:
+              - img [ref=e56]
+              - img [ref=e57]
+    - generic [ref=e59]:
+      - complementary [ref=e60]:
+        - list [ref=e62]:
+          - link "GETTING STARTED" [ref=e64] [cursor=pointer]:
+            - /url: /demand/docs
+            - img [ref=e65]
+            - generic [ref=e68]: GETTING STARTED
+          - link "FUNDAMENTALS" [ref=e70] [cursor=pointer]:
+            - img [ref=e71]
+            - generic [ref=e74]: FUNDAMENTALS
+          - link "MIGRATION GUIDES" [ref=e76] [cursor=pointer]:
+            - /url: /demand/docs/migration-guide/overview
+            - img [ref=e77]
+            - generic [ref=e80]: MIGRATION GUIDES
+          - link "ACCOMMODATION" [ref=e82] [cursor=pointer]:
+            - /url: /demand/docs/accommodations/about-accommodation
+            - img [ref=e83]
+            - generic [ref=e86]: ACCOMMODATION
+          - link "CARS" [ref=e88] [cursor=pointer]:
+            - /url: /demand/docs/cars/overview
+            - img [ref=e89]
+            - generic [ref=e92]: CARS
+          - link "ATTRACTIONS (3.2 Beta)" [ref=e94] [cursor=pointer]:
+            - /url: /demand/docs/attractions/about-attractions
+            - img [ref=e95]
+            - generic [ref=e98]: ATTRACTIONS (3.2 Beta)
+          - link "ORDERS" [ref=e100] [cursor=pointer]:
+            - /url: /demand/docs/orders-api/overview
+            - img [ref=e101]
+            - generic [ref=e104]: ORDERS
+          - link "PAYMENTS" [ref=e106] [cursor=pointer]:
+            - /url: /demand/docs/payments/overview
+            - img [ref=e107]
+            - generic [ref=e110]: PAYMENTS
+          - link "MESSAGING" [ref=e112] [cursor=pointer]:
+            - /url: /demand/docs/messaging/about-messaging
+            - img [ref=e113]
+            - generic [ref=e116]: MESSAGING
+          - link "SUPPORT" [ref=e118] [cursor=pointer]:
+            - img [ref=e119]
+            - generic [ref=e122]: SUPPORT
+          - link "CHANGELOG" [ref=e124] [cursor=pointer]:
+            - /url: /demand/docs/whats-new/changelog
+            - img [ref=e125]
+            - generic [ref=e128]: CHANGELOG
+          - link "COMPLIANCE" [ref=e130] [cursor=pointer]:
+            - img [ref=e131]
+            - generic [ref=e134]: COMPLIANCE
+          - generic [ref=e135]:
+            - link "API REFERENCES" [ref=e136] [cursor=pointer]:
+              - /url: /demand/docs/open-api/about-api-references
+              - img [ref=e137]
+              - generic [ref=e140]: API REFERENCES
+            - list [ref=e142]:
+              - link "Version 3.2" [ref=e144] [cursor=pointer]:
+                - /url: /demand/docs/open-api/3.2/demand-api
+                - img [ref=e145]
+                - generic [ref=e148]: Version 3.2
+              - link "Version 3.2 - Beta" [ref=e150] [cursor=pointer]:
+                - /url: /demand/docs/open-api/3.2-beta/demand-api
+                - img [ref=e151]
+                - generic [ref=e154]: Version 3.2 - Beta
+              - generic [ref=e155]:
+                - link "Version 3.1" [ref=e156] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api
+                  - img [ref=e157]
+                  - generic [ref=e160]: Version 3.1
+                - list [ref=e162]:
+                  - generic:
+                    - link "Travel services":
+                      - generic:
+                        - generic: Travel services
+                  - link "Accommodation" [ref=e164] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/accommodations
+                    - img [ref=e165]
+                    - generic [ref=e168]: Accommodation
+                  - link "Car rentals" [ref=e170] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/cars
+                    - img [ref=e171]
+                    - generic [ref=e174]: Car rentals
+                  - generic:
+                    - link "Common":
+                      - generic:
+                        - generic: Common
+                  - link "Locations" [ref=e176] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlocations
+                    - img [ref=e177]
+                    - generic [ref=e180]: Locations
+                  - link "Payments" [ref=e182] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonpayments
+                    - img [ref=e183]
+                    - generic [ref=e186]: Payments
+                  - link "Languages" [ref=e188] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/commonlanguages
+                    - img [ref=e189]
+                    - generic [ref=e192]: Languages
+                  - generic:
+                    - link "Orders":
+                      - generic:
+                        - generic: Orders
+                  - link "Orders" [ref=e194] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/orders
+                    - img [ref=e195]
+                    - generic [ref=e198]: Orders
+                  - generic:
+                    - link "Messaging":
+                      - generic:
+                        - generic: Messaging
+                  - link "Messages" [ref=e200] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/messages
+                    - img [ref=e201]
+                    - generic [ref=e204]: Messages
+                  - link "Conversations" [ref=e206] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/conversations
+                    - img [ref=e207]
+                    - generic [ref=e210]: Conversations
+                  - link "Attachments" [ref=e212] [cursor=pointer]:
+                    - /url: /demand/docs/open-api/demand-api/attachments
+                    - img [ref=e213]
+                    - generic [ref=e216]: Attachments
+        - generic [ref=e219]:
+          - button "Hide sidebar" [ref=e220] [cursor=pointer]:
+            - img [ref=e221]
+          - generic "Change layout" [ref=e224] [cursor=pointer]:
+            - img [ref=e226]
+            - img [ref=e230]
+      - generic [ref=e236]:
+        - generic [ref=e238]:
+          - link "API REFERENCES" [ref=e240] [cursor=pointer]:
+            - /url: /demand/docs/open-api/about-api-references
+          - generic [ref=e241]: /
+          - link "Version 3.1" [ref=e243] [cursor=pointer]:
+            - /url: /demand/docs/open-api/demand-api
+        - generic [ref=e244]:
+          - generic [ref=e248]:
+            - heading "Booking.com Demand API (3.1)" [level=1] [ref=e249]:
+              - text: Booking.com Demand API
+              - generic [ref=e250]: (3.1)
+            - article [ref=e252]:
+              - paragraph [ref=e253]: The Booking.com Demand API enables Affiliate Partners to access Booking.com's travel inventory, including accommodations, car rentals, and flights.
+              - paragraph [ref=e254]: Use Demand API to search, retrieve details, check availability, manage bookings and run reports using orders details.
+              - list [ref=e255]:
+                - listitem [ref=e256]: RESTful API with JSON responses.
+                - listitem [ref=e257]: Make HTTPS POST requests to interact with endpoints.
+                - listitem [ref=e258]: Requires authentication using your Affiliate ID and token credentials.
+              - paragraph [ref=e259]:
+                - link "Check the try out guide!" [ref=e260] [cursor=pointer]:
+                  - /url: /demand/docs/getting-started/try-out-the-api
+          - generic [ref=e261]:
+            - generic [ref=e262]:
+              - generic [ref=e265]: Download OpenAPI description
+              - generic [ref=e267]:
+                - generic [ref=e268]:
+                  - generic [ref=e269]:
+                    - img [ref=e270]
+                    - link "demand-api.json" [ref=e275] [cursor=pointer]:
+                      - /url: /_spec/demand/docs/open-api/demand-api.json?download
+                  - link [ref=e276] [cursor=pointer]:
+                    - /url: /_spec/demand/docs/open-api/demand-api.json?download
+                    - button [ref=e277]:
+                      - img [ref=e278]
+                - generic [ref=e281]:
+                  - generic [ref=e282]:
+                    - img [ref=e283]
+                    - link "demand-api.yaml" [ref=e287] [cursor=pointer]:
+                      - /url: /_spec/demand/docs/open-api/demand-api.yaml?download
+                  - link [ref=e288] [cursor=pointer]:
+                    - /url: /_spec/demand/docs/open-api/demand-api.yaml?download
+                    - button [ref=e289]:
+                      - img [ref=e290]
+            - generic [ref=e293]:
+              - generic [ref=e296]: Languages
+              - generic [ref=e298]:
+                - generic [ref=e299]:
+                  - button "curl" [ref=e300] [cursor=pointer]:
+                    - generic [ref=e301]:
+                      - img [ref=e303]
+                      - generic "curl" [ref=e309]
+                  - button "JavaScript" [ref=e310] [cursor=pointer]:
+                    - generic [ref=e311]:
+                      - img [ref=e313]
+                      - generic "JavaScript" [ref=e317]
+                  - button "Node.js" [ref=e318] [cursor=pointer]:
+                    - generic [ref=e319]:
+                      - img [ref=e321]
+                      - generic "Node.js" [ref=e325]
+                  - button "Python" [ref=e326] [cursor=pointer]:
+                    - generic [ref=e327]:
+                      - img [ref=e329]
+                      - generic "Python" [ref=e333]
+                  - button "Java" [ref=e334] [cursor=pointer]:
+                    - generic [ref=e335]:
+                      - img [ref=e337]
+                      - generic "Java" [ref=e347]
+                - button [ref=e349] [cursor=pointer]:
+                  - img [ref=e350]
+            - generic [ref=e354]:
+              - generic [ref=e357]: Servers
+              - generic [ref=e359]:
+                - generic [ref=e360]:
+                  - text: Production environment
+                  - generic [ref=e361]:
+                    - generic [ref=e362]: https://demandapi.booking.com/3.1/
+                    - button [ref=e364] [cursor=pointer]:
+                      - img [ref=e365]
+                - generic [ref=e367]:
+                  - text: Sandbox environment
+                  - generic [ref=e368]:
+                    - generic [ref=e369]: https://demandapi-sandbox.booking.com/3.1/
+                    - button [ref=e371] [cursor=pointer]:
+                      - img [ref=e372]
+        - generic [ref=e375]:
+          - generic [ref=e376]:
+            - generic [ref=e377]:
+              - heading "link to Accommodation Accommodation" [level=2] [ref=e378]:
+                - link "link to Accommodation" [ref=e379] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/accommodations
+                  - img [ref=e380]
+                - text: Accommodation
+              - article [ref=e384]:
+                - paragraph [ref=e385]:
+                  - text: This API collection is specific for the stay part of the connected trip.
+                  - text: Use these endpoints to search for stays such as hotels and apartments, check availability, retrieve reviews, and get detailed property information.
+            - generic [ref=e386]:
+              - generic [ref=e387]: Operations
+              - button "post /accommodations/search" [ref=e388] [cursor=pointer]:
+                - generic [ref=e389]:
+                  - generic [ref=e391]: post
+                  - generic [ref=e392]: /accommodations/search
+              - button "post /accommodations/availability" [ref=e393] [cursor=pointer]:
+                - generic [ref=e394]:
+                  - generic [ref=e396]: post
+                  - generic [ref=e397]: /accommodations/availability
+              - button "post /accommodations/bulk-availability" [ref=e398] [cursor=pointer]:
+                - generic [ref=e399]:
+                  - generic [ref=e401]: post
+                  - generic [ref=e402]: /accommodations/bulk-availability
+              - button "post /accommodations/chains" [ref=e403] [cursor=pointer]:
+                - generic [ref=e404]:
+                  - generic [ref=e406]: post
+                  - generic [ref=e407]: /accommodations/chains
+              - button "post /accommodations/constants" [ref=e408] [cursor=pointer]:
+                - generic [ref=e409]:
+                  - generic [ref=e411]: post
+                  - generic [ref=e412]: /accommodations/constants
+              - button "post /accommodations/details" [ref=e413] [cursor=pointer]:
+                - generic [ref=e414]:
+                  - generic [ref=e416]: post
+                  - generic [ref=e417]: /accommodations/details
+              - button "post /accommodations/details/changes" [ref=e418] [cursor=pointer]:
+                - generic [ref=e419]:
+                  - generic [ref=e421]: post
+                  - generic [ref=e422]: /accommodations/details/changes
+              - button "post /accommodations/reviews" [ref=e423] [cursor=pointer]:
+                - generic [ref=e424]:
+                  - generic [ref=e426]: post
+                  - generic [ref=e427]: /accommodations/reviews
+              - button "Show 1 more..." [ref=e428] [cursor=pointer]
+          - button "+ Show" [ref=e429] [cursor=pointer]
+        - generic [ref=e431]:
+          - generic [ref=e432]:
+            - generic [ref=e433]:
+              - heading "link to Car rentals Car rentals" [level=2] [ref=e434]:
+                - link "link to Car rentals" [ref=e435] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/cars
+                  - img [ref=e436]
+                - text: Car rentals
+              - article [ref=e440]:
+                - paragraph [ref=e441]:
+                  - text: This API collection is specific to the car rentals part of the connected trip.
+                  - text: Use these endpoints to search for car rentals, check car details and look for depots and suppliers.
+            - generic [ref=e442]:
+              - generic [ref=e443]: Operations
+              - button "post /cars/search" [ref=e444] [cursor=pointer]:
+                - generic [ref=e445]:
+                  - generic [ref=e447]: post
+                  - generic [ref=e448]: /cars/search
+              - button "post /cars/depots" [ref=e449] [cursor=pointer]:
+                - generic [ref=e450]:
+                  - generic [ref=e452]: post
+                  - generic [ref=e453]: /cars/depots
+              - button "post /cars/depots/reviews/scores" [ref=e454] [cursor=pointer]:
+                - generic [ref=e455]:
+                  - generic [ref=e457]: post
+                  - generic [ref=e458]: /cars/depots/reviews/scores
+              - button "post /cars/details" [ref=e459] [cursor=pointer]:
+                - generic [ref=e460]:
+                  - generic [ref=e462]: post
+                  - generic [ref=e463]: /cars/details
+              - button "post /cars/suppliers" [ref=e464] [cursor=pointer]:
+                - generic [ref=e465]:
+                  - generic [ref=e467]: post
+                  - generic [ref=e468]: /cars/suppliers
+              - button "post /cars/constants" [ref=e469] [cursor=pointer]:
+                - generic [ref=e470]:
+                  - generic [ref=e472]: post
+                  - generic [ref=e473]: /cars/constants
+          - button "+ Show" [ref=e474] [cursor=pointer]
+        - generic [ref=e476]:
+          - generic [ref=e477]:
+            - generic [ref=e478]:
+              - heading "link to Locations Locations" [level=2] [ref=e479]:
+                - link "link to Locations" [ref=e480] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/commonlocations
+                  - img [ref=e481]
+                - text: Locations
+              - article [ref=e485]:
+                - paragraph [ref=e486]:
+                  - text: Provides identifiers for a wide range of geographical locations, including airports, countries, cities, and regions.
+                  - text: Use these identifiers to construct your requests.
+                  - text: "Note: These identifiers are available across all travel services and you can use them for both accommodotation and car rentals requests."
+            - generic [ref=e487]:
+              - generic [ref=e488]: Operations
+              - button "post /common/locations/airports" [ref=e489] [cursor=pointer]:
+                - generic [ref=e490]:
+                  - generic [ref=e492]: post
+                  - generic [ref=e493]: /common/locations/airports
+              - button "post /common/locations/cities" [ref=e494] [cursor=pointer]:
+                - generic [ref=e495]:
+                  - generic [ref=e497]: post
+                  - generic [ref=e498]: /common/locations/cities
+              - button "post /common/locations/countries" [ref=e499] [cursor=pointer]:
+                - generic [ref=e500]:
+                  - generic [ref=e502]: post
+                  - generic [ref=e503]: /common/locations/countries
+              - button "post /common/locations/districts" [ref=e504] [cursor=pointer]:
+                - generic [ref=e505]:
+                  - generic [ref=e507]: post
+                  - generic [ref=e508]: /common/locations/districts
+              - button "post /common/locations/landmarks" [ref=e509] [cursor=pointer]:
+                - generic [ref=e510]:
+                  - generic [ref=e512]: post
+                  - generic [ref=e513]: /common/locations/landmarks
+              - button "post /common/locations/regions" [ref=e514] [cursor=pointer]:
+                - generic [ref=e515]:
+                  - generic [ref=e517]: post
+                  - generic [ref=e518]: /common/locations/regions
+          - button "+ Show" [ref=e519] [cursor=pointer]
+        - generic [ref=e521]:
+          - generic [ref=e522]:
+            - generic [ref=e523]:
+              - heading "link to Payments Payments" [level=2] [ref=e524]:
+                - link "link to Payments" [ref=e525] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/commonpayments
+                  - img [ref=e526]
+                - text: Payments
+              - article [ref=e530]:
+                - paragraph [ref=e531]: Provides generic payment-related endpoints, including supported currencies and payment types.
+            - generic [ref=e532]:
+              - generic [ref=e533]: Operations
+              - button "post /common/payments/cards" [ref=e534] [cursor=pointer]:
+                - generic [ref=e535]:
+                  - generic [ref=e537]: post
+                  - generic [ref=e538]: /common/payments/cards
+              - button "post /common/payments/currencies" [ref=e539] [cursor=pointer]:
+                - generic [ref=e540]:
+                  - generic [ref=e542]: post
+                  - generic [ref=e543]: /common/payments/currencies
+          - button "+ Show" [ref=e544] [cursor=pointer]
+        - generic [ref=e546]:
+          - generic [ref=e547]:
+            - generic [ref=e548]:
+              - heading "link to Languages Languages" [level=2] [ref=e549]:
+                - link "link to Languages" [ref=e550] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/commonlanguages
+                  - img [ref=e551]
+                - text: Languages
+              - article [ref=e555]:
+                - paragraph [ref=e556]: Provides a list of supported language codes for use in API requests.
+            - generic [ref=e557]:
+              - generic [ref=e558]: Operations
+              - button "post /common/languages" [ref=e559] [cursor=pointer]:
+                - generic [ref=e560]:
+                  - generic [ref=e562]: post
+                  - generic [ref=e563]: /common/languages
+          - button "+ Show" [ref=e564] [cursor=pointer]
+        - generic [ref=e566]:
+          - generic [ref=e567]:
+            - generic [ref=e568]:
+              - heading "link to Orders Orders" [level=2] [ref=e569]:
+                - link "link to Orders" [ref=e570] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/orders
+                  - img [ref=e571]
+                - text: Orders
+              - article [ref=e575]:
+                - paragraph [ref=e576]:
+                  - text: Enables management of booking orders within the Demand API.
+                  - text: Use these endpoints to preview and create new orders, check order details, cancel or modify existing orders. This collection is required to integrate booking and order management functionality.
+            - generic [ref=e577]:
+              - generic [ref=e578]: Operations
+              - button "post /orders/preview" [ref=e579] [cursor=pointer]:
+                - generic [ref=e580]:
+                  - generic [ref=e582]: post
+                  - generic [ref=e583]: /orders/preview
+              - button "post /orders/create" [ref=e584] [cursor=pointer]:
+                - generic [ref=e585]:
+                  - generic [ref=e587]: post
+                  - generic [ref=e588]: /orders/create
+              - button "post /orders/details" [ref=e589] [cursor=pointer]:
+                - generic [ref=e590]:
+                  - generic [ref=e592]: post
+                  - generic [ref=e593]: /orders/details
+              - button "post /orders/details/accommodations" [ref=e594] [cursor=pointer]:
+                - generic [ref=e595]:
+                  - generic [ref=e597]: post
+                  - generic [ref=e598]: /orders/details/accommodations
+              - button "post /orders/details/cars" [ref=e599] [cursor=pointer]:
+                - generic [ref=e600]:
+                  - generic [ref=e602]: post
+                  - generic [ref=e603]: /orders/details/cars
+              - button "post /orders/details/flights" [ref=e604] [cursor=pointer]:
+                - generic [ref=e605]:
+                  - generic [ref=e607]: post
+                  - generic [ref=e608]: /orders/details/flights
+              - button "post /orders/modify" [ref=e609] [cursor=pointer]:
+                - generic [ref=e610]:
+                  - generic [ref=e612]: post
+                  - generic [ref=e613]: /orders/modify
+              - button "post /orders/cancel" [ref=e614] [cursor=pointer]:
+                - generic [ref=e615]:
+                  - generic [ref=e617]: post
+                  - generic [ref=e618]: /orders/cancel
+          - button "+ Show" [ref=e619] [cursor=pointer]
+        - generic [ref=e621]:
+          - generic [ref=e622]:
+            - generic [ref=e623]:
+              - heading "link to Messages Messages" [level=2] [ref=e624]:
+                - link "link to Messages" [ref=e625] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/messages
+                  - img [ref=e626]
+                - text: Messages
+              - article [ref=e630]:
+                - paragraph [ref=e631]:
+                  - text: Provides endpoints for two-way post-booking communication between guests and properties.
+                  - text: Use these endpoints to send and retrieve messages, exchange images, and check conversation details.
+            - generic [ref=e632]:
+              - generic [ref=e633]: Operations
+              - button "post /messages/send" [ref=e634] [cursor=pointer]:
+                - generic [ref=e635]:
+                  - generic [ref=e637]: post
+                  - generic [ref=e638]: /messages/send
+              - button "post /messages/latest" [ref=e639] [cursor=pointer]:
+                - generic [ref=e640]:
+                  - generic [ref=e642]: post
+                  - generic [ref=e643]: /messages/latest
+              - button "post /messages/latest/confirm" [ref=e644] [cursor=pointer]:
+                - generic [ref=e645]:
+                  - generic [ref=e647]: post
+                  - generic [ref=e648]: /messages/latest/confirm
+          - button "+ Show" [ref=e649] [cursor=pointer]
+        - generic [ref=e651]:
+          - generic [ref=e652]:
+            - generic [ref=e653]:
+              - heading "link to Conversations Conversations" [level=2] [ref=e654]:
+                - link "link to Conversations" [ref=e655] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/conversations
+                  - img [ref=e656]
+                - text: Conversations
+              - article [ref=e660]:
+                - paragraph [ref=e661]:
+                  - text: Provides endpoints to retrieve and manage messaging conversations.
+                  - text: Use these endpoints to list conversations, fetch conversation details, and track updates.
+            - generic [ref=e662]:
+              - generic [ref=e663]: Operations
+              - button "post /messages/conversations" [ref=e664] [cursor=pointer]:
+                - generic [ref=e665]:
+                  - generic [ref=e667]: post
+                  - generic [ref=e668]: /messages/conversations
+          - button "+ Show" [ref=e669] [cursor=pointer]
+        - generic [ref=e671]:
+          - generic [ref=e672]:
+            - generic [ref=e673]:
+              - heading "link to Attachments Attachments" [level=2] [ref=e674]:
+                - link "link to Attachments" [ref=e675] [cursor=pointer]:
+                  - /url: /demand/docs/open-api/demand-api/attachments
+                  - img [ref=e676]
+                - text: Attachments
+              - article [ref=e680]:
+                - paragraph [ref=e681]:
+                  - text: Provides endpoints for handling message attachments.
+                  - text: Use these endpoints to upload and download images shared within conversations.
+            - generic [ref=e682]:
+              - generic [ref=e683]: Operations
+              - button "post /messages/attachments/upload" [ref=e684] [cursor=pointer]:
+                - generic [ref=e685]:
+                  - generic [ref=e687]: post
+                  - generic [ref=e688]: /messages/attachments/upload
+              - button "post /messages/attachments/download" [ref=e689] [cursor=pointer]:
+                - generic [ref=e690]:
+                  - generic [ref=e692]: post
+                  - generic [ref=e693]: /messages/attachments/download
+              - button "post /messages/attachments/metadata" [ref=e694] [cursor=pointer]:
+                - generic [ref=e695]:
+                  - generic [ref=e697]: post
+                  - generic [ref=e698]: /messages/attachments/metadata
+          - button "+ Show" [ref=e699] [cursor=pointer]
+    - contentinfo [ref=e700]:
+      - generic [ref=e701]:
+        - link "About Booking.com" [ref=e703] [cursor=pointer]:
+          - /url: https://www.booking.com/content/about.html
+        - link "Frequently asked questions" [ref=e705] [cursor=pointer]:
+          - /url: https://affiliates.support.booking.com/kb/s/topic/0TO67000000MnHMGA0/our-products
+        - link "Careers" [ref=e707] [cursor=pointer]:
+          - /url: https://careers.booking.com/
+        - link "Press centre" [ref=e709] [cursor=pointer]:
+          - /url: https://news.booking.com/
+        - link "Privacy and Cookies" [ref=e711] [cursor=pointer]:
+          - /url: https://admin.booking.com/hotel/hoteladmin/privacy.html
+      - generic [ref=e713]: © Copyright Booking.com
+  - region "Cookie banner" [ref=e714]:
+    - dialog "Manage cookie settings" [ref=e715]:
+      - generic [ref=e717]:
+        - generic [ref=e719]:
+          - heading "Manage cookie settings" [level=2] [ref=e720]
+          - generic [ref=e721]:
+            - paragraph [ref=e722]: "On this website, we, Booking.com and our partners, use the following categories of cookies (and similar technologies) that require your consent: analytical cookies and marketing cookies."
+            - heading "Analytical cookies" [level=3] [ref=e723]
+            - paragraph [ref=e724]:
+              - text: We and our partners use analytical cookies to gain information on your website usage which is then used to understand how visitors like you use our platform and to improve the performance of our site and services.
+              - button "Learn more" [ref=e725] [cursor=pointer]
+              - text: .
+            - heading "Marketing cookies" [level=3] [ref=e726]
+            - paragraph [ref=e727]:
+              - text: We and our partners use marketing cookies, including social media cookies, to collect information about your browsing behaviour on this website that helps us decide which products to show you on and off our site, to display and send personalised content and advertisements on our platform, other websites and via push messages and emails. The personalised content is based on your browsing and the services you have booked. These cookies also allow you to share or like pages on social media.
+              - button "Learn more" [ref=e728] [cursor=pointer]
+              - text: .
+            - paragraph [ref=e729]:
+              - text: You can find more information about the cookies we use and relevant processing of personal data in the
+              - link "Privacy & Cookie Statement" [ref=e730] [cursor=pointer]:
+                - /url: https://www.booking.com/content/privacy.html
+              - text: .
+            - paragraph [ref=e731]: By clicking 'Accept', you consent to the use of both analytical and marketing cookies and to the relevant processing of personal data.
+            - paragraph [ref=e732]: By clicking 'Decline', you will not be provided with a personalised experience on our platform.
+            - paragraph [ref=e733]: You can manage your cookie settings and withdraw your consent at any time by accessing the 'Manage cookie settings' menu in the website footer.
+        - generic [ref=e735]:
+          - button "Decline" [ref=e736] [cursor=pointer]
+          - button "Accept" [ref=e737] [cursor=pointer]
