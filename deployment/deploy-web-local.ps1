@@ -10,6 +10,7 @@
 param(
   [switch]$SkipBuild,
   [switch]$ForceRecreate,
+  [switch]$UseMirror,
   [switch]$Clean,
   [switch]$Help
 )
@@ -17,7 +18,7 @@ param(
 $ErrorActionPreference = 'Stop'
 
 if ($Help) {
-  Write-Host "Usage: ./deploy-web-local.ps1 [-SkipBuild] [-ForceRecreate] [-Clean] [-Help]" 
+  Write-Host "Usage: ./deploy-web-local.ps1 [-SkipBuild] [-ForceRecreate] [-UseMirror] [-Clean] [-Help]" 
   exit 0
 }
 
@@ -49,9 +50,23 @@ if (-not (Test-Path $ComposeFile)) {
 }
 
 $ComposeCmd = Select-ComposeCmd
+$MirrorPrefix = if ($env:MIRROR_PREFIX) { $env:MIRROR_PREFIX } else { 'docker.1ms.run' }
+
+if ($UseMirror) {
+  $env:NODE_IMAGE = "$MirrorPrefix/library/node:20.18.0-alpine"
+  if (-not $env:NPM_REGISTRY_SERVER) {
+    $env:NPM_REGISTRY_SERVER = 'https://registry.npmmirror.com'
+  }
+}
+
 Write-Host "Using compose: $($ComposeCmd -join ' ')" -ForegroundColor Cyan
 Write-Host "Project root: $RootDir" -ForegroundColor Cyan
 Write-Host "Platform: linux/amd64" -ForegroundColor Cyan
+if ($UseMirror) {
+  Write-Host "Mirror mode: enabled" -ForegroundColor Yellow
+  Write-Host "NODE_IMAGE: $env:NODE_IMAGE" -ForegroundColor Yellow
+  Write-Host "NPM_REGISTRY_SERVER: $env:NPM_REGISTRY_SERVER" -ForegroundColor Yellow
+}
 
 Assert-DockerReady
 
