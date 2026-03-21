@@ -7,6 +7,12 @@ import { useEffect, useMemo, useState } from "react";
 const ANDROID_DOWNLOAD_URL = "https://www.fir021.org/cXHLd";
 
 type ShareTargetType = "city" | "meetup" | "travel-plan" | "unknown";
+type BrowserEnvironment = "normal" | "wechat" | "qq" | "weibo";
+type FallbackMode =
+	| "desktop"
+	| "missing-link"
+	| "embedded-browser"
+	| "launch-failed";
 
 function resolveTargetType(slug: string | undefined): ShareTargetType {
 	if (!slug) {
@@ -45,6 +51,52 @@ function buildAppScheme(
 	}
 }
 
+function resolveRouteSegment(type: ShareTargetType): string | null {
+	switch (type) {
+		case "city":
+			return "city-detail";
+		case "meetup":
+			return "meetup-detail";
+		case "travel-plan":
+			return "travel-plan";
+		default:
+			return null;
+	}
+}
+
+function buildUniversalLink(
+	type: ShareTargetType,
+	id: string | null,
+): string | null {
+	const routeSegment = resolveRouteSegment(type);
+	if (!routeSegment || !id) {
+		return null;
+	}
+
+	return `https://go-nomads.com/app/${routeSegment}/${encodeURIComponent(id)}`;
+}
+
+function buildAndroidIntentLink(
+	type: ShareTargetType,
+	id: string | null,
+	fallbackUrl: string | null,
+): string | null {
+	if (!id || !fallbackUrl) {
+		return null;
+	}
+
+	switch (type) {
+		case "city":
+			return `intent://city?id=${encodeURIComponent(id)}#Intent;scheme=gonomads;package=com.gonomads.go_nomads_app;S.browser_fallback_url=${encodeURIComponent(fallbackUrl)};end`;
+		case "meetup":
+			return `intent://meetup?id=${encodeURIComponent(id)}#Intent;scheme=gonomads;package=com.gonomads.go_nomads_app;S.browser_fallback_url=${encodeURIComponent(fallbackUrl)};end`;
+		case "travel-plan":
+			return `intent://travel-plan?id=${encodeURIComponent(id)}#Intent;scheme=gonomads;package=com.gonomads.go_nomads_app;S.browser_fallback_url=${encodeURIComponent(fallbackUrl)};end`;
+		default:
+			return null;
+	}
+}
+
 function getTargetLabel(type: ShareTargetType): string {
 	switch (type) {
 		case "city":
@@ -66,6 +118,48 @@ function isMobileDevice(): boolean {
 	return /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
 }
 
+function isAndroidDevice(): boolean {
+	if (typeof navigator === "undefined") {
+		return false;
+	}
+
+	return /Android/i.test(navigator.userAgent);
+}
+
+function detectBrowserEnvironment(): BrowserEnvironment {
+	if (typeof navigator === "undefined") {
+		return "normal";
+	}
+
+	const userAgent = navigator.userAgent;
+	if (/MicroMessenger/i.test(userAgent)) {
+		return "wechat";
+	}
+
+	if (/QQ\//i.test(userAgent) || /MQQBrowser/i.test(userAgent)) {
+		return "qq";
+	}
+
+	if (/Weibo/i.test(userAgent)) {
+		return "weibo";
+	}
+
+	return "normal";
+}
+
+function getBlockedEnvironmentLabel(environment: BrowserEnvironment): string {
+	switch (environment) {
+		case "wechat":
+			return "微信";
+		case "qq":
+			return "QQ";
+		case "weibo":
+			return "微博";
+		default:
+			return "当前浏览器";
+	}
+}
+
 export default function ShareLandingPage() {
 	const params = useParams<{ slug?: string[] }>();
 	const searchParams = useSearchParams();
@@ -82,13 +176,36 @@ export default function ShareLandingPage() {
 		() => buildAppScheme(targetType, targetId),
 		[targetId, targetType],
 	);
+	const universalLink = useMemo(
+		() => buildUniversalLink(targetType, targetId),
+		[targetId, targetType],
+	);
+	const androidIntentLink = useMemo(
+		() => buildAndroidIntentLink(targetType, targetId, universalLink),
+		[targetId, targetType, universalLink],
+	);
 	const mobile = useMemo(() => isMobileDevice(), []);
+	const android = useMemo(() => isAndroidDevice(), []);
+	const browserEnvironment = useMemo(() => detectBrowserEnvironment(), []);
+	const embeddedBrowser = browserEnvironment !== "normal";
+	const openAppHref = android ? (androidIntentLink ?? appScheme) : appScheme;
+	const environmentLabel = getBlockedEnvironmentLabel(browserEnvironment);
+	const fallbackMode: FallbackMode | null = showFallback
+		? "launch-failed"
+		: !mobile
+			? "desktop"
+			: !openAppHref
+				? "missing-link"
+				: embeddedBrowser
+					? "embedded-browser"
+					: null;
 
 	useEffect(() => {
-		if (!mobile || !appScheme) {
-			if (!mobile) {
-				setShowFallback(true);
-			}
+		if (!mobile || !openAppHref) {
+			return;
+		}
+
+		if (embeddedBrowser) {
 			return;
 		}
 
@@ -99,25 +216,41 @@ export default function ShareLandingPage() {
 			}
 
 			setShowFallback(true);
-			setToast("未检测到已安装的行途 App，请先安装后再打开分享内容。");
-		}, 1600);
+			setToast("没有成功拉起行途 App。这通常是浏览器拦截了打开请求，不一定代表 App 未安装。你可以手动重试，或先在系统浏览器中打开。");
+		}, 2200);
 
-		window.location.href = appScheme;
+		window.location.href = openAppHref;
+
+		const clearFallbackTimer = () => {
+			window.clearTimeout(fallbackTimer);
+		};
 
 		const handleVisibilityChange = () => {
 			if (document.visibilityState === "hidden") {
-				window.clearTimeout(fallbackTimer);
+				clearFallbackTimer();
 			}
 		};
 
+		const handlePageHide = () => {
+			clearFallbackTimer();
+		};
+
+		const handleBlur = () => {
+			clearFallbackTimer();
+		};
+
 		document.addEventListener("visibilitychange", handleVisibilityChange);
+		window.addEventListener("pagehide", handlePageHide);
+		window.addEventListener("blur", handleBlur);
 
 		return () => {
 			cancelled = true;
-			window.clearTimeout(fallbackTimer);
+			clearFallbackTimer();
 			document.removeEventListener("visibilitychange", handleVisibilityChange);
+			window.removeEventListener("pagehide", handlePageHide);
+			window.removeEventListener("blur", handleBlur);
 		};
-	}, [appScheme, mobile]);
+	}, [embeddedBrowser, mobile, openAppHref]);
 
 	return (
 		<div className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(255,119,71,0.18),_transparent_42%),linear-gradient(180deg,_#fff8f2_0%,_#fff_48%,_#f7f7f5_100%)] text-base-content">
@@ -132,18 +265,18 @@ export default function ShareLandingPage() {
 						{targetId ? ` #${targetId}` : ""}
 					</p>
 					<p className="mt-2 text-sm leading-6 text-base-content/55">
-						如果手机已经安装行途，系统会自动拉起
-						App；如果没有安装，页面会保留在这里并给出下载入口。
+						如果设备支持直接唤起，页面会自动打开行途 App；未成功打开时，
+						你仍可以在这里继续手动操作。
 					</p>
 
 					<div className="mt-8 flex flex-wrap gap-3">
-						{appScheme ? (
-							<a className="btn btn-primary" href={appScheme}>
-								重新打开 App
+						{openAppHref ? (
+							<a className="btn btn-primary" href={openAppHref}>
+								立即打开行途 App
 							</a>
 						) : (
 							<button className="btn btn-primary" type="button" disabled>
-								分享链接缺少内容标识
+									当前链接不可直接打开
 							</button>
 						)}
 						<Link className="btn btn-outline" href="/">
@@ -151,16 +284,32 @@ export default function ShareLandingPage() {
 						</Link>
 					</div>
 
-					{showFallback && (
+					{fallbackMode && (
 						<div className="mt-8 rounded-3xl border border-warning/20 bg-warning/10 p-5 text-left">
 							<h2 className="text-lg font-bold text-base-content">
-								未安装 App？
+								{fallbackMode === "embedded-browser"
+									? `${environmentLabel}内暂不支持直接拉起`
+									: fallbackMode === "missing-link"
+										? "分享链接信息不完整"
+										: fallbackMode === "desktop"
+											? "请在手机上继续打开"
+											: "暂时未能打开 App"}
 							</h2>
 							<p className="mt-2 text-sm leading-6 text-base-content/70">
-								当前设备没有成功拉起行途。你可以先安装 Android
-								版，安装完成后回到本页再次打开。
+								{fallbackMode === "embedded-browser"
+									? `你当前是在${environmentLabel}内置浏览器中打开分享卡片。该环境通常会拦截 App 唤起，所以这里不能准确判断是否已安装行途。请先使用右上角菜单，选择“在浏览器打开”或“在 Safari 中打开”，再返回重试。`
+									: fallbackMode === "missing-link"
+										? "当前分享链接缺少必要的内容参数，页面暂时无法定位要打开的城市、活动或旅行计划。请重新生成分享链接后再试。"
+										: fallbackMode === "desktop"
+											? "当前是桌面浏览器环境，无法直接拉起手机里的行途 App。请把这条链接发送到手机，或在手机浏览器中重新打开。"
+											: "页面暂时没有成功拉起行途 App。这通常是浏览器拦截了打开请求，并不一定代表 App 未安装。你可以手动再次打开，或切换到系统浏览器后重试。"}
 							</p>
 							<div className="mt-4 flex flex-wrap gap-3">
+								{universalLink && (
+									<a className="btn btn-outline btn-sm" href={universalLink}>
+										使用通用链接重试
+									</a>
+								)}
 								<a
 									className="btn btn-primary btn-sm"
 									href={ANDROID_DOWNLOAD_URL}
