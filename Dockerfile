@@ -6,6 +6,7 @@ WORKDIR /app
 ENV NEXT_TELEMETRY_DISABLED=1
 
 FROM base AS deps
+ARG NPM_REGISTRY_SERVER=https://registry.yarnpkg.com
 # Use apk on alpine, apt-get on debian/ubuntu
 RUN if command -v apk >/dev/null 2>&1; then \
 		apk add --no-cache libc6-compat; \
@@ -17,7 +18,7 @@ COPY .yarn ./.yarn
 # Activate the project-pinned Yarn (Corepack) to match packageManager
 RUN corepack enable && corepack prepare yarn@4.5.1 --activate
 # 设置 yarn 网络超时和重试，使用官方源（Docker 容器内更稳定）
-RUN yarn config set npmRegistryServer ${NPM_REGISTRY_SERVER} && \
+RUN yarn config set npmRegistryServer "${NPM_REGISTRY_SERVER:-https://registry.yarnpkg.com}" && \
 	yarn install --immutable --network-timeout 600000
 
 FROM base AS builder

@@ -16,6 +16,7 @@ on:
 
 env:
   NODE_VERSION: '20'
+  NPM_REGISTRY_SERVER: https://registry.yarnpkg.com
 
 jobs:
   # ============================================================
@@ -76,7 +77,12 @@ jobs:
           SHORT_TAG="${TAG:0:8}"
           
           echo "构建镜像: ${IMAGE}:${SHORT_TAG}"
-          docker build --provenance=false -t ${IMAGE}:${SHORT_TAG} -t ${IMAGE}:latest .
+          docker build \
+            --provenance=false \
+            --build-arg NPM_REGISTRY_SERVER=${NPM_REGISTRY_SERVER} \
+            -t ${IMAGE}:${SHORT_TAG} \
+            -t ${IMAGE}:latest \
+            .
           
           echo "推送镜像..."
           docker push ${IMAGE}:${SHORT_TAG}

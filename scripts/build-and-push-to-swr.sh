@@ -58,6 +58,7 @@ build_image() {
   echo "Building image: $IMAGE_NAME"
   cd "$PROJECT_ROOT"
   local platform_flag=()
+  local npm_registry_server="${NPM_REGISTRY_SERVER:-https://registry.yarnpkg.com}"
   if [[ -n "${BUILD_PLATFORM:-}" ]]; then
     platform_flag=(--platform "$BUILD_PLATFORM")
   fi
@@ -66,6 +67,7 @@ build_image() {
     --provenance=false \
     --sbom=false \
     --pull=false \
+    --build-arg "NPM_REGISTRY_SERVER=$npm_registry_server" \
     -t "$IMAGE_NAME" \
     -f "$PROJECT_ROOT/Dockerfile" \
     .
