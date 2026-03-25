@@ -1,33 +1,32 @@
 # TOOLS.md - Local Notes
 
-Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
+## 开发环境
 
-## What Goes Here
+- 包管理: Yarn 4.5.1
+- 端口: dev 3001, Docker 3001
+- Lint/Format: Biome 2.x
+- Node.js: v20+
 
-Things like:
+## 常用命令
 
-- Camera names and locations
-- SSH hosts and aliases
-- Preferred voices for TTS
-- Speaker/room names
-- Device nicknames
-- Anything environment-specific
+```bash
+# 开发
+yarn dev
 
-## Examples
+# 构建
+yarn build
 
-```markdown
-### Cameras
+# Biome 检查
+yarn biome check src/
 
-- living-room → Main area, 180° wide angle
-- front-door → Entrance, motion-triggered
+# Docker 构建
+docker compose up --build
+```
 
-### SSH
+## API 代理
 
-- home-server → 192.168.1.100, user: admin
-
-### TTS
-
-- Preferred voice: "Nova" (warm, slightly British)
+- 开发环境通过 `next.config.ts` rewrites 代理到 Gateway
+- 生产环境直连 `api.go-nomads.com`
 - Default speaker: Kitchen HomePod
 ```
 
