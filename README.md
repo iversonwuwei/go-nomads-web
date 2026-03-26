@@ -52,6 +52,13 @@ Compose:
 docker compose up --build
 ```
 
+Notes:
+
+- The local compose file only starts the `web` container.
+- It joins the external `go-nomads-network`, so the backend stack must already have created that network.
+- Local server-side API calls target `http://go-nomads-gateway:5000/api/v1` by default.
+- `go-nomads-nginx` is not part of the web project compose file.
+
 ## Generate feature images with Tongyi Wanxiang
 
 This repo ships a helper script that calls Tongyi Wanxiang (DashScope) to render the six feature card images and saves them to `public/funcs`.
