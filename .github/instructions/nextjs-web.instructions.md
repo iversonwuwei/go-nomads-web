@@ -4,6 +4,12 @@ applyTo: "src/**/*.{ts,tsx}"
 
 # Next.js Web 端开发规范
 
+## Harness Engineering 基线
+- 本工程默认遵循根目录 `HARNESS_ENGINEERING_CHECKLIST.md`。
+- 交付说明默认遵循根目录 `HARNESS_DELIVERY_TEMPLATE.md`。
+- 开发前先明确边界、调用方、失败路径与验证方式；交付时区分已实现、已验证、剩余风险。
+- 前端改动必须同时检查接口契约、加载态、错误态、空态、埋点或日志可观测性，以及回滚影响面。
+
 ## 技术栈
 - Next.js 16 (App Router) + React 19 + TypeScript
 - Tailwind CSS 4 + DaisyUI 5（`data-theme="light"`）
