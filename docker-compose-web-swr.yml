@@ -9,7 +9,7 @@ services:
       NEXT_TELEMETRY_DISABLED: "1"
       API_BASE: ${API_BASE:-http://api.go-nomads.com/api/v1}
     ports:
-      - "3001:3000"
+      - "${WEB_HOST_PORT:-5100}:5100"
     command: ["node", "server.js"]
     restart: unless-stopped
     pull_policy: always

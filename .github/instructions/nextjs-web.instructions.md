@@ -46,5 +46,5 @@ applyTo: "src/**/*.{ts,tsx}"
 
 ## 部署
 - 输出: `standalone` 模式
-- Docker 端口: 3001
+- Docker 端口: 5100
 - CSS 优化: LightningCSS

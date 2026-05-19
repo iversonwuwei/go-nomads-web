@@ -14,7 +14,7 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:5100](http://localhost:5100) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
@@ -36,14 +36,14 @@ Build and run locally:
 ```bash
 npm run docker:build
 npm run docker:run
-# app on http://localhost:3000
+# app on http://localhost:5100
 ```
 
 Manual commands:
 
 ```bash
 docker build -t go-nomads-web .
-docker run --rm -p 3000:3000 go-nomads-web
+docker run --rm -p 5100:5100 go-nomads-web
 ```
 
 Compose:

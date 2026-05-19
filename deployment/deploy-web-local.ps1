@@ -90,4 +90,4 @@ finally {
   Pop-Location
 }
 
-Write-Host "✅ go-nomads-web is running at http://localhost:3001" -ForegroundColor Green
+Write-Host "✅ go-nomads-web is running at http://localhost:5100" -ForegroundColor Green

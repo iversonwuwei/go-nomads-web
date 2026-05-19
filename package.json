@@ -4,15 +4,15 @@
   "private": true,
   "packageManager": "yarn@4.5.1",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 5100",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 5100",
     "lint": "next lint",
     "lint:biome": "biome lint .",
     "format": "biome format . --write",
     "typecheck": "tsc --noEmit",
     "docker:build": "docker build -t go-nomads-web .",
-    "docker:run": "docker run --rm -p 3000:3000 go-nomads-web"
+    "docker:run": "docker run --rm -p 5100:5100 go-nomads-web"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.9",

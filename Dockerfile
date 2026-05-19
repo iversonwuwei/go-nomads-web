@@ -33,6 +33,7 @@ FROM ${NODE_IMAGE} AS runner
 WORKDIR /app
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
+ENV PORT=5100
 RUN if command -v addgroup >/dev/null 2>&1; then \
 			addgroup -g 1001 nodejs && adduser -D -u 1001 -G nodejs nodejs; \
 		else \
@@ -42,5 +43,5 @@ COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next/standalone ./
 COPY --from=builder /app/.next/static ./.next/static
 USER nodejs
-EXPOSE 3000
+EXPOSE 5100
 CMD ["node", "server.js"]
